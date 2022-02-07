@@ -1,21 +1,22 @@
 Zulfadli Bin Zainal<br>
 Tokyo, Japan<br>
-www.linkedin.com/in/zulfadlizainal/<br>
-www.github.com/zulfadlizainal/<br>
+<i class="fa fa-linkedin-square"></i> www.linkedin.com/in/zulfadlizainal/<br>
+<i class="fa fa-github"></i> www.github.com/zulfadlizainal/<br>
+
 
 #### Work Experiences
 
 Technical Manager, Radio Network Consulting<br>
-Motiv Research (Tokyo, Japan) • 5 mos.<br>
-Oct 2021 – Present<br><br>
+Motiv Research (Tokyo, Japan)<br>
+Oct 2021 – Present • 5 mos.<br><br>
 
 Senior Engineer, Radio Network Consulting<br>
-Motiv Research (Tokyo, Japan) • 2 yrs. 2 mos.<br>
-Aug 2019 – Sep 2021<br><br>
+Motiv Research (Tokyo, Japan)<br>
+Aug 2019 – Sep 2021 • 2 yrs. 2 mos.<br><br>
 
 Engineer, IoT Network Design<br>
-Motiv Research (Tokyo, Japan) • 1 yr. 10 mos.<br>
-Oct 2017 – Jul 2019<br><br>
+Motiv Research (Tokyo, Japan).<br>
+Oct 2017 – Jul 2019 • 1 yr. 10 mos.<br><br>
 
 Engineer, Radio Quality Performance<br>
 Webe Digital, A Telekom Malaysia Company (Petaling Jaya, Malaysia)<br>
@@ -34,6 +35,14 @@ Aug 2012 – Jul 2013 • 1 yr.<br>
 Bachelor Degree of Engineering (B.ENG),<br>
 Communication Engineering (HONS), 2008-2012<br>
 International Islamic University Malaysia<br>
+
+Foundation Degree,<br>
+Engineering, 2006-2008<br>
+International Islamic University Malaysia<br>
+
+High School Certificate,<br>
+Engineering, 2001-2005<br>
+Johor Science High School<br>
 
 #### Professional Certifications
 
