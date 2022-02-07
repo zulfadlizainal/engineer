@@ -8,27 +8,27 @@
 
 <i class="material-icons">storage</i> <b>Computer and Software</b><br>
 
-- [Data Analytics](XXX.md)
-- [Programming](XXX.md)
+- [Data Analytics](/content/content_loading.md)
+- [Programming](/content/content_loading.md)
 
 <i class="material-icons">psychology</i> <b>Artificial Intelligence</b><br>
 
-- [Machine Learning](XXX.md)
-- [Deep Learning](XXX.md)
+- [Machine Learning](/content/content_loading.md)
+- [Deep Learning](/content/content_loading.md)
 
 <i class="material-icons">functions</i> <b>Mathematics</b><br>
 
-- [Statistics](XXX.md)
-- [Probability](XXX.md)
+- [Statistics](/content/content_loading.md)
+- [Probability](/content/content_loading.md)
 
 <i class="material-icons">public</i> <b>GIS</b><br>
 
-- [Mapping](XXX.md)
+- [Mapping](/content/content_loading.md)
 
 <i class="material-icons">account_tree</i> <b>Others</b><br>
 
-- [Logical Thinking](XXX.md)
-- [Negotiation](XXX.md)
+- [Logical Thinking](/content/content_loading.md)
+- [Negotiation](/content/content_loading.md)
 
 <i class="material-icons">person_outline</i> <b>Contact</b><br>
 
