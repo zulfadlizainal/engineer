@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.2.0/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@6.7.0"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.2.7"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.2.0/dist/index.umd.min.js"></script><script>(r => {
+                setTimeout(r);
+              })(() => {
+  const {
+    markmap,
+    mm
+  } = window;
+  const toolbar = new markmap.Toolbar();
+  toolbar.attach(mm);
+  const el = toolbar.render();
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, data) => {
+        const {
+          Markmap
+        } = getMarkmap();
+        window.mm = Markmap.create('svg#mindmap', getOptions == null ? void 0 : getOptions(), data);
+      })(() => window.markmap,null,{"t":"heading","d":1,"p":{"lines":[0,1]},"v":"3GPP TS38.XXX (NR)","c":[{"t":"list_item","d":3,"p":{"lines":[2,3]},"v":"100 (TX, RX)","c":[{"t":"list_item","d":5,"p":{"lines":[3,5]},"v":"38.101<br>\nNR; User Equipment (UE) radio transmission and reception"},{"t":"list_item","d":5,"p":{"lines":[6,8]},"v":"38.104<br>\nNR; Base Station (BS) radio transmission and reception"}]},{"t":"list_item","d":3,"p":{"lines":[9,10]},"v":"200 (PHY)","c":[{"t":"list_item","d":5,"p":{"lines":[10,12]},"v":"38.201<br>\nNR; Physical layer; General description"},{"t":"list_item","d":5,"p":{"lines":[13,15]},"v":"38.211<br>\nNR; Physical channels and modulation"},{"t":"list_item","d":5,"p":{"lines":[16,18]},"v":"38.212<br>\nNR; Multiplexing and channel coding"},{"t":"list_item","d":5,"p":{"lines":[19,21]},"v":"38.213<br>\nNR; Physical layer procedures for control"},{"t":"list_item","d":5,"p":{"lines":[22,24]},"v":"38.214<br>\nNR; Physical layer procedures for data"},{"t":"list_item","d":5,"p":{"lines":[25,27]},"v":"38.215<br>\nNR; Physical layer measurements"}]},{"t":"list_item","d":3,"p":{"lines":[28,30]},"v":"310 -&gt; 330<br>\n(RLC, MAC, PDCP)","c":[{"t":"list_item","d":5,"p":{"lines":[30,32]},"v":"38.314<br>\nNR; Layer 2 measurements"},{"t":"list_item","d":5,"p":{"lines":[33,35]},"v":"38.321<br>\nNR; Medium Access Control (MAC) protocol specification"},{"t":"list_item","d":5,"p":{"lines":[36,38]},"v":"38.322<br>\nNR; Radio Link Control (RLC) protocol specification"},{"t":"list_item","d":5,"p":{"lines":[39,41]},"v":"38.323<br>\nNR; Packet Data Convergence Protocol (PDCP) specification"}]},{"t":"list_item","d":3,"p":{"lines":[42,43]},"v":"330 + (RRC)","c":[{"t":"list_item","d":5,"p":{"lines":[43,45]},"v":"38.331<br>\nNR; Radio Resource Control (RRC); Protocol specification"}]}]})</script>
+</body>
+</html>

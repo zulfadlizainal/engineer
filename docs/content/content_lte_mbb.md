@@ -15,8 +15,8 @@ Date Edited: 2022/02/07<br>
 
 #### Network Architecture 
 
-[System Architecture Evolution (SAE)](/lte_mbb/lte_mbb_nwarchitecture.md?id=System-Architecture-Evolution-(SAE))<br>
-[Evolved Packet Core (EPC)](/lte_mbb/lte_mbb_nwarchitecture.md?id=Evolved-Packet-Core-(EPC))<br>
+[System Architecture Evolution (SAE)](/lte_mbb/lte_mbb_nwarchitecture.md?id=System-Architecture-Evolution-SAE)<br>
+[Evolved Packet Core (EPC)](/lte_mbb/lte_mbb_nwarchitecture.md?id=Evolved-Packet-Core-EPC)<br>
 [Bearer Architecture](/lte_mbb/lte_mbb_nwarchitecture.md?id=Bearer-Architecture)<br>
 [E-UTRAN Architecture](/lte_mbb/lte_mbb_nwarchitecture.md?id=E-UTRAN-Architecture)<br>
 [Protocol Stack](/lte_mbb/lte_mbb_nwarchitecture.md?id=Protocol-Stack)<br>
@@ -31,10 +31,11 @@ Date Edited: 2022/02/07<br>
 #### Basic Features and Algorithm 
 
 Link Adaptation<br> 
+Carrier Aggregation (CA)<br> 
 MIMO Concept<br> 
+MIMO with CA Concept<br> 
 Massive MIMO<br>
 Beamforming<br> 
-Carrier Aggregation (CA)<br> 
 Idle Mode Mobility Load Balancing (IMLB)<br> 
 Connected Mode Mobility Load Balancing (MLB)<br> 
 Mobility Robustness Optimization (MRO)<br> 
