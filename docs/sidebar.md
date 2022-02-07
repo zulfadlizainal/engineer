@@ -1,9 +1,9 @@
 <i class="material-icons">cell_tower</i>  <b>Telecom</b><br>
 
-- [4G LTE MBB](/_content/content_lte_mbb.md)
-- [4G LTE eMTC](/_content/content_lte_emtc.md)
-- [4G LTE NB-IoT](/_content/content_lte_nbiot.md)
-- [5G NR eMBB](/_content/content_nr_embb.md)
+- [4G LTE MBB](/content/content_lte_mbb.md)
+- [4G LTE eMTC](/content/content_lte_emtc.md)
+- [4G LTE NB-IoT](/content/content_lte_nbiot.md)
+- [5G NR eMBB](/content/content_nr_embb.md)
 
 <i class="material-icons">storage</i> <b>Computer and Software</b><br>
 
