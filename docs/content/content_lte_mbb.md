@@ -32,8 +32,7 @@ Date Edited: 2022/02/07<br>
 
 Link Adaptation<br> 
 Carrier Aggregation (CA)<br> 
-MIMO Concept<br> 
-MIMO with CA Concept<br> 
+[MIMO Concept](/lte_mbb/lte_mbb_featurealgo.md?id=MIMO-Concept)<br>
 Massive MIMO<br>
 Beamforming<br> 
 Idle Mode Mobility Load Balancing (IMLB)<br> 

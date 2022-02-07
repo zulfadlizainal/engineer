@@ -7,11 +7,51 @@ Date Edited: 2022/02/07<br>
 
 #### MIMO Concept
 
-Downlink physical layer parameter values set by the field ue-Category: [1]
+MIMO stands for Multiple Input Multiple Output. Simply, it is a technique to increase the data throughput by using multiple transmitter antenna and multiple receiver antenna. [1]
 
-<img src="\lte_mbb\img\lte_mbb_dluecat.png" width=100% height=100% />
+##### -- DL MIMO --
+
+<img src="\lte_mbb\img\lte_mbb_dlmimo.png" width=100% height=100% />
+<br />
+
+Usually in industry standard, when engineer say Tx x Rx MIMO, they are referring to DL MIMO.
+
+1. 2 x 2 means: 2 TX in eNB, 2 RX in UE 
+
+<img src="\lte_mbb\img\lte_mbb_dlmimo2x2.png" width=100% height=100% />
+<br />
+
+2. 4 x 2 means: 4 TX in eNB, 2 RX in UE 
+
+<img src="\lte_mbb\img\lte_mbb_dlmimo4x2.png" width=100% height=100% />
+<br />
+
+3. 4 x 4 means: 4 TX in eNB, 4 RX in UE 
+
+<img src="\lte_mbb\img\lte_mbb_dlmimo4x4.png" width=100% height=100% />
+<br />
+
+##### -- UL MIMO --
+
+<img src="\lte_mbb\img\lte_mbb_ulmimo.png" width=100% height=100% />
+<br />
+
+Not many devices in LTE support UL MIMO. UL MIMO requires a lot of energy usage and demand for UL data is not as high as DL. 
+
+1. 4 x 4 means: 4 TX in UE, 4 RX in eNB 
+
+<img src="\lte_mbb\img\lte_mbb_ulmimo4x4.png" width=100% height=100% />
+<br />
+
+#### -- MIMO with CA --
+
+On higher level, CA and MIMO have same purposes. To increase throughput/capacity. Below are example representation of MIMO with combination of CA.
+
+1. 2CC CA with 2 x 2 MIMO on both PCell and SCell
+
+<img src="\lte_mbb\img\lte_mbb_dlmimo2ca2x2.png" width=100% height=100% />
 <br />
 
 #### References
 
-1. NA
+1. [Sharetechnote](https://www.sharetechnote.com/html/BasicProcedure_LTE_MIMO.html)
