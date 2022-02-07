@@ -30,6 +30,8 @@ So,
 
     1ms = 30720 Ts 
 
+---
+
 #### FDD Frame (Type 1)
 
 Key points for FDD frame structure: [1]
@@ -40,6 +42,8 @@ Key points for FDD frame structure: [1]
 
 <img src="\lte_mbb\img\lte_mbb_fddframe.png" width=100% height=100% />
 <br />
+
+---
 
 #### TDD Frame (Type 2)
 
@@ -61,6 +65,8 @@ TDD Special Subframe Config: [2]
 
 <img src="\lte_mbb\img\lte_mbb_tddspsconfig.png" width=100% height=100% />
 <br />
+
+---
 
 #### Uplink Frame
 

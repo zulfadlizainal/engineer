@@ -42,12 +42,11 @@ Date Edited: 2022/02/07<br>
 
 #### Layer 1: PHY
 
-- DL Reference Signal (RS)<br> 
+- [Downlink Reference Signal (RS)](/lte_mbb/lte_mbb_layer1.md?id=Downlink-Reference-Signal-RS)<br>
 - UL DMRS and SRS<br> 
-- Antenna Ports<br>
-- Transmission Mode (TM)<br> 
-- DL Power Allocation<br> 
-- MIMO in PHY<br> 
+- [Antenna Ports](/lte_mbb/lte_mbb_layer1.md?id=Antenna-Ports)<br>
+- [Transmission Mode (TM)](/lte_mbb/lte_mbb_layer1.md?id=Transmission-Mode-TM)<br>
+- [DL Power Allocation](/lte_mbb/lte_mbb_layer1.md?id=DL-Power-Allocation)<br>
 - Measurement Metrics (RPRP, RSRQ, SINR, RSSI)<br>
 - Overlapping Measurment<br> 
 

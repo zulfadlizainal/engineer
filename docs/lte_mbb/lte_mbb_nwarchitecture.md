@@ -12,12 +12,16 @@ Picture from [1]:
 <img src="\lte_mbb\img\lte_mbb_sae.png" width=100% height=100% />
 <br />
 
+---
+
 #### Evolved Packet Core (EPC)
 
 Picture from [1]:
 
 <img src="\lte_mbb\img\lte_mbb_epc.png" width=100% height=100% />
 <br />
+
+---
 
 #### Bearer Architecture
 
@@ -26,12 +30,16 @@ Picture from [1]:
 <img src="\lte_mbb\img\lte_mbb_bearer.png" width=100% height=100% />
 <br />
 
+---
+
 #### E-UTRAN Architecture
 
 Picture from [1]:
 
 <img src="\lte_mbb\img\lte_mbb_eutran.png" width=100% height=100% />
 <br />
+
+---
 
 #### Protocol Stack
 
@@ -49,6 +57,8 @@ User plane protocol stack (UU, S1)<br />
 User plane protocol stack (X2)<br />
 <img src="\lte_mbb\img\lte_mbb_upx2.png" width=100% height=100% />
 <br />
+
+---
 
 #### References
 

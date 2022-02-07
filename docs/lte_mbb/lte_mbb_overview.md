@@ -23,6 +23,8 @@ Uplink physical layer parameter values set by the field ue-Category:[2]
 <img src="\lte_mbb\img\lte_mbb_uluecat.png" width=100% height=100% />
 <br />
 
+---
+
 #### Operating Bands
 
 LTE Operating Bands [3] [4]
@@ -31,6 +33,8 @@ LTE Operating Bands [3] [4]
 <br />
 
 and continued in a long table list in 3GPP.
+
+---
 
 #### Supported Bandwidths
 
@@ -45,9 +49,13 @@ The bandwidths defined by the standard are 1.4, 3, 5, 10, 15, and 20 MHz. The ta
 | 15 MHz     | 75               | 901                     | 900                   |
 | 20 MHz     | 100              | 1201                    | 1200                  |
 
+---
+
 #### CA Band Combinations
 
 It's too long to list, refer 3GPP TS 36.306.
+
+---
 
 #### References
 

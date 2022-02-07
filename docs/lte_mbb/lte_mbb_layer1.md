@@ -1,0 +1,209 @@
+Topic: 4G LTE<br>
+Sub-Topic: MBB<br>
+Date Written: 2019/06/14<br>
+Date Edited: 2022/02/07<br>
+
+---
+
+#### Downlink Reference Signal (RS) 
+
+Most important -> Cell Specific RS (C-RS) [1]
+
+1. Most of the channels (e.g, PDSCH, PDCCH, PBCH etc) is for carrying a special information (a sequence of bits) and they have some higher layer channel connected to them. 
+2. Reference Signal is a special signal that exists only at PHY layer. This is not for delivering any specific information.  
+3. The purpose of this Reference Signal is to deliver the reference point for the downlink power. 
+4. When UE try to figure out DL power (i.e, the power of the signal from a eNode B), it measure the power of this reference signal and take it as downlink cell power. 
+
+Picture below shows that: [1]
+
+1. Logical antenna port for CRS: 1, 2, or 4 ports 
+2. Gray = DTX (Discontinuous transmission) - Not transmitting RS because other ports are using that RE location for transmitting RS. 
+
+<img src="\lte_mbb\img\lte_mbb_rsloc.png" width=100% height=100% />
+<br />
+
+##### -- Relation of PCI Planning with C-RS Location --
+
+1. PCI influence the RS pattern as well. (Based on PSS).
+2. Each antenna port use different RS pattern. .
+3. In case of 1 antenna port: 6 different pattern can be generated for RS (Mod 6).
+4. In case of 2 antenna port: 3 different pattern can be generated for RS (Mod 3). 
+5. In case of 4 antenna port: 3 different pattern can be generated for RS (Mod 3).
+
+Why every PCI needs different RS locations? [2]
+
+1. RS cannot be overlapped, if overlapped it causes interferences.
+2. So if Mod3 = It means it is possible for the coverage to overlapped up to 3 Cell that have PSS 0, 1, 2. 
+
+##### -- Other types of DL RS --
+
+0. Cell Specific RS (C-RS) -> As discussed above
+1. UE Specific RS 
+2. Positioning RS 
+3. Channel State Information RS (CSI-RS)
+
+<img src="\lte_mbb\img\lte_mbb_dlrstype.png" width=100% height=100% />
+<br />
+
+Eg: UE Speific RS [2]
+
+<img src="\lte_mbb\img\lte_mbb_uers.png" width=100% height=100% />
+<br />
+
+<img src="\lte_mbb\img\lte_mbb_uers2.png" width=100% height=100% />
+<br />
+
+Positioning RS [2]
+
+<img src="\lte_mbb\img\lte_mbb_prs.png" width=100% height=100% />
+<br />
+
+Channel State Information RS (CSI-RS) [2]
+
+<img src="\lte_mbb\img\lte_mbb_csirs.png" width=100% height=100% />
+<br />
+
+##### -- Available RE for Traffic & Control Channel  --
+
+1. Number of Non-RS RE which are not RS RE and DTX is depend on the nu of antenna port. 
+2. This Non-RS RE is used Traffic and Common Channel (PBCH, PCFICH, PDCCH, etc). 
+
+<br>Definition of  number of RE per Symbol per PRB: 
+
+    RS_RE_B(n): number of RS RE per symbol per PRB under RS symbol 
+    RS_RE_A(n): number of RS RE per symbol per PRB under non RS symbol 
+    DTX_RE_B(n): number of DTX RE per symbol per PRB under RS symbol 
+    DTX_RE_A(n): number of DTX RE per symbol per PRB under non RS symbol 
+    NRS_RE_B(n): number of non-RS and non-DTX RE per symbol per PRB under RS symbol 
+    NRS_RE_A(n): number of non-RS and non-DTX RE per symbol per PRB under non RS symbol 
+
+<img src="\lte_mbb\img\lte_mbb_crsloc2.png" width=100% height=100% />
+<br />
+
+| Antenna  | Symbol Where RS Present |             |             | Symbol Where RS Not Present |             |             |
+|----------|-------------------------|-------------|-------------|-----------------------------|-------------|-------------|
+| Port (n) | RS_RE_B(n)              | DTX_RE_B(n) | NRS_RE_B(n) | RS_RE_A(n)                  | DTX_RE_A(n) | NRS_RE_A(n) |
+| 1        | 2                       | 0           | 10          | 0                           | 0           | 12          |
+| 2        | 4                       | 4           | 16          | 0                           | 0           | 24          |
+| 4        | 4                       | 12          | 32          | 4 or 0                      | 12 or 0     | Avg 44.8    |
+
+---
+
+#### Antenna Ports 
+
+In LTE, every logical antenna port will generate its own resource grid. Means, every resource grid should have RS. This RS mapping can be mapped based on below table: [3]
+
+| Antenna Ports | DL RS                                 | Release |
+|---------------|---------------------------------------|---------|
+| Port 0-3      | Cell Specific RS (C-RS)               | Rel-8   |
+| Port 4        | MBSFN RS                              | Rel-8   |
+| Port 5        | UE Specific RS for TM7 Beamforming    | Rel-8   |
+| Port 6        | Positioning RS                        | Rel-9   |
+| Port 7-8      | UE Specific RS for TM8 Beamforming    | Rel-9   |
+| Port 9-14     | UE Specific RS for TM9 Beamforming    | Rel-10  |
+| Port 15-22    | Channel State Information RS (CSI-RS) | Rel-10  |
+
+The way in which these logical antenna ports are assigned to the physical transmit antennas of a base station is up to the base station, and can vary between base stations of the same type (because of different operating conditions) and also between base stations from different manufacturers. The base station does not explicitly notify the UE of the mapping that has been carried out, rather the UE must take this into account automatically during demodulation. 
+
+<img src="\lte_mbb\img\lte_mbb_antport.png" width=100% height=100% />
+<br />
+
+---
+
+#### Transmission Mode (TM)
+
+Summary Table on Transmission Mode: [4] [5]
+
+<img src="\lte_mbb\img\lte_mbb_tmsum.png" width=100% height=100% />
+<br />
+
+Antenna Port Corresponding to Transmission Mode: [2] [5]
+
+<img src="\lte_mbb\img\lte_mbb_tmsum2.png" width=100% height=100% />
+<br />
+
+Codebook Based/or Non Codebook based Transmission Modes: [4] [5]
+
+<img src="\lte_mbb\img\lte_mbb_tmsum3.png" width=100% height=100% />
+<br />
+
+##### -- TM 1 - Single Transmit Antenna --
+
+This mode uses only one transmit antenna. 
+
+##### -- TM 2 - Transmit Diversity --
+
+1. Transmit diversity is the default MIMO mode. 
+2. It sends the same information via various antennas. Each antenna stream uses different coding and different frequency resources. 
+3. Improve SNR 
+4. More robust, increase reliability. 
+
+When Trans Div is being used: 
+
+1. Usually as a fall back technology. When spatial multiplexing cannot be used (eg: In poor RF condition). 
+2. Transmit important cannel: Eg- Control channel, PBCH, PDCCH. 
+
+##### -- TM 3 - Spatial Multiplexing (OL) with CDD --
+
+<img src="\lte_mbb\img\lte_mbb_tm3.png" width=100% height=100% />
+<br />
+
+1. Supports 2-4 layers (2-4 antennas) 
+2. Open Loop (OL) means: Not requires UE feedback (Not requires PMI) 
+3. Used when -> Channel info is missing, or channel condition rapidly changes (when UE moves very fast) -> Not practical to use close loop in this condition. 
+
+CDD means Cyclic Delay Diversity: 
+
+The signal is supplied to every antenna with a specific delay (cyclic delay diversity, or CDD), thus artificially creating frequency diversity. This will improve reliability of every streams. 
+
+<img src="\lte_mbb\img\lte_mbb_tm32.png" width=100% height=100% />
+<br />
+
+##### -- TM 4 - Spatial Multiplexing (CL) with CDD --
+
+<img src="\lte_mbb\img\lte_mbb_tm4.png" width=100% height=100% />
+<br />
+
+1. Supports up to 4 layers (4 Antennas). 
+2. To permit channel estimation at the receiver, the base station transmits cell-specific reference signals (RS), distributed over various resource elements (RE) and over various timeslots.  
+3. Close Loop (CL) - UE send response on channel situation (PMI) 
+
+Sample Visualization: 
+
+1. Case of 2x2 MIMO 
+2. Both data only arrive at 1UE -> Indicates TM4 is for Single User MIMO (SU-MIMO). 
+3. Refer 3GPP TS 36.211 Rel12 for 4 layers samples.  
+
+<img src="\lte_mbb\img\lte_mbb_tm42.png" width=100% height=100% />
+<br />
+
+Precoding Table: 
+
+<img src="\lte_mbb\img\lte_mbb_tm43.png" width=100% height=100% />
+<br />
+
+Element inside this table Matrix: Represents precoding. Precoding is not improving data rates directly: Efficient precoding improves PDSCH decoding rates (Improve BLER). Different precoding means: Antenna streams/channel (H) is being decoded by differently (Phase changed). Improve reliability of antenna streams/channels.  
+
+How Phase is changed? # This is complicated.
+
+    1 = Normal Phase 0deg 
+    -1 = Change phase 180deg 
+    j =  Change phase to different plane (90deg from 1) 
+    -j = Flip j 180deg (270deg from 1) 
+
+<img src="\lte_mbb\img\lte_mbb_tm43.png" width=100% height=100% />
+<br />
+
+---
+
+#### DL Power Allocation
+
+---
+
+#### References
+
+1. 3GPP TS 36.211 Section 6.10
+2. [Sharetechnote](https://www.sharetechnote.com/html/Handbook_LTE_Interference_Downlink.html#Intrafrequency_varying_PCI)
+3. 3GPP TS 36.211 Section 6.2.1
+4. [R&S Whitepaper](https://cdn.rohde-schwarz.com/pws/dl_downloads/dl_application/application_notes/1ma186/1MA186_2e_LTE_TMs_and_beamforming.pdf)
+5. 3GPP TS 36.211 V 12.5.0 

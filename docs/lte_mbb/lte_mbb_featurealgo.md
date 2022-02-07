@@ -52,6 +52,8 @@ On higher level, CA and MIMO have same purposes. To increase throughput/capacity
 <img src="\lte_mbb\img\lte_mbb_dlmimo2ca2x2.png" width=100% height=100% />
 <br />
 
+---
+
 #### References
 
 1. [Sharetechnote](https://www.sharetechnote.com/html/BasicProcedure_LTE_MIMO.html)
