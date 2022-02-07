@@ -30,7 +30,7 @@ LTE Operating Bands [3] [4]
 <img src="\lte_mbb\img\lte_mbb_operband.png" width=100% height=100% />
 <br />
 
-and continued.
+and continued in a long table list in 3GPP.
 
 #### Supported Bandwidths
 
