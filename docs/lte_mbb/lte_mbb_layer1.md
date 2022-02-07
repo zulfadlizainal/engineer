@@ -19,7 +19,7 @@ Picture below shows that: [1]
 1. Logical antenna port for CRS: 1, 2, or 4 ports 
 2. Gray = DTX (Discontinuous transmission) - Not transmitting RS because other ports are using that RE location for transmitting RS. 
 
-<img src="\lte_mbb\img\lte_mbb_rsloc.png" width=100% height=100% />
+<img src="\lte_mbb\img\lte_mbb_crsloc.png" width=100% height=100% />
 <br />
 
 ##### -- Relation of PCI Planning with C-RS Location --
@@ -192,6 +192,75 @@ How Phase is changed? # This is complicated.
     -j = Flip j 180deg (270deg from 1) 
 
 <img src="\lte_mbb\img\lte_mbb_tm43.png" width=100% height=100% />
+<br />
+
+##### -- TM 5 - Multi User MIMO --
+
+TM5 is similar to TM4: However, layers is divided to different UE. Sample 2 x 2 MIMO (But UE does not support MIMO). Since UE not support MIMO, the extra layer can be devided into different Ues as below: 
+
+2 x 2 MIMO (Supported) = (2 x 1 MIMO) + (2 x 1 MIMO)  
+
+<img src="\lte_mbb\img\lte_mbb_tm43.png" width=100% height=100% />
+<br />
+
+##### -- TM 6 - Spatial Multiplexing (CL) using 1 transmission layer --
+
+1. This is special type of TM4 (It uses only 1 layer to transmit). 
+2. Basically, TM6 is beamforming with codebook based (Phase and Weight changed). 
+3. If implement more than 1T (Multiple beams can be observed) .
+4. Start TM7 not using codebook anymore. 
+
+<img src="\lte_mbb\img\lte_mbb_tm6.png" width=100% height=100% />
+<br />
+
+Sample 2 x 1 MIMO (But UE does not support MIMO) 
+
+<img src="\lte_mbb\img\lte_mbb_tm62.png" width=100% height=100% />
+<br />
+
+##### -- TM 7 - Single Layer Beamforming (Single Ant Port 5) --
+
+1. Why use port 5? Because CRS is not strong/not accurate anymore when beamforming established. [Refer picture] 
+2. Port 5 is used to transmit UE-Specific RS for better channel estimation. 
+3. Both the data and the RS (UE Specific) are transmitted using the same antenna weightings. 
+4. Because the UE requires only the UE specific RS for demodulation of the PDSCH, the data transmission for the UE appears to have been received from only one transmit antenna, and the UE does not see the actual number of transmit antennas. 
+5. Therefore, this transmission mode is also called "single antenna port; port 5". The transmission appears to be transmitted from a single "virtual" antenna port 5.  
+6. UE informed to use UE-specific RS for as the phase reference in demodulation -> Why important: Eliminates need of UE to know how precoding was performed -> Where Transmitted: UE-specific RS only transmitted in RB’s of the PDSCH for a given UE 
+
+<img src="\lte_mbb\img\lte_mbb_tm62.png" width=100% height=100% />
+<br />
+
+1. The beam is formed based on the weightage of every transmit antenna. 
+2. More antenna -> More beam can be formed. 
+3. Different Weightage between transmit antenna -> Will formed different pattern of beam. 
+4. Weightage: Most likely a power factor (Not Confirmed) 
+
+How weightage is being decided: 
+
+1. Calculate DoA and AoA (Direction of Arrival, Angle of Arrival) - Hard Way 
+2. Estimate based on UL channel (TDD) - Because TDD is using same band in DL & UL, it is safe to estimate DL channel based on UL SRS. This is why beamforming is easier to implement in TDD. 
+
+##### -- TM 8 - Dual Layer Beamforming (Ant Port 7 and 8) --
+
+1. Release 9 specifies dual-layer beamforming.  
+2. This will permit the base station to weight two layers individually at the antennas so that beamforming can be combined with spatial multiplexing for one or more UEs.  
+
+UE Specific RS (Port 7 and 8) 
+The UE Specific RS must be coded differently so that the UE can distinguish among them.  
+
+<img src="\lte_mbb\img\lte_mbb_tm8.png" width=100% height=100% />
+<br />
+
+Because 2 layers are used, both layers can be assigned to one UE (SU MIMO), or the 2 layers can be assigned to two separate UEs (MU MIMO).  
+
+Dual Layer Beamforming (SU MIMO) - 2 Layer, 1UE 
+
+<img src="\lte_mbb\img\lte_mbb_tm82.png" width=100% height=100% />
+<br />
+
+Dual Layer Beamforming (MU MIMO) - 2 Layer, 2UE 
+
+<img src="\lte_mbb\img\lte_mbb_tm83.png" width=100% height=100% />
 <br />
 
 ---
