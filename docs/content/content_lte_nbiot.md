@@ -5,7 +5,7 @@ Date Edited: 2022/02/06<br>
 
 ---
 
-### 4G LTE NB-IoT
+### 4G LTE Narrowband Internet of Things (NB-IoT)
 #### Overview 
 
 3GPP Roadmap  <br>

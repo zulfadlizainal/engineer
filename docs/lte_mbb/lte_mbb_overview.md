@@ -13,27 +13,26 @@ DL-SCH = Downlink shared channel<br>
 UL-SCH = Uplink shared channel<br>
 TTI = Transmission Time Interval<br>
 
-Downlink physical layer parameter values set by the field ue-Category (36.306 table 4.1-1):
+Downlink physical layer parameter values set by the field ue-Category: [1]
 
 <img src="\lte_mbb\img\lte_mbb_dluecat.png" width=100% height=100% />
 <br />
 
-Uplink physical layer parameter values set by the field ue-Category (36.306 table 4.1-2):
+Uplink physical layer parameter values set by the field ue-Category:[2]
 
 <img src="\lte_mbb\img\lte_mbb_uluecat.png" width=100% height=100% />
 <br />
 
 #### Operating Bands
 
-Downlink physical layer parameter values set by the field ue-Category (36.306 table 5.5-1):
+LTE Operating Bands [3] [4]
 
 <img src="\lte_mbb\img\lte_mbb_operband.png" width=100% height=100% />
 <br />
 
-<img src="\lte_mbb\img\lte_mbb_operband_2.png" width=100% height=100% />
-<br />
+and continued.
 
-#### Supported Bandwidth
+#### Supported Bandwidths
 
 The bandwidths defined by the standard are 1.4, 3, 5, 10, 15, and 20 MHz. The table below shows how many subcarriers and resource blocks there are in each bandwidth for uplink and downlink. 
 
@@ -55,3 +54,4 @@ It's too long to list, refer 3GPP TS 36.306.
 1. 3GPP TS 36.306 table 4.1-1
 2. 3GPP TS 36.306 table 4.1-2
 3. 3GPP TS 36.306 table 5.5-1
+4. [Sqimway](https://www.sqimway.com/lte_band.php)

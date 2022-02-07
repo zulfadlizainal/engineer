@@ -10,8 +10,8 @@ Date Edited: 2022/02/07<br>
 
 [UE Category](/lte_mbb/lte_mbb_overview.md?id=Ue-Category)<br>
 [Operating Bands](/lte_mbb/lte_mbb_overview.md?id=Operating-Bands)<br>
-[CA Band Combinations](/lte_mbb/lte_mbb_overview.md?id=CA-Band-Combinations)<br>
 [Supported Bandwidths](/lte_mbb/lte_mbb_overview.md?id=Supported-Bandwidths)<br>
+[CA Band Combinations](/lte_mbb/lte_mbb_overview.md?id=CA-Band-Combinations)<br>
 
 #### Network Architecture 
 
@@ -23,26 +23,22 @@ Date Edited: 2022/02/07<br>
 
 #### Frame Structure 
 
-Basic Time Unit (Ts)<br> 
-FDD (Frame Type 1)<br> 
-TDD (Frame Type 2)<br> 
+[Basic Time Unit (Ts)](/lte_mbb/lte_mbb_framestructure.md?id=Basic-Time-Unit-Ts)<br>
+[FDD Frame (Type 1)](/lte_mbb/lte_mbb_framestructure.md?id=FDD-Frame-Type-1)<br>
+[TDD Frame (Type 2)](/lte_mbb/lte_mbb_framestructure.md?id=TDD-Frame-Type-2)<br>
+[Uplink Frame](/lte_mbb/lte_mbb_framestructure.md?id=Uplink-Frame)<br>
 
 #### Basic Features and Algorithm 
 
-PCI Planning<br> 
 Link Adaptation<br> 
 MIMO Concept<br> 
-CA + MIMO Concept<br> 
+Massive MIMO<br>
 Beamforming<br> 
-Massive MIMO<br> 
 Carrier Aggregation (CA)<br> 
-SON - Mobility Load Balancing (MLB) - via IMMCI<br> 
-SON - Mobility Robustness Optimization (MRO)<br> 
-SON - Automatic Neighbor Relation (ANR)<br> 
-Power Control in LTE<br> 
-UL Power Control - PRACH<br> 
-UL Power Control - PUCCH<br> 
-UL Power Control - PUSCH<br> 
+Idle Mode Mobility Load Balancing (IMLB)<br> 
+Connected Mode Mobility Load Balancing (MLB)<br> 
+Mobility Robustness Optimization (MRO)<br> 
+Automatic Neighbor Relation (ANR)<br> 
 
 #### Layer 1: Physical Channel, Signal, Measurement 
 
@@ -81,8 +77,11 @@ L3 Filtering<br>
 #### Protocol and Procedures 
 
 RACH (Causes, Timer, Max Trans)<br> 
-TAU (TAC Planning)<br> 
+
 Bearer Allocation<br> 
+UL Power Control for PRACH<br> 
+UL Power Control for PUCCH<br> 
+UL Power Control for PUSCH<br> 
 
 #### Idle Mode Mobility 
 
@@ -97,6 +96,8 @@ Connected Mode Strategy<br>
 
 #### Practical Analysis 
 
+TAU (TAC Planning)<br> 
+PCI Planning Rule<br> 
 PRB vs TTI Utilization<br> 
 Throughput Calculation<br> 
 Spectrum Efficiency Calculation<br> 

@@ -5,7 +5,7 @@ Date Edited: 2022/02/06<br>
 
 ---
 
-### 4G LTE eMTC
+### 4G LTE enhanced Machine Type Communication (eMTC)
 #### Overview 
 
 3GPP Roadmap<br>

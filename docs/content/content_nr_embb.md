@@ -5,7 +5,7 @@ Date Edited: 2022/02/06<br>
 
 ---
 
-### 5G NR eMBB
+### 5G NR enhanced Mobile Broadband (eMBB)
 #### Overview 
 
 3GPP Roadmap<br>
