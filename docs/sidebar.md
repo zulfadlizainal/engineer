@@ -1,14 +1,14 @@
 <i class="material-icons">cell_tower</i>  <b>Telecom</b><br>
 
-- [4G LTE MBB](/content/content_lte_mbb.md)
-- [4G LTE eMTC](/content/content_lte_emtc.md)
-- [4G LTE NB-IoT](/content/content_lte_nbiot.md)
 - [5G NR eMBB](/content/content_nr_embb.md)
+- [4G LTE NB-IoT](/content/content_lte_nbiot.md)
+- [4G LTE eMTC](/content/content_lte_emtc.md)
+- [4G LTE MBB](/content/content_lte_mbb.md)
 - [3GPP Specs](/3gpp/3gpp.md)
 
 <i class="material-icons">storage</i> <b>Computer and Software</b><br>
 
-- [Data Analytics](/content/content_loading.md)
+- [Data](/content/content_loading.md)
 - [Programming](/content/content_loading.md)
 
 <i class="material-icons">psychology</i> <b>Artificial Intelligence</b><br>

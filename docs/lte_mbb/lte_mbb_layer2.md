@@ -77,7 +77,7 @@ Method to decide which scheduler is the best based on case:
 How is RRC mapped to PHY and RLC layer (Sample as below): [1]
 
 <br>
-<img src="\lte_mbb\img\lte_mbb_rlcmap.png" width=100% height=100% />
+<img src="\lte_mbb\img\lte_mbb_rlcmap.png" width=5500% height=% />
 <br>
 
 This is how RLC interact between layers: [1]
@@ -98,9 +98,11 @@ This is how RLC interact between layers: [1]
 
 1. Simplest RLC Mode 
 2. Transparent means: Contents go through this layer without Modification 
-   - Not add/remove header 
-   - Not split input data to multiple segment 
-   - Not combine multiple input data to single data 
+   
+- Not add/remove header 
+- Not split input data to multiple segment 
+- Not combine multiple input data to single data 
+
 3. Only purpose for this mode: To buffer data. Data go in, keep the input data for certain amount of time or until next data come in. It will just discard if not transmitted within certain time frame. 
 
 <br>
@@ -140,7 +142,7 @@ Important UM parameters in rrcConnectionReconfiguration-r8:
 
 ***AM (Acknowledged Mode)*** [1]
 
-1. It requires ACK/NACK from the other party! 
+1. It requires ACK/NACK from the other party!
 2. If need ACK/NACK from every transmission, then overhead is too big? YES! 
 3. When RLC is sent, a copy will be sent to buffer.  
 4. In case ACK is received, data in buffer will be discarded. 
@@ -154,7 +156,7 @@ Important UM parameters in rrcConnectionReconfiguration-r8:
 <img src="\lte_mbb\img\lte_mbb_rlcam2.png" width=100% height=100% />
 <br>
 
-Important UM parameters in rrcConnectionReconfiguration-r8:
+Important AM parameters in rrcConnectionReconfiguration-r8:
 
 | Information Element  | Description                                                                                                                                             |
 |----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -182,31 +184,31 @@ Polling parameter in rrcConnectionSetup-r8: [1]
 | pollPDU              | In most typical condition, the poll bit is inserted after the number transmitted RLC PDU gets larger than this value. See 36.322 5.2.2.1        |
 | pollByte             | In most typical condition, the poll bit is inserted after the transmited RLC data is greater than (this value x 1000 bytes). See 36.322 5.2.2.1 |
 
-Case 1: Basic Poll Handling 
+***Case 1: Basic Poll Handling ***
 
 <br>
 <img src="\lte_mbb\img\lte_mbb_rlcamarq.png" width=100% height=100% />
 <br>
 
-Case 2: Poll bit and RLC ACK operates by sequence number 
+***Case 2: Poll bit and RLC ACK operates by sequence number ***
 
 <br>
 <img src="\lte_mbb\img\lte_mbb_rlcamarq2.png" width=100% height=100% />
 <br>
 
-Case 3: Retransmission due to t-PollRetransmit timeout
+***Case 3: Retransmission due to t-PollRetransmit timeout***
 
 <br>
 <img src="\lte_mbb\img\lte_mbb_rlcamarq3.png" width=100% height=100% />
 <br>
 
-Case 4: Retransmission due to RLC NACK 
+***Case 4: Retransmission due to RLC NACK ***
 
 <br>
 <img src="\lte_mbb\img\lte_mbb_rlcamarq4.png" width=100% height=100% />
 <br>
 
-Case 5: RLF due to Max Retx Fail 
+***Case 5: RLF due to Max Retx Fail ***
 
 <br>
 <img src="\lte_mbb\img\lte_mbb_rlcamarq5.png" width=100% height=100% />

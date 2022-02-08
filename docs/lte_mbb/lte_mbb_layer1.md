@@ -60,7 +60,7 @@ Eg: UE Speific RS [2]
 Eg: Positioning RS [2]
 
 <br>
-<img src="\lte_mbb\img\lte_mbb_prs.png" width=50% height=50% />
+<img src="\lte_mbb\img\lte_mbb_prs.png" width=70% height=70% />
 <br>
 
 Eg: Channel State Information RS (CSI-RS) [2]
@@ -345,14 +345,6 @@ TM9: The UE-specific
 <img src="\lte_mbb\img\lte_mbb_rspow2.png" width=50% height=50% />
 <br>
 
-<br>
-<img src="\lte_mbb\img\lte_mbb_rspow3.png" width=50% height=50% />
-<br>
-
-<br>
-<img src="\lte_mbb\img\lte_mbb_rspow4.png" width=100% height=100% />
-<br>
-
 Calculation:
 
     EPRE_RS = RS Power 
@@ -374,11 +366,11 @@ Formulas:
     Type B PDSCH RE Power (dBm) = Type A PDSCH RE Power (dBm) + 10 × log10 (Rho B/Rho A) 
 
 <br>
-<img src="\lte_mbb\img\lte_mbb_rspow5.png" width=100% height=100% />
+<img src="\lte_mbb\img\lte_mbb_rspow3.png" width=100% height=100% />
 <br>
 
 <br>
-<img src="\lte_mbb\img\lte_mbb_rspow6.png" width=100% height=100% />
+<img src="\lte_mbb\img\lte_mbb_rspow4.png" width=100% height=100% />
 <br>
 
 For RS Power simulation code, go to this [repository](https://github.com/zulfadlizainal/4G-LTE-DL-Power-Allocation/tree/master/Ideal%20RS%20Power%20Settings).

@@ -87,6 +87,7 @@ Date Edited: 2022/02/07<br>
 
 - Measurement Reports/Events<br> 
 - Connected Mode Parameter<br>
+- Handover/Redirection Design<br> 
 
 #### Practical Analysis 
 
