@@ -77,7 +77,7 @@ Method to decide which scheduler is the best based on case:
 How is RRC mapped to PHY and RLC layer (Sample as below): [1]
 
 <br>
-<img src="\lte_mbb\img\lte_mbb_rlcmap.png" width=5500% height=% />
+<img src="\lte_mbb\img\lte_mbb_rlcmap.png" width=50% height=50% />
 <br>
 
 This is how RLC interact between layers: [1]
