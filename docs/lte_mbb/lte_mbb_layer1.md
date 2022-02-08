@@ -19,6 +19,7 @@ Picture below shows that: [1]
 1. Logical antenna port for CRS: 1, 2, or 4 ports 
 2. Gray = DTX (Discontinuous transmission) - Not transmitting RS because other ports are using that RE location for transmitting RS. 
 
+<br>
 <img src="\lte_mbb\img\lte_mbb_crsloc.png" width=100% height=100% />
 <br>
 
@@ -42,24 +43,29 @@ Why every PCI needs different RS locations? [2]
 2. Positioning RS 
 3. Channel State Information RS (CSI-RS)
 
+<br>
 <img src="\lte_mbb\img\lte_mbb_dlrstype.png" width=100% height=100% />
 <br>
 
 Eg: UE Speific RS [2]
 
+<br>
 <img src="\lte_mbb\img\lte_mbb_uers.png" width=50% height=50% />
 <br>
 
+<br>
 <img src="\lte_mbb\img\lte_mbb_uers2.png" width=100% height=100% />
 <br>
 
 Eg: Positioning RS [2]
 
-<img src="\lte_mbb\img\lte_mbb_prs.png" width=100% height=100% />
+<br>
+<img src="\lte_mbb\img\lte_mbb_prs.png" width=50% height=50% />
 <br>
 
 Eg: Channel State Information RS (CSI-RS) [2]
 
+<br>
 <img src="\lte_mbb\img\lte_mbb_csirs.png" width=100% height=100% />
 <br>
 
@@ -77,7 +83,7 @@ Eg: Channel State Information RS (CSI-RS) [2]
     NRS_RE_B(n): number of non-RS and non-DTX RE per symbol per PRB under RS symbol 
     NRS_RE_A(n): number of non-RS and non-DTX RE per symbol per PRB under non RS symbol 
 
-
+<br>
 <img src="\lte_mbb\img\lte_mbb_crsloc2.png" width=100% height=100% />
 <br>
 
@@ -106,6 +112,7 @@ In LTE, every logical antenna port will generate its own resource grid. Means, e
 
 The way in which these logical antenna ports are assigned to the physical transmit antennas of a base station is up to the base station, and can vary between base stations of the same type (because of different operating conditions) and also between base stations from different manufacturers. The base station does not explicitly notify the UE of the mapping that has been carried out, rather the UE must take this into account automatically during demodulation. 
 
+<br>
 <img src="\lte_mbb\img\lte_mbb_antport.png" width=100% height=100% />
 <br>
 
@@ -335,11 +342,11 @@ TM9: The UE-specific
 <br>
 
 <br>
-<img src="\lte_mbb\img\lte_mbb_rspow2.png" width=100% height=100% />
+<img src="\lte_mbb\img\lte_mbb_rspow2.png" width=50% height=50% />
 <br>
 
 <br>
-<img src="\lte_mbb\img\lte_mbb_rspow3.png" width=100% height=100% />
+<img src="\lte_mbb\img\lte_mbb_rspow3.png" width=50% height=50% />
 <br>
 
 <br>

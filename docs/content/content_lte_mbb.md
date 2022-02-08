@@ -52,10 +52,10 @@ Date Edited: 2022/02/07<br>
 
 #### Layer 2: RLC, MAC, PDCP 
 
-- RLC Concept<br> 
-- RLC: TM, AM, UM<br> 
-- RLC: ARQ in AM<br> 
-- Scheduling Type<br> 
+- [RLC Concept](/lte_mbb/lte_mbb_layer2.md?id=RLC-Concept)<br>
+- [RLC: TM, AM, UM](/lte_mbb/lte_mbb_layer2.md?id=RLC-TM-AM-UM)<br>
+- [RLC: ARQ in AM](/lte_mbb/lte_mbb_layer2.md?id=RLC-ARQ-in-AM)<br>
+- Scheduler<br> 
 - Timing Advance<br> 
 - HARQ<br> 
 - MAC Retransmission<br> 
