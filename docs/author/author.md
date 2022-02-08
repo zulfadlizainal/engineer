@@ -73,14 +73,13 @@ Huawei Technologies Co. Ltd, 2012<br>
 
 #### Projects
 
-5G Planning Simulations<br>
+Plan 5G<br>
 Role: Author and Developer<br>
 URL: https://zulfadlizainal.github.io/5G-NR-Planning-And-Dimensioning/<br>
-A list of simulations and figures that demonstrate important concepts in 5G NR radio<br>
-resource planning and dimensioning.<br><br>
+A list of simulations and figures that demonstrate important concepts in 5G NR radio resource planning and dimensioning.<br><br>
 
-Simulations and Automations on the Topics of Radio Network<br>
+Open Source Repositories<br>
 Role: Author and Developer<br>
 URL: https://github.com/zulfadlizainal<br>
-Software development work related to radio network learning and automations. Eg: 5G<br>
-Coverage Prediction Simulation, Antenna Pattern Simulation and more.<br><br>
+Software development work related to radio network learning and automations.<br> 
+Eg: 5G Coverage Prediction Simulation, Antenna Pattern Simulation and more.<br><br>

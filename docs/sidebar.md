@@ -28,7 +28,6 @@
 <i class="material-icons">account_tree</i> <b>Others</b><br>
 
 - [Logical Thinking](/content/content_loading.md)
-- [Negotiation](/content/content_loading.md)
 
 <i class="material-icons">person_outline</i> <b>Contact</b><br>
 

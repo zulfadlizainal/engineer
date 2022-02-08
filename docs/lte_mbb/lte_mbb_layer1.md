@@ -20,9 +20,9 @@ Picture below shows that: [1]
 2. Gray = DTX (Discontinuous transmission) - Not transmitting RS because other ports are using that RE location for transmitting RS. 
 
 <img src="\lte_mbb\img\lte_mbb_crsloc.png" width=100% height=100% />
-<br />
+<br>
 
-##### -- Relation of PCI Planning with C-RS Location --
+***Relation of PCI Planning with C-RS Location***
 
 1. PCI influence the RS pattern as well. (Based on PSS).
 2. Each antenna port use different RS pattern. .
@@ -35,7 +35,7 @@ Why every PCI needs different RS locations? [2]
 1. RS cannot be overlapped, if overlapped it causes interferences.
 2. So if Mod3 = It means it is possible for the coverage to overlapped up to 3 Cell that have PSS 0, 1, 2. 
 
-##### -- Other types of DL RS --
+***Other types of DL RS***
 
 0. Cell Specific RS (C-RS) -> As discussed above
 1. UE Specific RS 
@@ -43,27 +43,27 @@ Why every PCI needs different RS locations? [2]
 3. Channel State Information RS (CSI-RS)
 
 <img src="\lte_mbb\img\lte_mbb_dlrstype.png" width=100% height=100% />
-<br />
+<br>
 
 Eg: UE Speific RS [2]
 
-<img src="\lte_mbb\img\lte_mbb_uers.png" width=100% height=100% />
-<br />
+<img src="\lte_mbb\img\lte_mbb_uers.png" width=50% height=50% />
+<br>
 
 <img src="\lte_mbb\img\lte_mbb_uers2.png" width=100% height=100% />
-<br />
+<br>
 
-Positioning RS [2]
+Eg: Positioning RS [2]
 
 <img src="\lte_mbb\img\lte_mbb_prs.png" width=100% height=100% />
-<br />
+<br>
 
-Channel State Information RS (CSI-RS) [2]
+Eg: Channel State Information RS (CSI-RS) [2]
 
 <img src="\lte_mbb\img\lte_mbb_csirs.png" width=100% height=100% />
-<br />
+<br>
 
-##### -- Available RE for Traffic & Control Channel  --
+***Available RE for Traffic & Control Channel***
 
 1. Number of Non-RS RE which are not RS RE and DTX is depend on the nu of antenna port. 
 2. This Non-RS RE is used Traffic and Common Channel (PBCH, PCFICH, PDCCH, etc). 
@@ -77,8 +77,9 @@ Channel State Information RS (CSI-RS) [2]
     NRS_RE_B(n): number of non-RS and non-DTX RE per symbol per PRB under RS symbol 
     NRS_RE_A(n): number of non-RS and non-DTX RE per symbol per PRB under non RS symbol 
 
+
 <img src="\lte_mbb\img\lte_mbb_crsloc2.png" width=100% height=100% />
-<br />
+<br>
 
 | Antenna  | Symbol Where RS Present |             |             | Symbol Where RS Not Present |             |             |
 |----------|-------------------------|-------------|-------------|-----------------------------|-------------|-------------|
@@ -106,7 +107,7 @@ In LTE, every logical antenna port will generate its own resource grid. Means, e
 The way in which these logical antenna ports are assigned to the physical transmit antennas of a base station is up to the base station, and can vary between base stations of the same type (because of different operating conditions) and also between base stations from different manufacturers. The base station does not explicitly notify the UE of the mapping that has been carried out, rather the UE must take this into account automatically during demodulation. 
 
 <img src="\lte_mbb\img\lte_mbb_antport.png" width=100% height=100% />
-<br />
+<br>
 
 ---
 
@@ -114,39 +115,43 @@ The way in which these logical antenna ports are assigned to the physical transm
 
 Summary Table on Transmission Mode: [4] [5]
 
+<br>
 <img src="\lte_mbb\img\lte_mbb_tmsum.png" width=100% height=100% />
-<br />
+<br>
 
 Antenna Port Corresponding to Transmission Mode: [2] [5]
 
+<br>
 <img src="\lte_mbb\img\lte_mbb_tmsum2.png" width=100% height=100% />
-<br />
+<br>
 
 Codebook Based/or Non Codebook based Transmission Modes: [4] [5]
 
+<br>
 <img src="\lte_mbb\img\lte_mbb_tmsum3.png" width=100% height=100% />
-<br />
+<br>
 
-##### -- TM 1 - Single Transmit Antenna --
+***TM 1 - Single Transmit Antenna***
 
 This mode uses only one transmit antenna. 
 
-##### -- TM 2 - Transmit Diversity --
+***TM 2 - Transmit Diversity***
 
 1. Transmit diversity is the default MIMO mode. 
 2. It sends the same information via various antennas. Each antenna stream uses different coding and different frequency resources. 
 3. Improve SNR 
 4. More robust, increase reliability. 
 
-When Trans Div is being used: 
+When transmit diversity is being used?
 
 1. Usually as a fall back technology. When spatial multiplexing cannot be used (eg: In poor RF condition). 
 2. Transmit important cannel: Eg- Control channel, PBCH, PDCCH. 
 
-##### -- TM 3 - Spatial Multiplexing (OL) with CDD --
+***TM 3 - Spatial Multiplexing (OL) with CDD***
 
+<br>
 <img src="\lte_mbb\img\lte_mbb_tm3.png" width=100% height=100% />
-<br />
+<br>
 
 1. Supports 2-4 layers (2-4 antennas) 
 2. Open Loop (OL) means: Not requires UE feedback (Not requires PMI) 
@@ -156,13 +161,15 @@ CDD means Cyclic Delay Diversity:
 
 The signal is supplied to every antenna with a specific delay (cyclic delay diversity, or CDD), thus artificially creating frequency diversity. This will improve reliability of every streams. 
 
+<br>
 <img src="\lte_mbb\img\lte_mbb_tm32.png" width=100% height=100% />
-<br />
+<br>
 
-##### -- TM 4 - Spatial Multiplexing (CL) with CDD --
+***TM 4 - Spatial Multiplexing (CL) with CDD***
 
+<br>
 <img src="\lte_mbb\img\lte_mbb_tm4.png" width=100% height=100% />
-<br />
+<br>
 
 1. Supports up to 4 layers (4 Antennas). 
 2. To permit channel estimation at the receiver, the base station transmits cell-specific reference signals (RS), distributed over various resource elements (RE) and over various timeslots.  
@@ -174,13 +181,15 @@ Sample Visualization:
 2. Both data only arrive at 1UE -> Indicates TM4 is for Single User MIMO (SU-MIMO). 
 3. Refer 3GPP TS 36.211 Rel12 for 4 layers samples.  
 
+<br>
 <img src="\lte_mbb\img\lte_mbb_tm42.png" width=100% height=100% />
-<br />
+<br>
 
 Precoding Table: 
 
+<br>
 <img src="\lte_mbb\img\lte_mbb_tm43.png" width=100% height=100% />
-<br />
+<br>
 
 Element inside this table Matrix: Represents precoding. Precoding is not improving data rates directly: Efficient precoding improves PDSCH decoding rates (Improve BLER). Different precoding means: Antenna streams/channel (H) is being decoded by differently (Phase changed). Improve reliability of antenna streams/channels.  
 
@@ -191,34 +200,38 @@ How Phase is changed? # This is complicated.
     j =  Change phase to different plane (90deg from 1) 
     -j = Flip j 180deg (270deg from 1) 
 
+<br>
 <img src="\lte_mbb\img\lte_mbb_tm43.png" width=100% height=100% />
-<br />
+<br>
 
-##### -- TM 5 - Multi User MIMO --
+***TM 5 - Multi User MIMO***
 
 TM5 is similar to TM4: However, layers is divided to different UE. Sample 2 x 2 MIMO (But UE does not support MIMO). Since UE not support MIMO, the extra layer can be devided into different Ues as below: 
 
 2 x 2 MIMO (Supported) = (2 x 1 MIMO) + (2 x 1 MIMO)  
 
+<br>
 <img src="\lte_mbb\img\lte_mbb_tm43.png" width=100% height=100% />
-<br />
+<br>
 
-##### -- TM 6 - Spatial Multiplexing (CL) using 1 transmission layer --
+***TM 6 - Spatial Multiplexing (CL) using 1 transmission layer***
 
 1. This is special type of TM4 (It uses only 1 layer to transmit). 
 2. Basically, TM6 is beamforming with codebook based (Phase and Weight changed). 
 3. If implement more than 1T (Multiple beams can be observed) .
 4. Start TM7 not using codebook anymore. 
 
+<br>
 <img src="\lte_mbb\img\lte_mbb_tm6.png" width=100% height=100% />
-<br />
+<br>
 
 Sample 2 x 1 MIMO (But UE does not support MIMO) 
 
+<br>
 <img src="\lte_mbb\img\lte_mbb_tm62.png" width=100% height=100% />
-<br />
+<br>
 
-##### -- TM 7 - Single Layer Beamforming (Single Ant Port 5) --
+***TM 7 - Single Layer Beamforming (Single Ant Port 5)***
 
 1. Why use port 5? Because CRS is not strong/not accurate anymore when beamforming established. [Refer picture] 
 2. Port 5 is used to transmit UE-Specific RS for better channel estimation. 
@@ -227,8 +240,9 @@ Sample 2 x 1 MIMO (But UE does not support MIMO)
 5. Therefore, this transmission mode is also called "single antenna port; port 5". The transmission appears to be transmitted from a single "virtual" antenna port 5.  
 6. UE informed to use UE-specific RS for as the phase reference in demodulation -> Why important: Eliminates need of UE to know how precoding was performed -> Where Transmitted: UE-specific RS only transmitted in RB’s of the PDSCH for a given UE 
 
+<br>
 <img src="\lte_mbb\img\lte_mbb_tm62.png" width=100% height=100% />
-<br />
+<br>
 
 1. The beam is formed based on the weightage of every transmit antenna. 
 2. More antenna -> More beam can be formed. 
@@ -240,7 +254,7 @@ How weightage is being decided:
 1. Calculate DoA and AoA (Direction of Arrival, Angle of Arrival) - Hard Way 
 2. Estimate based on UL channel (TDD) - Because TDD is using same band in DL & UL, it is safe to estimate DL channel based on UL SRS. This is why beamforming is easier to implement in TDD. 
 
-##### -- TM 8 - Dual Layer Beamforming (Ant Port 7 and 8) --
+***TM 8 - Dual Layer Beamforming (Ant Port 7 and 8)***
 
 1. Release 9 specifies dual-layer beamforming.  
 2. This will permit the base station to weight two layers individually at the antennas so that beamforming can be combined with spatial multiplexing for one or more UEs.  
@@ -248,24 +262,119 @@ How weightage is being decided:
 UE Specific RS (Port 7 and 8) 
 The UE Specific RS must be coded differently so that the UE can distinguish among them.  
 
+<br>
 <img src="\lte_mbb\img\lte_mbb_tm8.png" width=100% height=100% />
-<br />
+<br>
 
 Because 2 layers are used, both layers can be assigned to one UE (SU MIMO), or the 2 layers can be assigned to two separate UEs (MU MIMO).  
 
 Dual Layer Beamforming (SU MIMO) - 2 Layer, 1UE 
 
+<br>
 <img src="\lte_mbb\img\lte_mbb_tm82.png" width=100% height=100% />
-<br />
+<br>
 
 Dual Layer Beamforming (MU MIMO) - 2 Layer, 2UE 
 
+<br>
 <img src="\lte_mbb\img\lte_mbb_tm83.png" width=100% height=100% />
-<br />
+<br>
+
+***TM 9 - Up to 8 Layer Transmission (Ant Port 7-14)*** 
+
+1. Release 10 adds Transmission Mode 9. In this mode up to 8 layers can be used (8 physical transmitter is needed) - Leads to 8 x 8 MIMO. 
+2. Virtual antenna ports used: Ant port 7 - 14. 
+3. Both single user (SU) and multi user (MU) MIMO is possible, dynamic switching between both modes is possible without special signaling by higher layers (without RRC). 
+
+Improved RS Structure: 
+
+1. UE-specific (DM-RS) for demodulation of PDSCH. This is an extension of the beamforming concept of TM7 and TM8 to support more layers. 
+2. In addition CSI-RS allows the UE downlink channels state information (CSI) measurements. They are cell-specific. 
+
+The same elements are used for ports 7,8,11,12 (noted as Rx, blue) and 9,10,13,14 (noted as Ry, green), the reference signals must be coded differently so that the UE can distinguish among them. 
+
+<br>
+<img src="\lte_mbb\img\lte_mbb_tm9.png" width=100% height=100% />
+<br>
+ 
+**Why start TM7 no need to use Codebook for precoding?**
+
+Because DM-RS and CSI RS is being introduced - DMRS is applied before precoding, so weightage is known for beamforming.
+
+1. The UE-specific DM-RS is applied to the data streams before the precoding.  
+2. That means the UE receives the known RS which is precoded and transmitted via the channel.  
+3. Thus the receiver does not need to know the used precoding in advance.  
+4. There is no need to use special codebooks anymore, the UE does not send back the the PMI. -> In other words the spatial multiplexing is able to use the full range of weighting (precoding) for beamforming now, not only discrete precoding via the codebook like in TM3…6.
+
+<br>
+<img src="\lte_mbb\img\lte_mbb_tm92.png" width=100% height=100% />
+<br>
+
+vs
+
+<br>
+<img src="\lte_mbb\img\lte_mbb_tm93.png" width=100% height=100% />
+<br>
+
+TM9: The UE-specific RS is applied before the precoding. This enables non-codebook based precoding. So the full range of beamforming patterns can be used. 
+
+***TM 10 - Up to 8 Layer Transmission (Ant Port 7-14)***
+
+TM9: The UE-specific  
 
 ---
 
 #### DL Power Allocation
+
+1. eNB define the downlink RE power (EPRE(Energy per Resource Element)) of Reference signal and non reference signal. 
+2. The EPRE of RS is directly defined the parameter as Reference-signal-power.  
+3. The EPRE of non RS is not directly defined the parameter but it can be calculated by using ρA and ρB parameter which are defended by 3GPP.  
+
+<br>
+<img src="\lte_mbb\img\lte_mbb_rspow.png" width=100% height=100% />
+<br>
+
+<br>
+<img src="\lte_mbb\img\lte_mbb_rspow2.png" width=100% height=100% />
+<br>
+
+<br>
+<img src="\lte_mbb\img\lte_mbb_rspow3.png" width=100% height=100% />
+<br>
+
+<br>
+<img src="\lte_mbb\img\lte_mbb_rspow4.png" width=100% height=100% />
+<br>
+
+Calculation:
+
+    EPRE_RS = RS Power 
+    EPRE_A = Type A RE (PDSCH RE with no RS RE in the symbol) 
+    EPRE_B = Type B RE (PDSCH RE with RS RE in the symbol) 
+
+    ρA = EPRE_A / EPRE_RS 
+    ρB = EPRE_B / EPRE_RS 
+    ρB / ρA = EPRE_B / EPRE_A 
+
+    Pa = ρA 
+    Pb = ρB / ρA 
+
+Formulas:
+
+    RS Power (dBm) = Type A PDSCH RE Power (dBm) - Pa (dB) 
+    Type A PDSCH RE Power (dBm) = 10 × log10 (Power per Port (dBm) / Subcarrier Number) 
+    Type A PDSCH RE Power (dBm) =  Power per Port (dBm) - 10 x log10 (Subcarrier Number) 
+    Type B PDSCH RE Power (dBm) = Type A PDSCH RE Power (dBm) + 10 × log10 (Rho B/Rho A) 
+
+<br>
+<img src="\lte_mbb\img\lte_mbb_rspow5.png" width=100% height=100% />
+<br>
+
+<br>
+<img src="\lte_mbb\img\lte_mbb_rspow6.png" width=100% height=100% />
+<br>
+
+For RS Power simulation code, go to this [repository](https://github.com/zulfadlizainal/4G-LTE-DL-Power-Allocation/tree/master/Ideal%20RS%20Power%20Settings).
 
 ---
 

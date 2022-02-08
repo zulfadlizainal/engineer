@@ -1,13 +1,13 @@
 Topic: 4G LTE<br>
 Sub-Topic: MBB<br>
 Date Written: 2019/06/14<br>
-Date Edited: 2022/02/07<br>
+Date Edited: 2022/02/08<br>
 
 ---
 
 #### Basic Time Unit (Ts)
 
-First, an introduction to some of the terms used in describing an LTE Frame. There are six time units: [1]
+There are six time units in LTE: [1]
 
 1. Frame
 2. Half-frame
@@ -28,7 +28,7 @@ First, an introduction to some of the terms used in describing an LTE Frame. The
 
 So,
 
-    1ms = 30720 Ts 
+    1ms = 30720 Ts
 
 ---
 
@@ -40,8 +40,9 @@ Key points for FDD frame structure: [1]
 2. For full-duplex FDD, uplink and downlink frames are separated by frequency and are transmitted continuously and synchronously.
 3. For half-duplex FDD, the only difference is that a UE cannot receive while transmitting.
 
+<br>
 <img src="\lte_mbb\img\lte_mbb_fddframe.png" width=100% height=100% />
-<br />
+<br>
 
 ---
 
@@ -53,18 +54,21 @@ Key points for TDD frame structure: [1]
 2. The locations of the uplink, downlink, and special subframes are determined by the uplink-downlink configuration.
 3. There are seven possible configurations given in the standard.
 
+<br>
 <img src="\lte_mbb\img\lte_mbb_tddframe.png" width=100% height=100% />
-<br />
+<br>
 
 TDD Subframe Config: [2]
 
+<br>
 <img src="\lte_mbb\img\lte_mbb_tddsubconfig.png" width=100% height=100% />
-<br />
+<br>
 
 TDD Special Subframe Config: [2]
 
+<br>
 <img src="\lte_mbb\img\lte_mbb_tddspsconfig.png" width=100% height=100% />
-<br />
+<br>
 
 ---
 
@@ -76,8 +80,9 @@ Key points for UL frame structure: [1]
 2. FDD and TDD uplink transmissions have the same physical channels and signals. 
 3. The only difference is that TDD frames include a special subframe, part of which can be used for SRS and PRACH uplink transmissions.
 
+<br>
 <img src="\lte_mbb\img\lte_mbb_ulframe.png" width=100% height=100% />
-<br />
+<br>
 
 #### References
 

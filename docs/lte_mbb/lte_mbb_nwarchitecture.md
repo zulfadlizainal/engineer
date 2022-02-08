@@ -9,8 +9,9 @@ Date Edited: 2022/02/07<br>
 
 Picture from [1]:
 
+<br>
 <img src="\lte_mbb\img\lte_mbb_sae.png" width=100% height=100% />
-<br />
+<br>
 
 ---
 
@@ -18,8 +19,9 @@ Picture from [1]:
 
 Picture from [1]:
 
+<br>
 <img src="\lte_mbb\img\lte_mbb_epc.png" width=100% height=100% />
-<br />
+<br>
 
 ---
 
@@ -27,8 +29,9 @@ Picture from [1]:
 
 Picture from [1]:
 
+<br>
 <img src="\lte_mbb\img\lte_mbb_bearer.png" width=100% height=100% />
-<br />
+<br>
 
 ---
 
@@ -36,8 +39,9 @@ Picture from [1]:
 
 Picture from [1]:
 
+<br>
 <img src="\lte_mbb\img\lte_mbb_eutran.png" width=100% height=100% />
-<br />
+<br>
 
 ---
 
@@ -45,18 +49,29 @@ Picture from [1]:
 
 Picture from [1]:
 
-Control plane protocol stack (UU, S1)<br />
+Control plane protocol stack (UU, S1):
+
+<br>
 <img src="\lte_mbb\img\lte_mbb_cpuu.png" width=100% height=100% />
-<br />
-Control plane protocol stack (X2)<br />
+<br>
+
+Control plane protocol stack (X2):
+
+<br>
 <img src="\lte_mbb\img\lte_mbb_cpx2.png" width=100% height=100% />
-<br />
-User plane protocol stack (UU, S1)<br />
+<br>
+
+User plane protocol stack (UU, S1):
+
+<br>
 <img src="\lte_mbb\img\lte_mbb_upuu.png" width=100% height=100% />
-<br />
-User plane protocol stack (X2)<br />
+<br>
+
+User plane protocol stack (X2):
+
+<br>
 <img src="\lte_mbb\img\lte_mbb_upx2.png" width=100% height=100% />
-<br />
+<br>
 
 ---
 

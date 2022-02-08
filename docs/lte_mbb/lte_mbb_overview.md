@@ -1,7 +1,7 @@
 Topic: 4G LTE<br>
 Sub-Topic: MBB<br>
 Date Written: 2019/06/14<br>
-Date Edited: 2022/02/07<br>
+Date Edited: 2022/02/08<br>
 
 ---
 
@@ -15,13 +15,15 @@ TTI = Transmission Time Interval<br>
 
 Downlink physical layer parameter values set by the field ue-Category: [1]
 
+<br>
 <img src="\lte_mbb\img\lte_mbb_dluecat.png" width=100% height=100% />
-<br />
+<br>
 
-Uplink physical layer parameter values set by the field ue-Category:[2]
+Uplink physical layer parameter values set by the field ue-Category: [2]
 
+<br>
 <img src="\lte_mbb\img\lte_mbb_uluecat.png" width=100% height=100% />
-<br />
+<br>
 
 ---
 
@@ -29,8 +31,9 @@ Uplink physical layer parameter values set by the field ue-Category:[2]
 
 LTE Operating Bands [3] [4]
 
+<br>
 <img src="\lte_mbb\img\lte_mbb_operband.png" width=100% height=100% />
-<br />
+<br>
 
 and continued in a long table list in 3GPP.
 
