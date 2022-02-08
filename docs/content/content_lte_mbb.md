@@ -50,28 +50,29 @@ Date Edited: 2022/02/07<br>
 - Measurement Metrics (RPRP, RSRQ, SINR, RSSI)<br>
 - Overlapping Measurment<br> 
 
-#### Layer 2: RLC, MAC, PDCP 
+#### Layer 2: MAC, RLC, PDCP 
 
-- [RLC Concept](/lte_mbb/lte_mbb_layer2.md?id=RLC-Concept)<br>
+- [MAC: Scheduler](/lte_mbb/lte_mbb_layer2.md?id=MAC-Scheduler)<br>
+- MAC: HARQ<br> 
+- MAC: Retransmission<br>
+- MAC: Timing Advance<br>  
+- MAC: Power Headroom (PHR)<br> 
+- MAC: Buffer Status Reporting (BSR)<br> 
+- MAC: SCell Activation/Deactivation<br> 
+- [RLC: Concept](/lte_mbb/lte_mbb_layer2.md?id=RLC-Concept)<br>
 - [RLC: TM, AM, UM](/lte_mbb/lte_mbb_layer2.md?id=RLC-TM-AM-UM)<br>
 - [RLC: ARQ in AM](/lte_mbb/lte_mbb_layer2.md?id=RLC-ARQ-in-AM)<br>
-- Scheduler<br> 
-- Timing Advance<br> 
-- HARQ<br> 
-- MAC Retransmission<br> 
-- RLC Retransmission<br> 
-- Power Headroom (PHR)<br> 
-- Buffer Status Reporting<br> 
-- SCell Activation/Deactivation<br> 
+- RLC: Retransmission<br> 
 
 #### Layer 3: RRC, NAS
 
-- SIB Information Table<br> 
-- L3 Filtering<br> 
+- MIB<br>
+- SIB<br>
+- RRC<br>
 
 #### Protocol and Procedures 
 
-- RACH (Causes, Timer, Max Trans)<br> 
+- RACH<br> 
 - Bearer Allocation<br> 
 - UL Power Control for PRACH<br> 
 - UL Power Control for PUCCH<br> 
@@ -85,8 +86,7 @@ Date Edited: 2022/02/07<br>
 #### Connected Mode Mobility 
 
 - Measurement Reports/Events<br> 
-- Connected Mode Parameter<br> 
-- Connected Mode Strategy<br> 
+- Connected Mode Parameter<br>
 
 #### Practical Analysis 
 

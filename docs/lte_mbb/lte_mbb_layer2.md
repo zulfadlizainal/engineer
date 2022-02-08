@@ -5,7 +5,64 @@ Date Edited: 2022/02/08<br>
 
 ---
 
-#### RLC Concept 
+#### MAC: Scheduler
+
+There are many types of scheduler. Below are common ones for LTE. 
+
+1. Proportional Fair 
+2. Equal Throughput 
+3. Round Robin 
+4. Max C/I 
+
+How these scheduler works is based on the user prioritization coefficients! Simply said, if the user have higher priority = schedule more for that user. 
+
+<br>
+<img src="\lte_mbb\img\lte_mbb_macsch.png" width=100% height=100% />
+<br>
+
+    T denotes the data rate potentially achievable for the station in the present time slot. 
+    R is the historical average data rate of this station. 
+    α and β tune the "fairness" of the scheduler. 
+
+Most conventional settings -> 
+
+    if we set α = 0, and β  = 0 the scheduler treats all UE equally regardless its real time condition or historical condition (Round Robin) 
+
+Most extreme settings -> 
+
+    if we set α = 1, and β  = 0 the scheduler will give priority to user with high data rate at that time (high CQI UE) (Max C/I) 
+
+<br>
+<img src="\lte_mbb\img\lte_mbb_macschset.png" width=70% height=70% />
+<br>
+
+***Keep in mind, higher data rates (throughput) = good CQI! ***
+
+>RR: Round Robin (α = 0, β  = 0) -> eNB treats UE same priority. So it sends equal PRB with equal TTI allocation to all users regardless its throughput condition good or bad. This means, even poor CQI UE receiving similar resource in time and frequency domain (PRB and TTI) with good CQI UE. This is the most basic scheduler (Not intelligent - assume all UE the same) 
+
+>ET: Equal Throughput (α = 0, β  = 1) -> Similar like proportional fair, but instead of using fairness scheduler will try to schedule resource to achieve similar throughput for all UE. 
+
+>PF: Proportional Fair (α = 1, β  = 1) -> Normally used. Its give fairness to all type of UE in the cell (low or high CQI). For Eg: Low CQI UE will receive higher PRB and TTI allocation to achieve better cell edge throughput. In this sense, high CQI UE receive less PRB and TTI allocation but throughput is still acceptable. 
+
+>Max C/I: Max Carrier / Interference (α = 1, β  = 0) -> eNB will only based on real time throughput. If the UE having the highest throughput, this UE will get most priority. Because of this, low CQI UE (Cell Edge) suffer waiting for scheduling.  
+
+***Info: Some vendors allows to set real continuous values for α and β (Not Integers)***
+
+Table refer from [2]
+
+<br>
+<img src="\lte_mbb\img\lte_mbb_macschcom.png" width=100% height=100% />
+<br>
+
+Method to decide which scheduler is the best based on case: 
+
+<br>
+<img src="\lte_mbb\img\lte_mbb_macschcat.png" width=100% height=100% />
+<br>
+
+---
+
+#### RLC: Concept 
 
 3 Types of RLC Modes: TM, AM, UM [1]
 
@@ -160,3 +217,4 @@ Case 5: RLF due to Max Retx Fail
 #### References
 
 1. [Sharetechnote](https://www.sharetechnote.com/html/RLC_LTE.html)
+2. [Techplayon](https://www.techplayon.com/lte-enodeb-scheduler-and-different-scheduler-type/)
