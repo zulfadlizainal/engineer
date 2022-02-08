@@ -20,10 +20,14 @@ Date Edited: 2022/02/08<br>
 How is RRC mapped to PHY and RLC layer (Sample as below): [1]
 
 <br>
-<img src="\lte_mbb\img\lte_mbb_rlcdl.png" width=100% height=100% />
+<img src="\lte_mbb\img\lte_mbb_rlcmap.png" width=100% height=100% />
 <br>
 
 This is how RLC interact between layers: [1]
+
+<br>
+<img src="\lte_mbb\img\lte_mbb_rlcdl.png" width=100% height=100% />
+<br>
 
 <br>
 <img src="\lte_mbb\img\lte_mbb_rlcul.png" width=100% height=100% />
