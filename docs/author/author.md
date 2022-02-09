@@ -3,7 +3,6 @@ Tokyo, Japan<br>
 <i class="fa fa-linkedin-square"></i> www.linkedin.com/in/zulfadlizainal/<br>
 <i class="fa fa-github"></i> www.github.com/zulfadlizainal/<br>
 
-
 #### Work Experiences
 
 Technical Manager, Radio Network Consulting<br>
@@ -46,7 +45,7 @@ Johor Science High School<br>
 
 #### Professional Certifications
 
-ZTE Certified Radio Network Optimizer (RF & OSS)<br>
+Certified Radio Network Optimizer (RF & OSS)<br>
 Huawei Certified Datacom Associate (HCDA-HNTD)<br>
 CompTIA Certified Network Associate (Network+)<br>
 Board of Engineers Malaysia Certified Telecom Practitioner (ENGR)<br>
