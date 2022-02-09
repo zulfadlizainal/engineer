@@ -7,7 +7,7 @@ Date Edited: 2022/02/09<br>
 
 #### MIB 
 
-MIB contains below information. From this, UE know how to operate for next step (PHICH -> PDCCH for SIB -> SIB -> RACH -> COnnected Mode).
+MIB contains below information. From this, UE know how to operate for next step (PHICH -> PDCCH for SIB -> SIB -> RACH -> Connected Mode).
 
 1. DL Bandwidth
 2. Number of Transmit Antenna
