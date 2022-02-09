@@ -34,7 +34,10 @@ Date Edited: 2022/02/07<br>
 - Carrier Aggregation (CA)<br> 
 - [MIMO Concept](/lte_mbb/lte_mbb_featurealgo.md?id=MIMO-Concept)<br>
 - Massive MIMO<br>
-- Beamforming<br> 
+- Beamforming<br>
+- UL Power Control for PRACH<br> 
+- UL Power Control for PUCCH<br> 
+- UL Power Control for PUSCH<br> 
 - Idle Mode Mobility Load Balancing (IMLB)<br> 
 - Connected Mode Mobility Load Balancing (MLB)<br> 
 - Mobility Robustness Optimization (MRO)<br> 
@@ -66,17 +69,15 @@ Date Edited: 2022/02/07<br>
 
 #### Layer 3: RRC, NAS
 
-- MIB<br>
-- SIB<br>
+- [MIB](/lte_mbb/lte_mbb_layer3.md?id=mib)<br>
+- [SIB](/lte_mbb/lte_mbb_layer3.md?id=sib)<br>
 - RRC<br>
 
 #### Protocol and Procedures 
 
+- Attach<br> 
 - RACH<br> 
 - Bearer Allocation<br> 
-- UL Power Control for PRACH<br> 
-- UL Power Control for PUCCH<br> 
-- UL Power Control for PUSCH<br> 
 
 #### Idle Mode Mobility 
 
