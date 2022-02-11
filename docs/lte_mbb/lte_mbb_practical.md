@@ -84,7 +84,7 @@ Below are method of reading antenna pattern based on usual antenna pattern data 
 The purpose of this simulation is to calculate the coverage of LTE at train lines based on path loss model.
 
 <br>
-<img src="\lte_mbb\img\lte_mbb_covtrain.png" width=100% height=100% />
+<img src="\lte_mbb\img\lte_mbb_covtrain.png" width=50% height=50% />
 <br>
 
 ***GPS Plotting***
@@ -95,7 +95,7 @@ The purpose of this simulation is to calculate the coverage of LTE at train line
     How to cut: Cut based on straight line, because we use trigonometry to calculate distance. 
 
 <br>
-<img src="\lte_mbb\img\lte_mbb_covtrain2.png" width=50% height=50% />
+<img src="\lte_mbb\img\lte_mbb_covtrain2.png" width=100% height=100% />
 <br>
 
 3. Create GPS sample between cut lines (Eg: From B to C) 
