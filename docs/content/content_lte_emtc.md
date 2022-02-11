@@ -1,21 +1,18 @@
 Topic: 4G LTE<br>
 Sub-Topic: eMTC<br>
-Date Written: 2019/02/26<br>
-Date Edited: 2022/02/06<br>
+Date Written: 2019/05/17<br>
+Date Edited: 2022/02/11<br>
 
 ---
 
 ### 4G LTE enhanced Machine Type Communication (eMTC)
 #### Overview 
 
-3GPP Roadmap<br>
-UE Category <br>
-Need for Redefined Air Interface <br>
-
-#### Basic Concept 
-
-Carrier Deployment Mode (PRB) <br>
-Cell Range (Preamble Format, MCL) <br>
+- [3GPP Roadmap](/lte_emtc/lte_emtc_overview.md?id=3GPP-Roadmap)<br>
+- [UE Category](/lte_emtc/lte_emtc_overview.md?id=UE-Category)<br>
+- [Redefined Air Interface](/lte_emtc/lte_emtc_overview.md?id=Redefined-Air-Interface)<br>
+- [Carrier Deployment Mode](/lte_emtc/lte_emtc_overview.md?id=Carrier-Deployment-Mode)<br>
+Cell Range <br>
 Coverage Design <br>
 
 #### Frame Structure 
@@ -24,7 +21,7 @@ eMTC vs NB-IoT Frame Structure <br>
 DL Frame Structure <br>
 UL Frame Structure <br>
 
-#### Basic Features and Algorithm 
+#### Features and Algorithm 
 
 Evolved Discontinues Reception (eDRX) <br>
 Power Saving Mode (PSM) <br>
@@ -33,12 +30,12 @@ Coverage Enhancement Mode (CE Mode) <br>
 Physical Channel Repetitions <br>
 Normal and Enhance Coverage (NC, EC) <br>
 
-#### Physical Channel, Repetitions, Scheduling 
+#### Layer 1: PHY
 
 Physical Channel Mapping <br>
 Physical Channel Repetition Structures <br>
 MPDCCH <br>
-Overall Physical Channel Configurations <br>
+Physical Channel Configurations <br>
 Narrowband Index <br>
 Physical Channel Repetitions Impact <br>
 TBS/MCS <br>
@@ -58,23 +55,24 @@ CE Level Switching in Connected Mode  <br>
 #### Idle Mode Mobility 
  
 3GPP Mobility Support <br>
-Cell Reselection Design<br> 
+Cell Selection<br> 
+Intra Frequency Cell Reselection<br> 
+Inter Frequency Cell Reselection<br> 
 
 #### Connected Mode Mobility 
 
 3GPP Mobility Support <br>
 Measurement Gap for MTC <br>
-Handover (for Intra) <br>
+Intra Freuency Handover <br>
 
 #### Practical Analysis 
 
-Calculate Actual PDSCH Used Repetitions (For Dynamic PDSCH Rep) <br>
-Accessibility Performance Optimization <br>
-Throughput Performance Optimization <br>
-CE Level Optimization <br>
-Deciding CE Level <br>
-Repetition Optimization <br>
-Deciding Repetition Number <br>
-Measurement Gap Analysis Categorization <br>
-Accessibility Performance Optimization <br>
-Checking eDRX Settings <br>
+Optimize CE Level <br>
+Decide CE Level <br>
+Optimize Accessibility Performance <br>
+Optimize Throughput Performance <br>
+Optimize Repetition Number <br>
+Decide Repetition Number <br>
+Calculate PDSCH Used Repetitions (For Dynamic PDSCH Rep) <br>
+Analyze Measurement Gap Category <br>
+Check eDRX Settings <br>

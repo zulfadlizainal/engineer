@@ -76,7 +76,7 @@ Date Edited: 2022/02/11<br>
 #### Protocol and Procedures 
 
 - Attach<br> 
-- RACH<br> 
+- Random Access<br> 
 - Bearer Allocation<br> 
 
 #### Idle Mode Mobility 
