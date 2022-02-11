@@ -1,7 +1,7 @@
 Topic: 4G LTE<br>
 Sub-Topic: MBB<br>
 Date Written: 2019/02/26<br>
-Date Edited: 2022/02/07<br>
+Date Edited: 2022/02/11<br>
 
 ---
 
@@ -81,14 +81,17 @@ Date Edited: 2022/02/07<br>
 
 #### Idle Mode Mobility 
 
-- Idle Mode Parameter<br> 
-- Cell Reselection Design<br> 
+- Cell Selection<br> 
+- Intra Frequency Cell Reselection<br> 
+- [Inter Frequency Cell Reselection](/lte_mbb/lte_mbb_idle.md?id=Inter-Frequency-Cell-Reselection)<br>
 
 #### Connected Mode Mobility 
 
-- Measurement Reports/Events<br> 
-- Connected Mode Parameter<br>
-- Handover/Redirection Design<br> 
+- Measurement Reports<br>
+- [Measurement Events](/lte_mbb/lte_mbb_connected.md?id=Measurement-Events)<br>
+- Intra Frequency Handover<br>
+- Inter Frequency Handover<br>
+- Measurement Gap <br>
 
 #### Practical Analysis 
 
