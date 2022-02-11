@@ -14,7 +14,7 @@ Motiv Research (Tokyo, Japan)<br>
 Aug 2019 – Sep 2021 • 2 yrs. 2 mos.<br><br>
 
 Engineer, IoT Network Design<br>
-Motiv Research (Tokyo, Japan).<br>
+Motiv Research (Tokyo, Japan)<br>
 Oct 2017 – Jul 2019 • 1 yr. 10 mos.<br><br>
 
 Engineer, Radio Quality Performance<br>
