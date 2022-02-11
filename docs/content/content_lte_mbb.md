@@ -95,14 +95,14 @@ Date Edited: 2022/02/11<br>
 
 #### Practical Analysis 
 
-- BLER (Ack, Nack, CRC, Discarded Retransmission)<br> 
-- TAU (TAC Planning)<br> 
-- PCI Planning Rule<br> 
-- PRB vs TTI Utilization<br> 
-- Throughput Calculation<br> 
-- Spectrum Efficiency Calculation<br> 
-- IFHO: A2 and A5 Consideration in Mobility & Static<br>
-- Coverage Simulation for Train Lines<br> 
-- Too Big CIO: Causing ping Pong HO<br>
-- Calculate RP, RQ, SINR, O<br>
-- Idle Mode Parameter Simulation
+- Plan TAC<br> 
+- Plan PCI<br> 
+- [Differentiate PRB & TTI Utilization](/lte_mbb/lte_mbb_practical.md?id=Differentiate-PRB-&-TTI-Utilization)<br>
+- [Differentiate TX, Layer, Spatial Rank, and Codewords](/lte_mbb/lte_mbb_practical.md?id=Differentiate-TX-Layer-Spatial-Rank-and-Codewords)<br>
+- Calculate Throughput<br>
+- Calculate Spectrum Efficiency<br>
+- [Reading Antenna Pattern](/lte_mbb/lte_mbb_practical.md?id=Reading-Antenna-Pattern)<br>
+- Simulate Coverage based on Path Loss<br>
+- [Simulate Coverage for Train Lines](/lte_mbb/lte_mbb_practical.md?id=Simulate-Coverage-for-Train-Lines)<br>
+- [Why Too Big CIO Causing Ping Pong Handover](/lte_mbb/lte_mbb_practical.md?id=Why-Too-Big-CIO-Causing-Ping-Pong-Handover)<br>
+- [Why A2MG Change Will Only Impact Mobility Users](/lte_mbb/lte_mbb_practical.md?id=Why-A2MG-Change-Will-Only-Impact-Mobility-Users)<br>

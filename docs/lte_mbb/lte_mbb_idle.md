@@ -66,7 +66,7 @@ Reference from 3GPP, 36.304. Starts from chapter 5. [1]
 <img src="\lte_mbb\img\lte_mbb_idle3gpp.png" width=100% height=100% />
 <br>
 
-Simulation already being made to estimate load balance using idle mode parameters in this [repository](https://github.com/zulfadlizainal/4G-LTE-Idle-Mode-Load-Balance/tree/master/Inter%20Frequency%20-%20Reselection). This simulation requires drive test data in of multiple band for same location.
+Simulation already being made to estimate load balance using idle mode parameters in this [repository](https://github.com/zulfadlizainal/4G-LTE-Idle-Mode-Load-Balance/tree/master/Inter%20Frequency%20-%20Reselection). This simulation requires drive test data for multiple band in same location.
 
 ---
 
