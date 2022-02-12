@@ -25,7 +25,7 @@ Date Edited: 2022/02/12<br>
 3. Two CE Modes in connected mode are defined by 3GPP in regards for different motivations.  
 
 <br>
-<img src="\lte_emtc\img\lte_emtc_cel.png" width=100% height=100% />
+<img src="\lte_emtc\img\lte_emtc_cem.png" width=100% height=100% />
 <br>
 
 ---
