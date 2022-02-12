@@ -12,8 +12,6 @@ Date Edited: 2022/02/12<br>
 - [UE Category](/lte_emtc/lte_emtc_overview.md?id=UE-Category)<br>
 - [Redefined Air Interface](/lte_emtc/lte_emtc_overview.md?id=Redefined-Air-Interface)<br>
 - [Carrier Deployment Mode](/lte_emtc/lte_emtc_overview.md?id=Carrier-Deployment-Mode)<br>
-- Cell Range <br>
-- Coverage Design <br>
 
 #### Frame Structure 
 
@@ -23,9 +21,9 @@ Date Edited: 2022/02/12<br>
 
 #### Features and Algorithm 
 
-Coverage Level (CE Level) <br>
-Coverage Enhancement Mode (CE Mode) <br>
-Physical Channel Repetitions <br>
+- [Coverage Level (CE Level)](/lte_emtc/lte_emtc_featurealgo.md?id=Coverage-Level-CE-Level)<br>
+- [Coverage Enhancement Mode (CE Mode) ](/lte_emtc/lte_emtc_featurealgo.md?id=Coverage-Enhancement-Mode-CE-Mode)<br>
+- [Physical Channel Repetitions Structures](/lte_emtc/lte_emtc_featurealgo.md?id=Physical-Channel-Repetitions-Structures)<br>
 Normal and Enhance Coverage (NC, EC) <br>
 Evolved Discontinues Reception (eDRX) <br>
 Power Saving Mode (PSM) <br>
