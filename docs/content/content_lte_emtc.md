@@ -1,7 +1,7 @@
 Topic: 4G LTE<br>
 Sub-Topic: eMTC<br>
 Date Written: 2019/05/17<br>
-Date Edited: 2022/02/11<br>
+Date Edited: 2022/02/12<br>
 
 ---
 
@@ -17,18 +17,18 @@ Date Edited: 2022/02/11<br>
 
 #### Frame Structure 
 
-DL Frame Structure <br>
-UL Frame Structure <br>
-eMTC vs NB-IoT Frame Structure <br>
+- [DL Frame Structure](/lte_emtc/lte_emtc_framestructure.md?id=DL-Frame-Structure)<br>
+- [UL Frame Structure](/lte_emtc/lte_emtc_framestructure.md?id=UL-Frame-Structure)<br>
+- [eMTC vs NB-IoT Frame Structure ](/lte_emtc/lte_emtc_framestructure.md?id=eMTC-vs-NB-IoT-Frame-Structure )<br>
 
 #### Features and Algorithm 
 
-Evolved Discontinues Reception (eDRX) <br>
-Power Saving Mode (PSM) <br>
 Coverage Level (CE Level) <br>
 Coverage Enhancement Mode (CE Mode) <br>
 Physical Channel Repetitions <br>
 Normal and Enhance Coverage (NC, EC) <br>
+Evolved Discontinues Reception (eDRX) <br>
+Power Saving Mode (PSM) <br>
 
 #### Layer 1: PHY
 

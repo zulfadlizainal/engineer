@@ -38,6 +38,7 @@ Table version for easy copy:
 | Battery Life        | Varies               | Varies               | Varies               | > 10 Years           | > 10 Years         |
 
 <br>
+
 ***Cat M UE category info:***
 
 <br>
