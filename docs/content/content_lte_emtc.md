@@ -12,14 +12,14 @@ Date Edited: 2022/02/11<br>
 - [UE Category](/lte_emtc/lte_emtc_overview.md?id=UE-Category)<br>
 - [Redefined Air Interface](/lte_emtc/lte_emtc_overview.md?id=Redefined-Air-Interface)<br>
 - [Carrier Deployment Mode](/lte_emtc/lte_emtc_overview.md?id=Carrier-Deployment-Mode)<br>
-Cell Range <br>
-Coverage Design <br>
+- Cell Range <br>
+- Coverage Design <br>
 
 #### Frame Structure 
 
-eMTC vs NB-IoT Frame Structure <br>
 DL Frame Structure <br>
 UL Frame Structure <br>
+eMTC vs NB-IoT Frame Structure <br>
 
 #### Features and Algorithm 
 

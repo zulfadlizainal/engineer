@@ -37,10 +37,11 @@ Table version for easy copy:
 | Coverage Gain       | Base (MCL>140.7 dB)  | Base (MCL>140.7 dB)  | Base (MCL>140.7 dB)  | 15dB (MCL>155.7 dB)  | 23dB (MCL>164 dB)  |
 | Battery Life        | Varies               | Varies               | Varies               | > 10 Years           | > 10 Years         |
 
-Cat M UE category info:
+<br>
+***Cat M UE category info:***
 
 <br>
-<img src="\lte_emtc\img\lte_emtc_uecatm.png" width=100% height=100% />
+<img src="\lte_emtc\img\lte_emtc_uecatm.png" width=50% height=50% />
 <br>
 
 Table version for easy copy:
