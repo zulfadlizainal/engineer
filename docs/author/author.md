@@ -5,39 +5,37 @@ Tokyo, Japan<br>
 
 #### Work Experiences
 
-- Technical Manager, Radio Design Optimization<br>
-Motiv Research (Tokyo, Japan)<br>
-Oct 2021 – Present • 5 mos.<br>
+- Technical Manager, Radio Design Optimization,<br> 
+Motiv Research,<br>
+Tokyo, Japan, Oct 2021 - Present<br>
 
-- Senior Engineer, Radio Design Optimizaton<br>
-Motiv Research (Tokyo, Japan)<br>
-Aug 2019 – Sep 2021 • 2 yrs. 2 mos.<br>
+- Senior Engineer, Radio Design Optimizaton,<br> 
+Motiv Research,<br> 
+Tokyo, Japan, Aug 2019 - Sep 2021<br>
 
-- Engineer, Radio Design Optimizaton<br>
-Motiv Research (Tokyo, Japan)<br>
-Oct 2017 – Jul 2019 • 1 yr. 10 mos.<br>
+- Engineer, Radio Design Optimizaton,<br> 
+Motiv Research,<br> 
+Tokyo, Japan, Oct 2017 - Jul 2019<br>
 
-- Engineer, Radio Quality Performance<br>
-Webe Digital, A Telekom Malaysia Company (Petaling Jaya, Malaysia)<br>
-Jan 2015 – Sep 2017 • 2 yrs. 9 mos.<br>
+- Engineer, Radio Quality Performance,<br> 
+Webe Digital, A Telekom Malaysia Company,<br>
+Petaling Jaya, Malaysia, Jan 2015 - Sep 2017<br>
 
 - Engineer, Radio Optimization<br>
-Kyocera Propel Network, A Kyocera Global Company (Shah Alam, Malaysia)<br>
-Aug 2013 – Dec 2014 • 1 yrs. 5 mos.<br>
+Kyocera Propel Network, A Kyocera Global Company,<br>
+Shah Alam, Malaysia, Aug 2013 - Dec 2014<br>
 
 - Junior Engineer, Radio Optimization<br>
-GCI Science and Technology (Subang Jaya, Malaysia)<br>
-Aug 2012 – Jul 2013 • 1 yr.<br>
+GCI Science and Technology, <br>
+Subang Jaya, Malaysia, Aug 2012 - Jul 2013<br>
 
 #### University Educations
 
-- Bachelor Degree of Engineering (B.ENG),<br>
-Communication Engineering (HONS), 2008-2012<br>
-International Islamic University Malaysia<br>
+- Bachelor Degree in Communication Engineering,<br>
+International Islamic University Malaysia (IIUM)<br>
 
-- Foundation Degree,<br>
-Engineering, 2006-2008<br>
-International Islamic University Malaysia<br>
+- Foundation Degree in Engineering,<br>
+International Islamic University Malaysia (IIUM)<br>
 
 #### Professional Certifications
 
@@ -51,12 +49,10 @@ International Islamic University Malaysia<br>
 - Interference Minimization Schemes in OFDMA-based Femtocells<br>
 Australian Journal of Basic and Applied Sciences, 6(10): 76-87<br>
 ISSN 1991-8178<br>
-URL: http://ajbasweb.com/old/ajbas/2012/October/76-87.pdf<br>
 
 - Self-Organized Femtocell Networks<br>
 QoS and Mobile Technologies IIUM Press, pp. 141-153<br>
 ISBN 978-967-418-142-0<br>
-URL: http://irep.iium.edu.my/21482/<br>
 
 #### Recognitions
 

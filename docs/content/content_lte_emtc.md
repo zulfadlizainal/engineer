@@ -24,9 +24,9 @@ Date Edited: 2022/02/12<br>
 - [Coverage Level (CE Level)](/lte_emtc/lte_emtc_featurealgo.md?id=Coverage-Level-CE-Level)<br>
 - [Coverage Enhancement Mode (CE Mode) ](/lte_emtc/lte_emtc_featurealgo.md?id=Coverage-Enhancement-Mode-CE-Mode)<br>
 - [Physical Channel Repetitions Structures](/lte_emtc/lte_emtc_featurealgo.md?id=Physical-Channel-Repetitions-Structures)<br>
-Normal and Enhance Coverage (NC, EC) <br>
+- [Normal and Enhance Coverage (NC, EC)](/lte_emtc/lte_emtc_featurealgo.md?id=Normal-and-Enhance-Coverage-NC-EC)<br>
 Evolved Discontinues Reception (eDRX) <br>
-Power Saving Mode (PSM) <br>
+- [Power Saving Mode (PSM)](/lte_emtc/lte_emtc_featurealgo.md?id=Power-Saving-Mode-PSM)<br>
 
 #### Layer 1: PHY
 
