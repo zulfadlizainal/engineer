@@ -41,7 +41,7 @@ International Islamic University Malaysia<br>
 
 #### Professional Certifications
 
-- Certified Radio Network Optimizer (RF & OSS)<br>
+- ZTE Certified Radio Network Optimizer (RF & OSS)<br>
 - Huawei Certified Datacom Associate (HCDA-HNTD)<br>
 - CompTIA Certified Network Associate (Network+)<br>
 - BEM Certified Telecom Practitioner (ENGR)<br>
