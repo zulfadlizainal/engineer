@@ -51,10 +51,11 @@ Date Edited: 2022/02/14<br>
 
 #### Idle Mode Mobility 
  
-3GPP Mobility Support <br>
-Cell Selection<br> 
-Intra Frequency Cell Reselection<br> 
-Inter Frequency Cell Reselection<br> 
+- [Features to 3GPP Mapping](/lte_emtc/lte_emtc_idle.md?id=Features-to-3GPP-Mapping)<br>
+- [Important Parameter Addition](/lte_emtc/lte_emtc_idle.md?id=Important-Parameter-Addition)<br>
+- Cell Selection<br> 
+- Intra Frequency Cell Reselection<br> 
+- Inter Frequency Cell Reselection<br> 
 
 #### Connected Mode Mobility 
 

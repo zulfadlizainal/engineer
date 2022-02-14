@@ -1,7 +1,7 @@
 Topic: 4G LTE<br>
 Sub-Topic: eMTC<br>
 Date Written: 2019/05/17<br>
-Date Edited: 2022/02/12<br>
+Date Edited: 2022/02/14<br>
 
 ---
 
@@ -149,7 +149,7 @@ Example from logfiles:
 ***Connected vs Idle Mode***
 
 <br>
-<img src="\lte_emtc\img\lte_emtc_ceswitch.png" width=100% height=100% />
+<img src="\lte_emtc\img\lte_emtc_ceswitch2.png" width=100% height=100% />
 <br>
 
 ***Triggering Threshold for CE Level Switching***
