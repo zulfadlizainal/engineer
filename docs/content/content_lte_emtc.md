@@ -1,7 +1,7 @@
 Topic: 4G LTE<br>
 Sub-Topic: eMTC<br>
 Date Written: 2019/05/17<br>
-Date Edited: 2022/02/12<br>
+Date Edited: 2022/02/14<br>
 
 ---
 
@@ -22,22 +22,21 @@ Date Edited: 2022/02/12<br>
 #### Features and Algorithm 
 
 - [Coverage Level (CE Level)](/lte_emtc/lte_emtc_featurealgo.md?id=Coverage-Level-CE-Level)<br>
-- [Coverage Enhancement Mode (CE Mode) ](/lte_emtc/lte_emtc_featurealgo.md?id=Coverage-Enhancement-Mode-CE-Mode)<br>
-- [Physical Channel Repetitions Structures](/lte_emtc/lte_emtc_featurealgo.md?id=Physical-Channel-Repetitions-Structures)<br>
+- [Coverage Enhancement Mode (CE Mode)](/lte_emtc/lte_emtc_featurealgo.md?id=Coverage-Enhancement-Mode-CE-Mode)<br>
 - [Normal and Enhance Coverage (NC, EC)](/lte_emtc/lte_emtc_featurealgo.md?id=Normal-and-Enhance-Coverage-NC-EC)<br>
 Evolved Discontinues Reception (eDRX) <br>
 - [Power Saving Mode (PSM)](/lte_emtc/lte_emtc_featurealgo.md?id=Power-Saving-Mode-PSM)<br>
 
 #### Layer 1: PHY
 
-Physical Channel Mapping <br>
-Physical Channel Repetition Structures <br>
-MPDCCH <br>
-Physical Channel Configurations <br>
-Narrowband Index <br>
+- [Physical Channel Mapping](/lte_emtc/lte_emtc_layer1.md?id=Physical-Channel-Mapping)<br>
+- [Physical Channel Repetitions Structures](/lte_emtc/lte_emtc_layer1.md?id=Physical-Channel-Repetitions-Structures)<br>
+- [MPDCCH](/lte_emtc/lte_emtc_layer1.md?id=MPDCCH)<br>
+- [Channel to RB Mapping](/lte_emtc/lte_emtc_layer1.md?id=Channel-to-RB-Mapping)<br>
+- [Narrowband Index](/lte_emtc/lte_emtc_layer1.md?id=Narrowband-Index)<br>
 Physical Channel Repetitions Impact <br>
 TBS/MCS <br>
-HARQ for UL PUSCH <br>
+- [No HARQ for UL PUSCH](/lte_emtc/lte_emtc_layer1.md?id=No-HARQ-for-UL-PUSCH)<br>
 
 #### Protocol and Procedures 
 

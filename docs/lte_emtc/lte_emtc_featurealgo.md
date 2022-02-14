@@ -30,33 +30,6 @@ Date Edited: 2022/02/12<br>
 
 ---
 
-#### Physical Channel Repetitions Structures
-
-1. Other important features adapted in eMTC is physical channel repetitions. 
-2. Repetition is a technique consisting on repeating the same data transmission several times to ensure its reliability. 
-3. In areas with good coverage, high data rates can be reached using a few repetitions or even without repetition. In areas with poor coverage, coverage performance can be ensured by using more repetitions. 
-4. These repetitions settings can be divided based on Coverage Enhancement Level (CEL) concept, meet objective to extend coverage.   
-
-<br>
-<img src="\lte_emtc\img\lte_emtc_repstruct.png" width=100% height=100% />
-<br>
-
-Parameter mapping for physical channel repititions:
-
-| L3 Msg | Phy Channel Repetition        | L3 Parameter Name                                                                 | CE Level 0 | CE Level 1 | CE Level 2 |
-|--------|-------------------------------|-----------------------------------------------------------------------------------|------------|------------|------------|
-| SIB2   | ① MPDCCH for Paging           | mpdcch-NumRepetition-Paging-r13                                                   | X          | X          | X          |
-| SIB2   | ② MPDCCH for RA               | mpdcch-NumRepetition-RA-r13                                                       | X          | X          | X          |
-| SIB2   | ③ PUCCH (ACK/NACK for MSG4)   | pucch-NumRepetitionCE-Msg4-Level0-r13 <br/>pucch-NumRepetitionCE-Msg4-Level1-r13  | X          | X          | X          |
-| SIB2   | ④ PRACH (Preamble)            | numRepetitionPerPreambleAttempt-r13                                               | X          | X          | X          |
-| Setup  | ⑤ MPDCCH (DCI Format)         | mpdcch-NumRepetition-r13                                                          | X          | X          | X          |
-| Setup  | ⑥ PUCCH (ACK/NACK,Format1/2)  | pucch-NumRepetitionCE-format1-r13 <br/>pucch-NumRepetitionCE-format2-r13          | X          | X          | X          |
-| SIB2   | ⑦ PDSCH                       | pdsch-maxNumRepetitionCEmodeA-r13                                                 | X          | X          | X          |
-| SIB2   | ⑧ PUSCH                       | pusch-maxNumRepetitionCEmodeA-r13                                                 | X          | X          | X          |
-|        | ⑨ PDSCH for Paging            |                                                                                   | X          | X          | X          |
-
----
-
 #### Normal and Enhance Coverage (NC, EC) 
 
 1. In Release 13, two types of coverage mode is being defined by 3GPP: Normal Coverage and Enhanced Coverage. 
@@ -110,6 +83,8 @@ Start Release 12, IoT UE (MTC Cat 0 R12, eMTC Cat M1 R13, NB-IoT Cat NB1 R13) ab
     3. If UE want to change timer, UE can send during the periodically TAU. 
     4. The maximum time a device may sleep is approximately 413 days (set by 3GPP Release 13 for T3412). The maximum time a device may be reachable is 186 minutes (an equivalent of the maximum value of the Active timer T3324).  
 
+Picture form [7]
+
 <br>
 <img src="\lte_emtc\img\lte_emtc_psmsignal.png" width=100% height=100% />
 <br>
@@ -128,3 +103,4 @@ Start Release 12, IoT UE (MTC Cat 0 R12, eMTC Cat M1 R13, NB-IoT Cat NB1 R13) ab
 4. 3GPP TS 36.133 Section 4.6.2 
 5. 3GPP TS 23.682 Section 4.5.4
 6. 3GPP TS 24.301 Section 5.3.11
+7. [Sharetechnote](https://www.sharetechnote.com/html/Handbook_LTE_PSM.html#:~:text=ShareTechnote&text=What%20is%20PSM%20%3F,normal%20idle%20mode%20energy%20consumption.)
