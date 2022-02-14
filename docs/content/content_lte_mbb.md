@@ -7,8 +7,6 @@ Date Edited: 2022/02/11<br>
 
 ### 4G LTE Mobile Broadband (MBB)
 
-!> Note to self: LTE MBB is old tech. Spend less time on this, just revisit when needed.
-
 #### Overview 
 
 - [UE Category](/lte_mbb/lte_mbb_overview.md?id=Ue-Category)<br>
