@@ -59,9 +59,9 @@ Date Edited: 2022/02/14<br>
 
 #### Connected Mode Mobility 
 
-3GPP Mobility Support <br>
-Measurement Gap for MTC <br>
-Intra Freuency Handover <br>
+- [Features to 3GPP Mapping](/lte_emtc/lte_emtc_connected.md?id=Features-to-3GPP-Mapping)<br>
+- [Measurement Gap for MTC](/lte_emtc/lte_emtc_connected.md?id=Measurement-Gap-for-MTC)<br>
+- Intra Freuency Handover <br>
 
 #### Practical Analysis 
 
