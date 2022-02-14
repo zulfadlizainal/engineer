@@ -5,28 +5,28 @@ Tokyo, Japan<br>
 
 #### Work Experiences
 
-- Technical Manager, Radio Design Optimization,<br> 
-Motiv Research,<br>
+- Technical Manager, Radio Design Optimization<br> 
+Motiv Research<br>
 Tokyo, Japan, Oct 2021 - Present<br>
 
-- Senior Engineer, Radio Design Optimizaton,<br> 
-Motiv Research,<br> 
+- Senior Engineer, Radio Design Optimizaton<br> 
+Motiv Research<br> 
 Tokyo, Japan, Aug 2019 - Sep 2021<br>
 
-- Engineer, Radio Design Optimizaton,<br> 
-Motiv Research,<br> 
+- Engineer, Radio Design Optimizaton<br> 
+Motiv Research<br> 
 Tokyo, Japan, Oct 2017 - Jul 2019<br>
 
-- Engineer, Radio Quality Performance,<br> 
-Webe Digital, A Telekom Malaysia Company,<br>
+- Engineer, Radio Quality Performance<br> 
+Webe Digital, A Telekom Malaysia Company<br>
 Petaling Jaya, Malaysia, Jan 2015 - Sep 2017<br>
 
 - Engineer, Radio Optimization<br>
-Kyocera Propel Network, A Kyocera Global Company,<br>
+Kyocera Propel Network, A Kyocera Global Company<br>
 Shah Alam, Malaysia, Aug 2013 - Dec 2014<br>
 
 - Junior Engineer, Radio Optimization<br>
-GCI Science and Technology, <br>
+GCI Science and Technology <br>
 Subang Jaya, Malaysia, Aug 2012 - Jul 2013<br>
 
 #### University Educations

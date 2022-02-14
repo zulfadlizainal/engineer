@@ -61,16 +61,16 @@ Date Edited: 2022/02/14<br>
 
 - [Features to 3GPP Mapping](/lte_emtc/lte_emtc_connected.md?id=Features-to-3GPP-Mapping)<br>
 - [Measurement Gap for MTC](/lte_emtc/lte_emtc_connected.md?id=Measurement-Gap-for-MTC)<br>
-- Intra Freuency Handover <br>
+- Intra Frequency Handover <br>
 
 #### Practical Analysis 
 
-Optimize CE Level <br>
-Decide CE Level <br>
 Optimize Accessibility Performance <br>
 Optimize Throughput Performance <br>
 Optimize Repetition Number <br>
-Decide Repetition Number <br>
+Optimize CE Level <br>
 Calculate PDSCH Used Repetitions (For Dynamic PDSCH Rep) <br>
 Analyze Measurement Gap Category <br>
 Check eDRX Settings <br>
+Check UL Retrans <br>
+Check Operation for RACH in eMTC <br>
