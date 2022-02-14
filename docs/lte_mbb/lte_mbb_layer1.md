@@ -186,6 +186,8 @@ Picture from [4]
 
 ***TM 4 - Spatial Multiplexing (CL) with CDD***
 
+Picture form [4]
+
 <br>
 <img src="\lte_mbb\img\lte_mbb_tm4.png" width=100% height=100% />
 <br>
@@ -327,6 +329,8 @@ Improved RS Structure:
 
 The same elements are used for ports 7,8,11,12 (noted as Rx, blue) and 9,10,13,14 (noted as Ry, green), the reference signals must be coded differently so that the UE can distinguish among them. 
 
+Picture form [4]
+
 <br>
 <img src="\lte_mbb\img\lte_mbb_tm9.png" width=100% height=100% />
 <br>
@@ -359,7 +363,7 @@ TM9: The UE-specific RS is applied before the precoding. This enables non-codebo
 
 ***TM 10 - Up to 8 Layer Transmission (Ant Port 7-14)***
 
-!>TODO: To be studied
+!>TODO: Study TM10
 
 ---
 
