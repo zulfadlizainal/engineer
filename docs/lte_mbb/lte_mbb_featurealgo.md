@@ -7,7 +7,7 @@ Date Edited: 2022/02/08<br>
 
 #### MIMO Concept
 
-MIMO stands for Multiple Input Multiple Output. Simply, it is a technique to increase the data throughput by using multiple transmitter antenna and multiple receiver antenna. [1]
+MIMO stands for Multiple Input Multiple Output. Simply, <mark>it is a technique to increase the data throughput by using multiple transmitter antenna and multiple receiver antenna.</mark> [1]
 
 ***DL MIMO***
 
@@ -15,7 +15,7 @@ MIMO stands for Multiple Input Multiple Output. Simply, it is a technique to inc
 <img src="\lte_mbb\img\lte_mbb_dlmimo.png" width=100% height=100% />
 <br>
 
-Usually in industry standard, when engineer say Tx x Rx MIMO, they are referring to DL MIMO.
+?>Usually in industry standard, when engineer say TX x RX MIMO, they are referring to DL MIMO.
 
 1. 2 x 2 means: 2 TX in eNB, 2 RX in UE 
 
@@ -41,7 +41,7 @@ Usually in industry standard, when engineer say Tx x Rx MIMO, they are referring
 <img src="\lte_mbb\img\lte_mbb_ulmimo.png" width=100% height=100% />
 <br>
 
-Not many devices in LTE support UL MIMO. UL MIMO requires a lot of energy usage and demand for UL data is not as high as DL. 
+?>Not many devices in LTE support UL MIMO. UL MIMO requires a lot of energy usage and demand for UL data is not as high as DL. 
 
 1. 4 x 4 means: 4 TX in UE, 4 RX in eNB 
 

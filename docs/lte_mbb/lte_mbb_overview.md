@@ -7,19 +7,19 @@ Date Edited: 2022/02/08<br>
 
 #### UE Category
 
-Category information is used to allow the eNB to communicate effectively with all the UEs connected to it.  The ue-Category defines a combined uplink and downlink capability as specified in 3GPP TS36.306.
+Category information is used to allow the eNB to communicate effectively with all the UEs connected to it.  The ue-Category defines a combined uplink and downlink capability as specified in 3GPP. [1] [2]
 
-DL-SCH = Downlink shared channel<br>
-UL-SCH = Uplink shared channel<br>
-TTI = Transmission Time Interval<br>
+>DL-SCH = Downlink shared channel<br>
+>UL-SCH = Uplink shared channel<br>
+>TTI = Transmission Time Interval<br>
 
-Downlink physical layer parameter values set by the field ue-Category: [1]
+***Downlink physical layer parameter values set by the field ue-Category:*** [1]
 
 <br>
 <img src="\lte_mbb\img\lte_mbb_dluecat.png" width=100% height=100% />
 <br>
 
-Uplink physical layer parameter values set by the field ue-Category: [2]
+***Uplink physical layer parameter values set by the field ue-Category:*** [2]
 
 <br>
 <img src="\lte_mbb\img\lte_mbb_uluecat.png" width=100% height=100% />
@@ -41,7 +41,7 @@ and continued in a long table list in 3GPP.
 
 #### Supported Bandwidths
 
-The bandwidths defined by the standard are 1.4, 3, 5, 10, 15, and 20 MHz. The table below shows how many subcarriers and resource blocks there are in each bandwidth for uplink and downlink. 
+The bandwidths defined by the standard are <mark>1.4, 3, 5, 10, 15, and 20 MHz</mark>. The table below shows how many subcarriers and resource blocks there are in each bandwidth for uplink and downlink. 
 
 | Bandwidth  | Resource Blocks  | Subcarriers (downlink)  | Subcarriers (uplink)  |
 |------------|------------------|-------------------------|-----------------------|
@@ -56,7 +56,9 @@ The bandwidths defined by the standard are 1.4, 3, 5, 10, 15, and 20 MHz. The ta
 
 #### CA Band Combinations
 
-It's too long to list, refer 3GPP TS 36.306.
+It's too long to list, refer specifications for full list.
+
+?> Specs to refer: 3GPP TS 36.306
 
 ---
 

@@ -28,7 +28,7 @@ There are six time units in LTE: [1]
 
 So,
 
-    1ms = 30720 Ts
+?>1ms = 30720 Ts
 
 ---
 
@@ -40,8 +40,10 @@ Key points for FDD frame structure: [1]
 2. For full-duplex FDD, uplink and downlink frames are separated by frequency and are transmitted continuously and synchronously.
 3. For half-duplex FDD, the only difference is that a UE cannot receive while transmitting.
 
+Picture from [1]
+
 <br>
-<img src="\lte_mbb\img\lte_mbb_fddframe.png" width=100% height=100% />
+<img src="\lte_mbb\img\lte_mbb_fddframe.png" width=70% height=70% />
 <br>
 
 ---
@@ -54,17 +56,23 @@ Key points for TDD frame structure: [1]
 2. The locations of the uplink, downlink, and special subframes are determined by the uplink-downlink configuration.
 3. There are seven possible configurations given in the standard.
 
+Picture from [1]
+
 <br>
-<img src="\lte_mbb\img\lte_mbb_tddframe.png" width=100% height=100% />
+<img src="\lte_mbb\img\lte_mbb_tddframe.png" width=70% height=70% />
 <br>
 
-TDD Subframe Config: [2]
+***TDD Subframe Config:***
+
+Picture from [2]
 
 <br>
 <img src="\lte_mbb\img\lte_mbb_tddsubconfig.png" width=100% height=100% />
 <br>
 
-TDD Special Subframe Config: [2]
+***TDD Special Subframe Config:***
+
+Picture from [2]
 
 <br>
 <img src="\lte_mbb\img\lte_mbb_tddspsconfig.png" width=100% height=100% />
@@ -79,6 +87,8 @@ Key points for UL frame structure: [1]
 1. Uplink user transmissions consist of uplink user data (PUSCH), random-access requests (PRACH), user control channels (PUCCH), and sounding reference signals (SRS).
 2. FDD and TDD uplink transmissions have the same physical channels and signals. 
 3. The only difference is that TDD frames include a special subframe, part of which can be used for SRS and PRACH uplink transmissions.
+
+Picture from [1]
 
 <br>
 <img src="\lte_mbb\img\lte_mbb_ulframe.png" width=100% height=100% />

@@ -12,9 +12,15 @@ Date Edited: 2022/02/07<br>
 1. [Official 3GPP Website](https://www.3gpp.org/specifications/specification-numbering)
 2. [3GPP FTP](http://www.3gpp.org/ftp/specs/archive/)
 
+---
+
 #### 4G LTE 3GPP Specs Mapping
 
 Similar with 5G NR but change specs number from TS 38.XXX to TS 36.XXX.
+
+!> TODO: Update 4G related specs that not applicable in 5G
+
+---
 
 #### 5G NR 3GPP Specs Mapping
 
