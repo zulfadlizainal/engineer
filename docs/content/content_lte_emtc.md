@@ -24,7 +24,7 @@ Date Edited: 2022/02/14<br>
 - [Coverage Level (CE Level)](/lte_emtc/lte_emtc_featurealgo.md?id=Coverage-Level-CE-Level)<br>
 - [Coverage Enhancement Mode (CE Mode)](/lte_emtc/lte_emtc_featurealgo.md?id=Coverage-Enhancement-Mode-CE-Mode)<br>
 - [Normal and Enhance Coverage (NC, EC)](/lte_emtc/lte_emtc_featurealgo.md?id=Normal-and-Enhance-Coverage-NC-EC)<br>
-Evolved Discontinues Reception (eDRX) <br>
+- Evolved Discontinues Reception (eDRX) <br>
 - [Power Saving Mode (PSM)](/lte_emtc/lte_emtc_featurealgo.md?id=Power-Saving-Mode-PSM)<br>
 
 #### Layer 1: PHY
@@ -34,20 +34,20 @@ Evolved Discontinues Reception (eDRX) <br>
 - [MPDCCH](/lte_emtc/lte_emtc_layer1.md?id=MPDCCH)<br>
 - [Channel to RB Mapping](/lte_emtc/lte_emtc_layer1.md?id=Channel-to-RB-Mapping)<br>
 - [Narrowband Index](/lte_emtc/lte_emtc_layer1.md?id=Narrowband-Index)<br>
-Physical Channel Repetitions Impact <br>
-TBS/MCS <br>
+- Physical Channel Repetitions Impact <br>
+- TBS/MCS <br>
 - [No HARQ for UL PUSCH](/lte_emtc/lte_emtc_layer1.md?id=No-HARQ-for-UL-PUSCH)<br>
 
 #### Protocol and Procedures 
 
-MIB Repetitions <br>
-SIB1 BR Repetitions <br>
-Initial Access Procedure <br>
-Cell Selection <br>
-Random Access <br>
-CE Level Selection Criteria <br>
-CE Level Conversion <br>
-CE Level Switching in Connected Mode  <br>
+- [MIB Repetitions](/lte_emtc/lte_emtc_procedure.md?id=MIB-Repetitions)<br>
+- [SIB 1 BR Repetitions](/lte_emtc/lte_emtc_procedure.md?id=SIB-1-BR-Repetitions)<br>
+- Initial Access Procedure <br>
+- Cell Selection <br>
+- Random Access <br>
+- [CE Level Selection Criteria](/lte_emtc/lte_emtc_procedure.md?id=CE-Level-Selection-Criteria)<br>
+- [CE Level Conversion](/lte_emtc/lte_emtc_procedure.md?id=CE-Level-Conversion)<br>
+- [CE Level Switching in Connected Mode](/lte_emtc/lte_emtc_procedure.md?id=CE-Level-Switching-in-Connected-Mode)<br>
 
 #### Idle Mode Mobility 
  
