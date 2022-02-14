@@ -27,7 +27,7 @@ In MTC, measurement gap is needed even for Intra Frequency handover. Here is why
 Refer [1]
 
 <br>
-<img src="\lte_emtc\img\lte_emtc_cel.png" width=100% height=100% />
+<img src="\lte_emtc\img\lte_emtc_mgap.png" width=100% height=100% />
 <br>
 
 1. Same carrier frequency and cell bandwidths (Scenario A): an intra-frequency scenario; not measurement gap assisted.  
