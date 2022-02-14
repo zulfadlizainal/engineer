@@ -19,7 +19,7 @@ Refer [1] [2]
 <br>
 
 <br>
-<img src="\lte_emtc\img\lte_emtc_ulchmap.png" width=100% height=100% />
+<img src="\lte_emtc\img\lte_emtc_ulchmap.png" width=70% height=70% />
 <br>
 
 #### Physical Channel Repetitions Structures
@@ -56,7 +56,9 @@ Parameter mapping for physical channel repititions:
 2. It is a special type of PDCCH designed for eMTC operation. 
 3. MPDCCH using a very similar concept as EPDCCH in LTE. 
 
-***Basic Concept*** [3]
+***Basic Concept*** 
+
+Refer [3]
 
 1. MPDCCH using same concept as EPDCCH in LTE.
 2. MPDCCH are formed by the aggregation of ECCEs. 
@@ -67,7 +69,9 @@ Parameter mapping for physical channel repititions:
 7. MPDCCH can be transmitted in different set of NB Index if frequency hopping is enabled. Otherwise, it is always transmitted in the same narrowband index. 
 8. MPDCCH support both same subframe scheduling and cross subframe scheduling.
 
-***MPDCCH Format*** [4]
+***MPDCCH Format*** 
+
+Refer [4]
 
 | DCI Format   | Purpose                                 |
 |--------------|-----------------------------------------|
@@ -78,7 +82,9 @@ Parameter mapping for physical channel repititions:
 | Format 6-1B  | DL Scheduling                           |
 | Format 6-2   | Paging and Direct Indication Scheduling |
 
-***Enhanced Control Channel Element (ECCE)*** [5]
+***Enhanced Control Channel Element (ECCE)*** 
+
+Refer [5]
 
 1. Type of resource allocation for control channel. 
 2. Developed for EPDCCH 
@@ -86,10 +92,12 @@ Parameter mapping for physical channel repititions:
 4. Hence, ECCE is formed using available REs for PDSCH 
 
 <br>
-<img src="\lte_emtc\img\lte_emtc_ecce.png" width=100% height=100% />
+<img src="\lte_emtc\img\lte_emtc_ecce.png" width=70% height=70% />
 <br>
 
-***How M1 UE know size of MPDCCH*** [6] [7]
+***How M1 UE know size of MPDCCH*** 
+
+Refer [6] [7]
 
 1. MPDCCH in eMTC using the same concept as ECCE where the MPDCCH is formed using the PDSCH RE. 
 2. Since there is no PCFICH in eMTC, Cat M1 UE need an indication to know the size of MPDCCH for the UE to monitor. 
