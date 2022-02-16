@@ -1,13 +1,15 @@
 Topic: 4G LTE<br>
 Sub-Topic: eMTC<br>
 Date Written: 2019/05/17<br>
-Date Edited: 2022/02/11<br>
+Date Edited: 2022/02/16<br>
 
 ---
 
 #### 3GPP Roadmap
 
-References: [1] [2]
+References: [1]
+
+Picture from [2]
 
 <br>
 <img src="\lte_emtc\img\lte_emtc_3gpproadmap.png" width=100% height=100% />
@@ -62,7 +64,7 @@ Table version for easy copy:
 
 Since R8, 3GPP has define lower complexity UE categories to compliment IoT vision. However, since R13, not only UE complexity is being reduced but even the air interface is being modified to suits specific needs of IoT. [3]
 
-Why is it necessary to introduce specific architecture for IoT in air interface? 
+<mark>Why is it necessary to introduce specific architecture for IoT in air interface?</mark>
 
 >The first main focus of the new air interface is changing the operating bandwidth of eMTC and NB-IoT. IoT UE does not need to monitor or decode any PRB outside the IoT system bandwidth. With this Bandwidth Low reduction, extra saving of power consumption can be achieved hence battery life savings can be up to 10 years. 
 
@@ -94,9 +96,9 @@ Key Concept: [4] [5] [6] [7]
 3. Use same MIB and SIBs 
 4. Use same physical channel structure except LTE control channel 
 
+?>eMTC PRB Location: Based on Narrowband Index
 
-    eMTC PRB Location: Based on Narrowband Index
-    eMTC PCI Design: Same PCI with LTE
+?>eMTC PCI Design: Same PCI with LTE
 
 ---
 

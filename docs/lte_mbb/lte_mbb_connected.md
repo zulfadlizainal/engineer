@@ -32,7 +32,7 @@ UE will report below measurement events whenever any criteria of connected mode 
 | Event H2    | The Aerial UE height  is below a threshold                                                                                          |
 
 
-This is a good website to explain this in animation -> [Sqimway](https://www.sqimway.com/lte_event.php). [3]
+<mark>This is a good website to explain this in animation -> [Sqimway](https://www.sqimway.com/lte_event.php).</mark> [3]
 
 ---
 

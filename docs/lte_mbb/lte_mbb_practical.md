@@ -1,7 +1,7 @@
 Topic: 4G LTE<br>
 Sub-Topic: MBB<br>
 Date Written: 2019/02/28<br>
-Date Edited: 2022/02/11<br>
+Date Edited: 2022/02/16<br>
 
 ---
 
@@ -47,6 +47,8 @@ All of this metric is calculated based on stardard deployed in most drive test a
 
 Layer mapping not related to transmission mode. Transmission mode 2 can have 2 or 4 layer, but all layer is transmitting same data (Transmit Diversity). [2]
 
+Table from [3]
+
 <br>
 <img src="\lte_mbb\img\lte_mbb_txlayer.png" width=100% height=100% />
 <br>
@@ -81,7 +83,7 @@ Below are method of reading antenna pattern based on usual antenna pattern data 
 
 #### Simulate Coverage for Train Lines
 
-The purpose of this simulation is to calculate the coverage of LTE at train lines based on path loss model.
+The purpose of this simulation is to <mark>calculate the coverage of LTE at train lines based on path loss model.</mark>
 
 <br>
 <img src="\lte_mbb\img\lte_mbb_covtrain.png" width=50% height=50% />
@@ -174,7 +176,7 @@ How to calculate: For every location point, find the vertical angle in reflects 
 
 #### Why Too Big CIO Causing Ping Pong Handover
 
-Too big CIO will cause ping pong handover. It is because TT trigger too fast compared to actual cross point.
+Too big CIO will cause ping pong handover. It is because Time to Trigger (TTT) too fast compared to actual cross point.
 
 <br>
 <img src="\lte_mbb\img\lte_mbb_ciopingpong.png" width=100% height=100% />
@@ -194,3 +196,4 @@ Too big CIO will cause ping pong handover. It is because TT trigger too fast com
 
 1. Accuver XCAP
 2. 3GPP TS 36.211
+3. [Sharetechnote](https://www.sharetechnote.com/html/Handbook_LTE_TransmissionMode.html)

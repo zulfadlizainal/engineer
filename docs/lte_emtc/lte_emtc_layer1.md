@@ -1,7 +1,7 @@
 Topic: 4G LTE<br>
 Sub-Topic: eMTC<br>
 Date Written: 2019/05/17<br>
-Date Edited: 2022/02/14<br>
+Date Edited: 2022/02/16<br>
 
 ---
 
@@ -91,11 +91,13 @@ Refer [5]
 3. Starting Rel 11, CCE unable to accommodate with maximum PCFICH  is 3 symbol per subframe 
 4. Hence, ECCE is formed using available REs for PDSCH 
 
+Picture from [5]
+
 <br>
 <img src="\lte_emtc\img\lte_emtc_ecce.png" width=70% height=70% />
 <br>
 
-***How M1 UE know size of MPDCCH*** 
+<mark>How M1 UE know size of MPDCCH?</mark>
 
 Refer [6] [7]
 
@@ -163,6 +165,8 @@ Refer [10] [11]
 
 1. No ACK/NACK transmission for PUSCH in eMTC.
 2. Retransmission of PUSCH is supported in PUSCH eMTC. 
+
+Picture from [11]
 
 <br>
 <img src="\lte_emtc\img\lte_emtc_ulharq.png" width=100% height=100% />

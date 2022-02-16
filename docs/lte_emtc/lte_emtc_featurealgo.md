@@ -1,7 +1,7 @@
 Topic: 4G LTE<br>
 Sub-Topic: eMTC<br>
 Date Written: 2019/05/17<br>
-Date Edited: 2022/02/12<br>
+Date Edited: 2022/02/16<br>
 
 ---
 
@@ -11,6 +11,8 @@ Date Edited: 2022/02/12<br>
 2. Dividing the coverage allowing UE/eNB to selects an appropriate coverage level based on the signal strength to provide reliable transmission in poor RF without trading off good performance in good RF. 
 3. Four CE Level available in eMTC defined based on RSRP range. 
 4. To achieve deep coverage, number of repetitions can be set separately for different coverage areas. 
+
+?> Different CEL have different PHY channel repettition parameter set.
 
 <br>
 <img src="\lte_emtc\img\lte_emtc_cel.png" width=100% height=100% />
@@ -24,6 +26,8 @@ Date Edited: 2022/02/12<br>
 2. Dividing the coverage allowing UE/eNB to selects an appropriate coverage level based on the signal strength to provide reliable transmission in poor RF without trading off good performance in good RF. 
 3. Two CE Modes in connected mode are defined by 3GPP in regards for different motivations.  
 
+?> Concept of CE Mode almost similar with CEL. However, this concept focus on connected mode part. UE should be able to support certain CE Mode to use this concept.
+
 <br>
 <img src="\lte_emtc\img\lte_emtc_cem.png" width=100% height=100% />
 <br>
@@ -35,6 +39,8 @@ Date Edited: 2022/02/12<br>
 1. In Release 13, two types of coverage mode is being defined by 3GPP: Normal Coverage and Enhanced Coverage. 
 2. The motivation is to have capability to control cell selection region based on UE capability (BL/CE UE, BL/CE Mode B UE.
 3. The mechanism being used is S criterion rule by utilizing Qrxlevmin and Qqualmin indicator. 
+
+?> This concept focus on Cell Selection procedure.
 
 ***Basic Concepts*** [1] [2] [3] [4]
 

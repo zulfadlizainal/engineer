@@ -1,20 +1,20 @@
 Topic: 4G LTE<br>
 Sub-Topic: MBB<br>
 Date Written: 2019/03/03<br>
-Date Edited: 2022/02/09<br>
+Date Edited: 2022/02/16<br>
 
 ---
 
 #### MIB 
 
-MIB contains below information. From this, UE know how to operate for next step (PHICH -> PDCCH for SIB -> SIB -> RACH -> Connected Mode).
+MIB contains below information. From this, UE know how to operate for next step <mark>(PHICH -> PDCCH for SIB -> SIB -> RACH -> Connected Mode)</mark>.
 
 1. DL Bandwidth
 2. Number of Transmit Antenna
 3. System Frame Number (SFN)
 4. PHICH Configuration
 
-Frequency x Time Domain:
+***Frequency x Time Domain:***
 
     Frequency: LTE always use 6 PRB for MIB in the middle of the bandwidth (center frequency).
     Time: Transmit every 40 ms , repeat every 10 ms
