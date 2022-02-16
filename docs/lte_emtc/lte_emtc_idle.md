@@ -7,7 +7,9 @@ Date Edited: 2022/02/14<br>
 
 #### Features to 3GPP Mapping
 
-Up to Rel 13. #TODO Need to update.
+Up to Rel 13. [1]
+
+!> TODO Need to update.
 
 | Features                               | eMTC Cat-M1                     | NB-IoT Cat NB-1                 |
 |----------------------------------------|---------------------------------|---------------------------------|
@@ -19,7 +21,7 @@ Up to Rel 13. #TODO Need to update.
 
 #### Important Parameter Addition
 
-Important addition of eMTC parameter up to Rel 13.
+Important addition of eMTC parameter up to Rel 13. [1]
 
 ***SIB 1 BR***
     
@@ -77,4 +79,4 @@ Important addition of eMTC parameter up to Rel 13.
 
 #### References
 
-1. 3GPP
+1. 3GPP TS 36.133 Section 4

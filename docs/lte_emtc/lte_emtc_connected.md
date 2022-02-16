@@ -7,12 +7,14 @@ Date Edited: 2022/02/14<br>
 
 #### Features to 3GPP Mapping
 
-Up to Rel 13. #TODO Need to update.
+Up to Rel 13. [5]
+
+!> TODO Need to update.
 
 | Features                           | eMTC Cat-M1                   | NB-IoT Cat NB-1  |
 |------------------------------------|-------------------------------|------------------|
 |  Intra Frequency FDD-FDD Handover  | 3GPP TS 36.133 Sec 5.5.2.1-2  |                  |
-| Intra Frequency TDD-TDD Handover   | 3GPP TS 36.133 Sec 5.5.2.3    |                  |
+|  Intra Frequency TDD-TDD Handover  | 3GPP TS 36.133 Sec 5.5.2.3    |                  |
 |  Inter Frequency FDD-TDD Handover  |                               |                  |
 |  Inter Frequency TDD-FDD Handover  |                               |                  |
 
@@ -20,7 +22,7 @@ Up to Rel 13. #TODO Need to update.
 
 In MTC, measurement gap is supported starting on Release 14 (FeMTC). Measurement Gap is to support measurement of other carrier before start doing handover. 
 
-In MTC, measurement gap is needed even for Intra Frequency handover. Here is why (TS 36.300 Section 10.1.3): BL/CE UE operating frequency is different with cell operating frequency even both source and target cell having same EARFCN. 
+<mark>In MTC, measurement gap is needed even for Intra Frequency handover. Here is why: BL/CE UE operating frequency is different with cell operating frequency even both source and target cell having same EARFCN.</mark> [1]
 
 ***Measurement Gap Scenarios*** 
 
@@ -44,7 +46,7 @@ Refer [1]
 2. Measurement Gap is Released: When eNodeB send Gap Release IE in RRCConnectionReconfiguration. 
 3. ENodeB know UE need to do measurement gap when UE send Event A2 to eNodeB. 
 
-***Why UE cannot directly do measurement gap when event A2 threshold is triggered?*** 
+<mark>Why UE cannot directly do measurement gap when event A2 threshold is triggered?</mark>
 
 Because, UE in connected mode must be controlled by eNodeB. ENodeB need to know when is the time to schedule UE in DL and UL, hence ENodeB will coordinate when a UE should do measurement gap. 
 
@@ -52,16 +54,17 @@ Because, UE in connected mode must be controlled by eNodeB. ENodeB need to know 
 
 MGAP Pattern ID:  [2] [3] [4]
 
-- Gp0: Every 40ms (MGL), Gap for 6ms (MGRP), start based on Gap Offset 
-- Gp1: Every 80ms (MGL), Gap for 6ms (MGRP), start based on Gap Offset 
-- Gp2: Every 40ms (MGL), Gap for 3ms (MGRP), start based on Gap Offset 
-- Gp3: Every 80ms (MGL), Gap for 3ms (MGRP), start based on Gap Offset 
+    Gp0: Every 40ms (MGL), Gap for 6ms (MGRP), start based on Gap Offset 
+    Gp1: Every 80ms (MGL), Gap for 6ms (MGRP), start based on Gap Offset 
+    Gp2: Every 40ms (MGL), Gap for 3ms (MGRP), start based on Gap Offset 
+    Gp3: Every 80ms (MGL), Gap for 3ms (MGRP), start based on Gap Offset 
 
 ---
 
 #### References
 
 1. 3GPP TS 36.300 Section 10.1.3
-2. TS 36.133 Section 8.1.2
+2. 3GPP TS 36.133 Section 8.1.2
 3. [Sharetechnote](http://www.sharetechnote.com/html/Handbook_LTE_MultiCell_Measurement_LTE.html#Measurement_GAP)
 4. [Sqimway](https://www.sqimway.com/lte_meas_gaps.php) -> Good visualization
+5. 3GPP TS 36.133 Section 5

@@ -1,7 +1,7 @@
 Topic: 4G LTE<br>
 Sub-Topic: eMTC<br>
 Date Written: 2019/05/17<br>
-Date Edited: 2022/02/14<br>
+Date Edited: 2022/02/16<br>
 
 ---
 
@@ -98,15 +98,13 @@ Based on 3GPP, RSRP threshold for CE level is mapped into RSRP range information
 <img src="\lte_emtc\img\lte_emtc_ceconv2.png" width=100% height=100% />
 <br>
 
-In some cases, vendors and UE might have different understanding on how to covert this value to a CE level value. For example, in this case TEMS using lower limit in their tool while XCAP using upper limit. 3GPP only define a range of RSRP for each index, maybe to save some index space. [8]
+!> In some cases, vendors and UE might have different understanding on how to covert this value to a CE level value. For example, in this case TEMS using lower limit in their tool while XCAP using upper limit. 3GPP only define a range of RSRP for each index, maybe to save some index space. [8]
 
 <br>
 <img src="\lte_emtc\img\lte_emtc_ceconv3.png" width=100% height=100% />
 <br>
 
-***Easy Tips***
-
-If SIB 2 Threshold says 15, Change CE Level when RSRP < -126dBm 
+?> Easy Tips: If SIB 2 Threshold says 15, Change CE Level when RSRP < -126dBm 
 
 | CE Level Change Value  | SIB 2 IE  |
 |------------------------|-----------|
