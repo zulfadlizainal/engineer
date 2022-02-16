@@ -192,6 +192,28 @@ Too big CIO will cause ping pong handover. It is because Time to Trigger (TTT) t
 
 ---
 
+#### Categorize Measurement Gap Scenario
+
+We can categorize analysis approach for MGAP analysis based on these category: 
+
+1. Unnecessary MGAP: MGAP Triggered but no handover.
+2. Too Early MGAP: MGAP Triggered too early before handover.
+3. Too Late MGAP: MGAP Triggered too late after NCell is available.
+
+<br>
+<img src="\lte_mbb\img\lte_mbb_mgap.png" width=100% height=100% />
+<br>
+
+<br>
+<img src="\lte_mbb\img\lte_mbb_mgap2.png" width=100% height=100% />
+<br>
+
+<br>
+<img src="\lte_mbb\img\lte_mbb_mgap3.png" width=100% height=100% />
+<br>
+
+---
+
 #### References
 
 1. Accuver XCAP

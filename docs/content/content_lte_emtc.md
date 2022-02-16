@@ -45,6 +45,7 @@ Date Edited: 2022/02/14<br>
 - Initial Access Procedure <br>
 - Cell Selection <br>
 - Random Access <br>
+- Random Abort Operation <br>
 - [CE Level Selection Criteria](/lte_emtc/lte_emtc_procedure.md?id=CE-Level-Selection-Criteria)<br>
 - [CE Level Conversion](/lte_emtc/lte_emtc_procedure.md?id=CE-Level-Conversion)<br>
 - [CE Level Switching in Connected Mode](/lte_emtc/lte_emtc_procedure.md?id=CE-Level-Switching-in-Connected-Mode)<br>
@@ -65,12 +66,9 @@ Date Edited: 2022/02/14<br>
 
 #### Practical Analysis 
 
-Optimize Accessibility Performance <br>
-Optimize Throughput Performance <br>
-Optimize Repetition Number <br>
-Optimize CE Level <br>
-Calculate PDSCH Used Repetitions (For Dynamic PDSCH Rep) <br>
-Analyze Measurement Gap Category <br>
-Check eDRX Settings <br>
-Check UL Retrans <br>
-Check Operation for RACH in eMTC <br>
+- [Optimize Accessibility Performance](/lte_emtc/lte_emtc_practical.md?id=Optimize-Accessibility-Performance)<br>
+- [Optimize Throughput Performance](/lte_emtc/lte_emtc_practical.md?id=Optimize-Throughput-Performance)<br>
+- [Optimize Repetition Number & CE Level Threshold](/lte_emtc/lte_emtc_practical.md?id=optimize-repetition-number-amp-ce-level-threshold)<br>
+- Calculate PDSCH Repetitions <br>
+- [Calculate PUSCH Repetitions & Retransmission](/lte_emtc/lte_emtc_practical.md?id=calculate-pusch-repetitions-amp-retransmission)<br>
+- [Check eDRX Settings](/lte_emtc/lte_emtc_practical.md?id=Check-eDRX-Settings)<br>

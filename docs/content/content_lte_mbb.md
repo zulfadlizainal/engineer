@@ -107,3 +107,4 @@ Date Edited: 2022/02/11<br>
 - [Simulate Coverage for Train Lines](/lte_mbb/lte_mbb_practical.md?id=Simulate-Coverage-for-Train-Lines)<br>
 - [Why Too Big CIO Causing Ping Pong Handover](/lte_mbb/lte_mbb_practical.md?id=Why-Too-Big-CIO-Causing-Ping-Pong-Handover)<br>
 - [Why A2MG Change Will Only Impact Mobility Users](/lte_mbb/lte_mbb_practical.md?id=Why-A2MG-Change-Will-Only-Impact-Mobility-Users)<br>
+- [Categorize Measurement Gap Scenario](/lte_mbb/lte_mbb_practical.md?id=Categorize-Measurement-Gap-Scenario)<br>
