@@ -72,6 +72,16 @@ Since R8, 3GPP has define lower complexity UE categories to compliment IoT visio
 
 ---
 
+#### Cellular IoT Network Architecture
+
+Currently no changes required in EPS to deploy eMTC and NB IoT in LTE system. Implementation of both eMTC and NB IoT can be done in the LTE carrier.
+
+<br>
+<img src="\lte_emtc\img\lte_emtc_iotnetarc.png" width=100% height=100% />
+<br>
+
+---
+
 #### Carrier Deployment Mode
 
 Key Concept: [4] [5] [6] [7]

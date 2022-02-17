@@ -1,7 +1,7 @@
 Topic: 4G LTE<br>
 Sub-Topic: eMTC<br>
 Date Written: 2019/05/17<br>
-Date Edited: 2022/02/14<br>
+Date Edited: 2022/02/17<br>
 
 ---
 
@@ -11,6 +11,7 @@ Date Edited: 2022/02/14<br>
 - [3GPP Roadmap](/lte_emtc/lte_emtc_overview.md?id=3GPP-Roadmap)<br>
 - [UE Category](/lte_emtc/lte_emtc_overview.md?id=UE-Category)<br>
 - [Redefined Air Interface](/lte_emtc/lte_emtc_overview.md?id=Redefined-Air-Interface)<br>
+- [Cellular IoT Network Architecture](/lte_emtc/lte_emtc_overview.md?id=Cellular-IoT-Network-Architecture)<br>
 - [Carrier Deployment Mode](/lte_emtc/lte_emtc_overview.md?id=Carrier-Deployment-Mode)<br>
 
 #### Frame Structure 
@@ -42,6 +43,7 @@ Date Edited: 2022/02/14<br>
 
 - [MIB Repetitions](/lte_emtc/lte_emtc_procedure.md?id=MIB-Repetitions)<br>
 - [SIB 1 BR Repetitions](/lte_emtc/lte_emtc_procedure.md?id=SIB-1-BR-Repetitions)<br>
+- [Other SIBs Repetitions](/lte_emtc/lte_emtc_procedure.md?id=Other-SIBs-Repetitions)<br>
 - Initial Access Procedure <br>
 - Cell Selection <br>
 - Random Access <br>

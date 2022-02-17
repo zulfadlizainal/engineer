@@ -76,6 +76,16 @@ Table for easy copy:
 
 ---
 
+#### Other SIBs Repetitions
+
+The SIB1 BR carries the scheduling information of all the SIBs and mapping between SIBs and SI messages. Other SIBs repetition is transmitted in SIB 1 BR. [9] [10] [11]
+
+<br>
+<img src="\lte_emtc\img\lte_emtc_othersib.png" width=100% height=100% />
+<br>
+
+---
+
 #### CE Level Selection Criteria
 
 The important thing is how UE consider itself to be in specific CE based on RSRP measurement. Based on 3GPP, UE shall consider to be in the designated CE Level when measured RSRP is < than Threshold in Higher Layer. It means if your index value translated into table range, when UE RSRP is less than the range, UE should consider itself to be in lower CE Level. [6] 
@@ -175,3 +185,6 @@ Different vendor might use different measurement event or no measurement event a
 6. 3GPP TS 36.321 Section 5.1.1
 7. 3GPP TS 36.331
 8. 3GPP TS 36.133 Section 9.1.4
+9. 3GPP TS 36.331 Section 6.2.2.2
+10. 3GPP TS 36.211 Section 5.2.43
+11. 3GPP TS 36.213 Section 7.1.7.2.1
