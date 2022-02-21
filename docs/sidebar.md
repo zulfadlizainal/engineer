@@ -6,9 +6,10 @@
 - [4G LTE MBB](/content/content_lte_mbb.md)
 - [3GPP Specs](/3gpp/3gpp.md)
 
-<i class="material-icons">storage</i> <b>Computer and Software</b><br>
+<!-- <i class="material-icons">storage</i> <b>Computing</b><br>
 
 - [Data](/content/content_loading.md)
+- [Algorithm](/content/content_loading.md)
 - [Programming](/content/content_loading.md)
 
 <i class="material-icons">psychology</i> <b>Artificial Intelligence</b><br>
@@ -31,7 +32,7 @@
 
 <i class="material-icons">person_outline</i> <b>Contact</b><br>
 
-- [About Me](/aboutme/aboutme.md)
+- [About Me](/aboutme/aboutme.md) -->
 
 <br><a href="https://www.buymeacoffee.com/zulfadlizainal" target="blank"><img src="https://cdn.ko-fi.com/cdn/kofi2.png?v=2" alt="Buy Me A Coffee" height="50" width="170"></a>
 
