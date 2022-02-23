@@ -28,11 +28,11 @@
 
 <i class="material-icons">account_tree</i> <b>Others</b><br>
 
-- [Logical Thinking](/content/content_loading.md)
+- [Logical Thinking](/content/content_loading.md) -->
 
 <i class="material-icons">person_outline</i> <b>Contact</b><br>
 
-- [About Me](/aboutme/aboutme.md) -->
+- [About Me](/aboutme/aboutme.md)
 
 <br><a href="https://www.buymeacoffee.com/zulfadlizainal" target="blank"><img src="https://cdn.ko-fi.com/cdn/kofi2.png?v=2" alt="Buy Me A Coffee" height="50" width="170"></a>
 
