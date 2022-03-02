@@ -71,6 +71,6 @@ Date Edited: 2022/03/02<br>
 - [Optimize Accessibility Performance](/lte_emtc/lte_emtc_practical.md?id=Optimize-Accessibility-Performance)<br>
 - [Optimize Throughput Performance](/lte_emtc/lte_emtc_practical.md?id=Optimize-Throughput-Performance)<br>
 - [Optimize Repetition Number & CE Level Threshold](/lte_emtc/lte_emtc_practical.md?id=optimize-repetition-number-amp-ce-level-threshold)<br>
-- Calculate PDSCH Repetitions <br>
+- [Calculate PDSCH Repetitions](/lte_emtc/lte_emtc_practical.md?id=Calculate-PDSCH-Repetitions)<br>
 - [Calculate PUSCH Repetitions & Retransmission](/lte_emtc/lte_emtc_practical.md?id=calculate-pusch-repetitions-amp-retransmission)<br>
 - [Check eDRX Settings](/lte_emtc/lte_emtc_practical.md?id=Check-eDRX-Settings)<br>

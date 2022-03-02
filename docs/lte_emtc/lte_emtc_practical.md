@@ -102,6 +102,22 @@ Example of repetition parameter change method based on try and error:
 
 ---
 
+#### Calculate PDSCH Repetitions
+
+<br>
+<img src="\lte_emtc\img\lte_emtc_pdschrep.png" width=100% height=100% />
+<br>
+
+<br>
+<img src="\lte_emtc\img\lte_emtc_pdschrep2.png" width=100% height=100% />
+<br>
+
+<br>
+<img src="\lte_emtc\img\lte_emtc_pdschrep3.png" width=100% height=100% />
+<br>
+
+---
+
 #### Calculate PUSCH Repetitions & Retransmission
 
 Refer [1] [2]
