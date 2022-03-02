@@ -47,7 +47,7 @@ Date Edited: 2022/02/17<br>
 - Initial Access Procedure <br>
 - Cell Selection <br>
 - Random Access <br>
-- Random Abort Operation <br>
+- [RACH Abort](/lte_emtc/lte_emtc_procedure.md?id=RACH-Abort)<br>
 - [CE Level Selection Criteria](/lte_emtc/lte_emtc_procedure.md?id=CE-Level-Selection-Criteria)<br>
 - [CE Level Conversion](/lte_emtc/lte_emtc_procedure.md?id=CE-Level-Conversion)<br>
 - [CE Level Switching in Connected Mode](/lte_emtc/lte_emtc_procedure.md?id=CE-Level-Switching-in-Connected-Mode)<br>

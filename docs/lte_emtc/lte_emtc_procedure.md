@@ -86,6 +86,80 @@ The SIB1 BR carries the scheduling information of all the SIBs and mapping betwe
 
 ---
 
+#### RACH Abort
+
+RACH abort operation is based on RACH reason. Different RACH reason will have different abort mechanism.
+
+!> Information above was learnt from actual field logs. Unable to find exact description in 3GPP.
+
+RACH Abort Rules:
+
+1. If RACH Reason  = <mark>Connection Request, abort is based on T300 timer.</mark>
+2. If RACH Reason  = <mark>UL Data Arrival, abort is based on PREAMBLE_TRANSMISSION_COUNTER.</mark>
+
+<br>
+<img src="\lte_emtc\img\lte_emtc_rachabort.png" width=100% height=100% />
+<br>
+
+***Important Parameters:*** [12]
+
+Important SIB2 Parameters:
+
+    preambleTransMax-CE-r13
+    CE0 maxNumPreambleAttemptCE-r13
+    CE1 maxNumPreambleAttemptCE-r13
+    T300
+
+Important UE Internal Counter mentioned in 3GPP:
+
+    PREAMBLE_TRANSMISSION_COUNTER
+    PREAMBLE_TRANSMISSION_COUNTER_CE
+
+***Rules for RACH Abort Operation:*** [12]
+
+PREAMBLE_TRANSMISSION_COUNTER Rules:
+    
+1. PREAMBLE_TRANSMISSION_COUNTER will increase when Failure at MSG2 or Failure at MSG4 due to CT timer expired happen.
+2. PREAMBLE_TRANSMISSION_COUNTER will <mark>not reset</mark> even it reached to preambleTransMax-CE-r13.
+
+PREAMBLE_TRANSMISSION_COUNTER_CE Rules:
+    
+1. PREAMBLE_TRANSMISSION_COUNTER_CE will only increase if Failure at MSG2 happen.
+2. UE will change to higher CE if possible when PREAMBLE_TRANSMISSION_COUNTER_CE reached maxNumPreambleAttemptCE-r13.
+3. PREAMBLE_TRANSMISSION_COUNTER_CE will <mark>reset</mark> whenever it reached to maxNumPreambleAttemptCE-r13.
+
+***Example 1: RACH Reason = Connection Request***
+
+    preambleTransMax-CE-r13 = n8
+    CE0 maxNumPreambleAttemptCE-r13 = n5
+    CE1 maxNumPreambleAttemptCE-r13 = n5
+    T300 = 2000ms
+
+<br>
+<img src="\lte_emtc\img\lte_emtc_rachabortconnreq.png" width=100% height=100% />
+<br>
+
+<br>
+<img src="\lte_emtc\img\lte_emtc_rachabortconnreq2.png" width=100% height=100% />
+<br>
+
+<br>
+<img src="\lte_emtc\img\lte_emtc_rachabortconnreq3.png" width=100% height=100% />
+<br>
+
+***Example 2: RACH Reason = UL Data Arrival***
+
+    preambleTransMax-CE-r13 = n8
+    CE0 maxNumPreambleAttemptCE-r13 = n5
+    CE1 maxNumPreambleAttemptCE-r13 = n5
+    T300 = 2000ms
+
+<br>
+<img src="\lte_emtc\img\lte_emtc_rachabortdataarr.png" width=100% height=100% />
+<br>
+
+---
+
 #### CE Level Selection Criteria
 
 The important thing is how UE consider itself to be in specific CE based on RSRP measurement. Based on 3GPP, UE shall consider to be in the designated CE Level when measured RSRP is < than Threshold in Higher Layer. It means if your index value translated into table range, when UE RSRP is less than the range, UE should consider itself to be in lower CE Level. [6] 
@@ -188,3 +262,4 @@ Different vendor might use different measurement event or no measurement event a
 9. 3GPP TS 36.331 Section 6.2.2.2
 10. 3GPP TS 36.211 Section 5.2.43
 11. 3GPP TS 36.213 Section 7.1.7.2.1
+12. 3GPP TS 26.321 Section 5.1.4, 5.1.5
