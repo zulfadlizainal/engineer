@@ -104,6 +104,10 @@ Example of repetition parameter change method based on try and error:
 
 #### Calculate PDSCH Repetitions
 
+To calculate PDSCH repetitions on eMTC, first need to filter PDSCH type by C-RNTI.
+
+Seperate data by HARQ process. 
+
 <br>
 <img src="\lte_emtc\img\lte_emtc_pdschrep.png" width=100% height=100% />
 <br>
