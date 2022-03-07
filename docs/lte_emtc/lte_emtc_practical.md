@@ -104,17 +104,33 @@ Example of repetition parameter change method based on try and error:
 
 #### Calculate PDSCH Repetitions
 
-To calculate PDSCH repetitions on eMTC, first need to filter PDSCH type by C-RNTI.
+Steps to calculate PDSCH Repetitions using TTI data:
 
-Seperate data by HARQ process. 
+1. Filter only PDSCH for <mark>C-RNTI</mark>.
+2. Seperate data by <mark>HARQ ID</mark> - If data failed to be decoded, it will be retransmitted in the same HARQ ID with new NDI.
 
 <br>
 <img src="\lte_emtc\img\lte_emtc_pdschrep.png" width=100% height=100% />
 <br>
 
+3. New data set is indicated based on <mark>NDI</mark> toggle. New data indicated when NDI is toggled between 0 and 1 in the same HARQ ID.
+
+?> If there is 4 TTIs in the same NDI, it means 4 PDSCH repetitions. 
+
 <br>
 <img src="\lte_emtc\img\lte_emtc_pdschrep2.png" width=100% height=100% />
 <br>
+
+4. Data decoding is verified through <mark>CRC result</mark>.
+
+
+    If CRC passed = Decoding success
+    If CRC failed = Decoding failed
+
+5. Data will not be discarded by UE if data is first UE data.
+
+!> When data is repeated data that being successfully decoded in previous TTI, CRC result will failed and UE will discard that data. 
+
 
 <br>
 <img src="\lte_emtc\img\lte_emtc_pdschrep3.png" width=100% height=100% />
