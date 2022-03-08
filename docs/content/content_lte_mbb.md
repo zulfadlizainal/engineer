@@ -1,7 +1,7 @@
 Topic: 4G LTE<br>
 Sub-Topic: MBB<br>
 Date Written: 2019/02/26<br>
-Date Edited: 2022/02/11<br>
+Date Edited: 2022/03/08<br>
 
 ---
 
@@ -36,9 +36,9 @@ Date Edited: 2022/02/11<br>
 - [MIMO Concept](/lte_mbb/lte_mbb_featurealgo.md?id=MIMO-Concept)<br>
 - Massive MIMO<br>
 - Beamforming<br>
-- UL Power Control for PRACH<br> 
-- UL Power Control for PUCCH<br> 
-- UL Power Control for PUSCH<br> 
+- [UL Power Control for PRACH](/lte_mbb/lte_mbb_featurealgo.md?id=UL-Power-Control-for-PRACH)<br>
+- UL Power Control for PUCCH<br>
+- [UL Power Control for PUSCH](/lte_mbb/lte_mbb_featurealgo.md?id=UL-Power-Control-for-PUSCH)<br>
 - Idle Mode Mobility Load Balancing (IMLB)<br> 
 - Connected Mode Mobility Load Balancing (MLB)<br> 
 - Mobility Robustness Optimization (MRO)<br> 
