@@ -101,6 +101,27 @@ Key Concept: [1]
 
 ---
 
+#### NPBCH
+
+Key Concept: [1]
+
+1. NPBCH carries the Narrowband Master Information Block (MIB-NB).
+2. The MIB-NB contains 34 bits and is transmitted over a time period of 640ms, i.e. 64 radio frames.
+
+!> Transmission of Master Information Block (MIB-NB)
+
+!> Uses Subframe #0 of every radio frame
+
+!> MIB-NB TTI is 640 ms
+
+***Subframe carrying NPBCH - Transmitted in Subframe #0 every 640ms***
+
+<br>
+<img src="\lte_nbiot\img\lte_nbiot_npbch.png" width=100% height=100% />
+<br>
+
+---
+
 #### References
 
 1. [Rohde & Schwarz](https://cdn.rohde-schwarz.com/pws/dl_downloads/dl_application/application_notes/1ma266/1MA266_0e_NB_IoT.pdf)
