@@ -36,12 +36,11 @@ Anchor and Non Anchor Carrier  <br>
 - [Physical Channel Mapping](/lte_nbiot/lte_nbiot_layer1.md?id=Physical-Channel-Mapping)<br>
 - [NPSS and NSSS](/lte_nbiot/lte_nbiot_layer1.md?id=NPSS-and-NSSS)<br>
 - [NRS](/lte_nbiot/lte_nbiot_layer1.md?id=NRS)<br>
-NRS  <br>
-NPBCH  <br>
+- [NPBCH](/lte_nbiot/lte_nbiot_layer1.md?id=NPBCH)<br>
+- [NPDCCH](/lte_nbiot/lte_nbiot_layer1.md?id=NPDCCH)<br>
 NPRACH: UL Frame  <br>
 NPRACH: Resource Design   <br>
 NPRACH: Indication UE Support MSG3 Multitone  <br>
-NPDCCH  <br>
 NPDSCH  <br>
 NPUSCH  <br>
 Impact Physical Channel Repetitions  <br>

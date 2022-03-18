@@ -122,7 +122,48 @@ Key Concept: [1]
 
 ---
 
+#### NPDCCH
+
+Key Concept: [1]
+
+1. NPDCCH stands for Narrowband Physical Downlink Control Channel.
+2. NPDCCH carries DCI format indicating downlink scheduling, UL Grant, and scheduling for paging and direct indication.
+
+***NPDCCH Subframe Design:***
+
+<mark>Assuming In Band Deployment with LTE FDD DL having CF1 Format 3 for PDCCH and using 2 Antenna port for CRS.</mark>
+
+<br>
+<img src="\lte_nbiot\img\lte_nbiot_npdcch.png" width=100% height=100% />
+<br>
+
+<mark>NPDCCH Format</mark> [3]
+
+| NPDCCH Format | Number of NCCEs (NCCE Aggregation) |
+|---------------|------------------------------------|
+| Format 0      | 1 NCCE used in a subframe          |
+| Format 1      | 2 NCCE used in a subframe          |
+
+<mark>DCI Format</mark> [4]
+
+| DCI Format | Purpose                               |
+|------------|---------------------------------------|
+| N0         | Schedule Uplink Transmission          |
+| N1         | Schedule Downlink Transmission        |
+| N2         | Schedule Paging and Direct Indication |
+
+***Subframe allocation for NPDCCH***
+
+<br>
+<img src="\lte_nbiot\img\lte_nbiot_npdcchsuballoc.png" width=100% height=100% />
+<br>
+
+
+---
+
 #### References
 
 1. [Rohde & Schwarz](https://cdn.rohde-schwarz.com/pws/dl_downloads/dl_application/application_notes/1ma266/1MA266_0e_NB_IoT.pdf)
 2. Intel, CIoT Presentation for IEEE Globecom 2016
+3. Keysight Technologies, Cellular Technology Connecting the Internet of Things
+4. 3GPP TS 36.212 Section 6.4.3
