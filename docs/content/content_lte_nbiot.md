@@ -1,22 +1,18 @@
 Topic: 4G LTE<br>
 Sub-Topic: NB-IoT<br>
 Date Written: 2019/02/26<br>
-Date Edited: 2022/02/06<br>
+Date Edited: 2022/03/18<br>
 
 ---
 
 ### 4G LTE Narrowband Internet of Things (NB-IoT)
 #### Overview 
 
-3GPP Roadmap  <br>
-UE Category  <br>
-Need for Redefined Air Interface  <br>
-
-#### Basic Concept 
-
-Carrier Deployment Mode (PRB)  <br>
-Cell Range (Preamble Format, MCL)  <br>
-Coverage Design  <br>
+- [3GPP Roadmap](/lte_nbiot/lte_nbiot_overview.md?id=3GPP-Roadmap)<br>
+- [UE Category](/lte_nbiot/lte_nbiot_overview.md?id=UE-Category)<br>
+- [Redefined Air Interface](/lte_nbiot/lte_nbiot_overview.md?id=Redefined-Air-Interface)<br>
+- [Cellular IoT Network Architecture](/lte_nbiot/lte_nbiot_overview.md?id=Cellular-IoT-Network-Architecture)<br>
+- [Carrier Deployment Mode](/lte_nbiot/lte_nbiot_overview.md?id=Carrier-Deployment-Mode)<br>
 
 #### Frame Structure 
 
