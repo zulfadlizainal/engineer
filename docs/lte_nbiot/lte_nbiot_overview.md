@@ -122,6 +122,16 @@ Key Concept:
     1 slot = 0.5ms (7 OFDM symbols)
     1 HyperSFN = 1024 x 1024 radio frames
 
+***Merit of Standalone NB-IoT compared to In Band NB-IoT***
+
+>Implementing NB-IoT in a standalone mode would benefit LTE network operator in terms of not sacrificing 1 LTE PRB in their LTE network for NB-IoT. This would also mean that LTE network performance will not be a tradeoff.
+
+>More RE Resource can be utilize by NB-IoT as the technology does not need to compromises with LTE PDCCH symbol and LTE CRS. All REs that is being used for LTE in In Band implementation can be used by NB-IoT.
+
+>Also in capacity point of view, maximum MCS for downlink in standalone mode can support up to MCS 12 compared to MCS 10 in in band deployment mode. This will ensure more resource allocation bits and capacity improvement for NB-IoT.
+
+>Having less risk of inter cell interference from LTE cell that does not implement NB-IoT PRB.
+
 ---
 
 #### References
