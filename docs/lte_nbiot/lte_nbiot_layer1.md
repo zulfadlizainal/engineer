@@ -60,10 +60,43 @@ Table from [2]
 | NPSS   | Subframe #5 | 10ms        | Time and Freq Synchronization |
 | NSSS   | Subframe #9 | 20ms        | PCI Information               |
 
+
+
 ***Subframe Allocation for NPSS and NSSS***
+
+<mark>Assuming In Band Deployment with LTE FDD DL having CF1 Format 3 for PDCCH and using 4 Antenna port for CRS.</mark>
 
 <br>
 <img src="\lte_nbiot\img\lte_nbiot_npssnssssuballoc.png" width=100% height=100% />
+<br>
+
+---
+
+#### NRS
+
+Key Concept: [1]
+
+1. The narrowband reference signal (NRS) is transmitted in all subframes which may be used for broadcast or dedicated DL transmission, no matter if data is actually transmitted or not.
+2. There are two NB-IoT downlink transmission schemes defined in all operation modes: Single ant port (port 0) or Two ant port (port 0 and 1 transmit diversity).
+3. NRS is always present without any condition for every subframe carrying  NPDCCH or NPDSCH.
+4. NRS is not present whenever the subframe is carrying NPSS and NSSS.
+
+
+***Subframe carrying NPSS or NSSS – NRS not present***
+
+<mark>Assuming In Band Deployment with LTE FDD DL having CF1 Format 3 for PDCCH and using 4 Antenna port for CRS.</mark>
+
+<br>
+<img src="\lte_nbiot\img\lte_nbiot_nrsnotpresent.png" width=100% height=100% />
+<br>
+
+
+***Subframe carrying NPDCCH or NPDSCH – NRS present***
+
+<mark>Assuming In Band Deployment with LTE FDD DL having CF1 Format 3 for PDCCH and using 4 Antenna port for CRS.</mark>
+
+<br>
+<img src="\lte_nbiot\img\lte_nbiot_nrspresent.png" width=100% height=100% />
 <br>
 
 ---

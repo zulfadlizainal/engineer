@@ -35,6 +35,7 @@ Anchor and Non Anchor Carrier  <br>
 
 - [Physical Channel Mapping](/lte_nbiot/lte_nbiot_layer1.md?id=Physical-Channel-Mapping)<br>
 - [NPSS and NSSS](/lte_nbiot/lte_nbiot_layer1.md?id=NPSS-and-NSSS)<br>
+- [NRS](/lte_nbiot/lte_nbiot_layer1.md?id=NRS)<br>
 NRS  <br>
 NPBCH  <br>
 NPRACH: UL Frame  <br>
