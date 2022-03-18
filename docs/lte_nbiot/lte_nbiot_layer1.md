@@ -53,7 +53,7 @@ Key Concept: [1]
 2. NPSS and NSSS is being defined to determine PCI for NB-IoT.
 3. Like in LTE, each cell has an assigned physical cell ID (PCI), the Narrowband physical cell ID (NCellID). Totally 504 different values for NCellID are defined.
 
-Table from [2]
+<mark>Table from</mark> [2]
 
 | Signal | Subframe    | Periodicity | Purpose                       |
 |--------|-------------|-------------|-------------------------------|
