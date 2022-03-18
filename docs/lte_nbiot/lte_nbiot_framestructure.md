@@ -12,7 +12,7 @@ Date Edited: 2022/03/18<br>
 3. NB-IoT uplink introducing a new unit for resource called RU (Resource Unit).
 
 <br>
-<img src="\lte_nbiot\img\lte_nbiot_emtcvsnb.png" width=100% height=100% />
+<img src="\lte_nbiot\img\lte_nbiot_emtcvsnb.png" width=70% height=70% />
 <br>
 
 Table version for easy copy:
