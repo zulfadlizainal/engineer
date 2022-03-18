@@ -23,7 +23,7 @@ UL Subcarrier Spacing  <br>
 UL Resource Unit (RU)  <br>
 UL Tone Number  <br>
 
-#### Basic Features and Algorithm 
+#### Features and Algorithm 
 
 NRS Signal Boost  <br>
 Evolved Discontinues Reception (eDRX)  <br>
@@ -31,11 +31,10 @@ Power Saving Mode (PSM)  <br>
 Coverage Level (CE Level)  <br>
 Anchor and Non Anchor Carrier  <br>
 
-#### Physical Channel, Repetitions 
+#### Layer 1: PHY
 
-Physical Channel Mapping  <br>
-Physical Channel Repetitions Structures  <br>
-NPSS and NSSS  <br>
+- [Physical Channel Mapping](/lte_nbiot/lte_nbiot_layer1.md?id=Physical-Channel-Mapping)<br>
+- [NPSS and NSSS](/lte_nbiot/lte_nbiot_layer1.md?id=NPSS-and-NSSS)<br>
 NRS  <br>
 NPBCH  <br>
 NPRACH: UL Frame  <br>
@@ -47,7 +46,7 @@ NPUSCH  <br>
 Impact Physical Channel Repetitions  <br>
 TBS/MCS  <br>
 
-#### Protocol and Procedure 
+#### Protocol and Procedures 
 
 MIB-NB Repetitions  <br>
 SIB1-NB Repetitions  <br>
