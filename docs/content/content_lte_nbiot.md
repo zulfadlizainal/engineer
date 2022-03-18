@@ -16,8 +16,8 @@ Date Edited: 2022/03/18<br>
 
 #### Frame Structure 
 
-eMTC vs NB-IoT Frame Structure  <br>
-DL Frame Structure  <br>
+- [eMTC vs NB-IoT Frame Structure](/lte_nbiot/lte_nbiot_framestructure.md?id=eMTC-vs-NB-IoT-Frame-Structure)<br>
+DL RE Mapping  <br>
 UL Frame Structure  <br>
 UL Subcarrier Spacing  <br>
 UL Resource Unit (RU)  <br>
