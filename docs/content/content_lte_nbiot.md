@@ -40,16 +40,15 @@ Date Edited: 2022/03/22<br>
 #### Protocol and Procedures 
 
 - [MIB-NB Repetitions](/lte_nbiot/lte_nbiot_procedure.md?id=MIB-NB-Repetitions)<br>
-- [SIB 1-NB Repetitions](/lte_nbiot/lte_nbiot_procedure.md?id=SIB-1-NB-Repetitions)<br>
+- [SIB1-NB Repetitions](/lte_nbiot/lte_nbiot_procedure.md?id=SIB1-NB-Repetitions)<br>
 
 #### Idle Mode Mobility 
 
-- Cell Reselection Design
-
+- [Cell Reselection Concept](/lte_nbiot/lte_nbiot_idle.md?id=Cell-Reselection-Concept)<br>
 
 #### Connected Mode Mobility 
 
-- 
+- Handover
 
 #### Practical Analysis 
 

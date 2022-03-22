@@ -37,7 +37,7 @@ Key Concepts: [1]
 
 ---
 
-#### SIB 1-NB Repetitions
+#### SIB1-NB Repetitions
 
 1. schedulingInfoSIB1-NB is specified in MIB-NB.
 2. The scheduling period of SIB1-NB is 2560ms. SIB 1-NB carry cell selection Info and scheduling for other SIBs-NB.
