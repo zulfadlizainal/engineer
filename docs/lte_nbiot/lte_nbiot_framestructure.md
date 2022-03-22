@@ -1,7 +1,7 @@
 Topic: 4G LTE<br>
 Sub-Topic: NB-IoT<br>
 Date Written: 2019/05/17<br>
-Date Edited: 2022/03/18<br>
+Date Edited: 2022/03/22<br>
 
 ---
 
@@ -32,7 +32,33 @@ Table version for easy copy:
 
 ---
 
+#### DL RE Mapping
+
+Refer [1]
+
+1. NB-IoT still adapting same OFDMA frame structure as LTE.
+2. However, not all RE can be used for NB-IoT resources if NB-IoT is being deployed inside an LTE band.
+3. More RE resource can be utilized in standalone NB-IoT deployment.
+4. LTE control channel region defined by CFI and LTE CRS cannot be read by Cat NB-1 UE.
+
+<mark>Standalone NB-IoT Deployment</mark>
+
+<br>
+<img src="\lte_nbiot\img\lte_nbiot_dlframesa.png" width=100% height=100% />
+<br>
+
+
+<mark>LTE In-Band NB-IoT Deployment</mark>
+
+Assuming, LTE FDD DL having CF1 Format 3 for PDCCH, using 4 antenna port for CRS, and NB-IoT implementing 2 antenna port for NRS (In Band Different PCI Mode).
+
+<br>
+<img src="\lte_nbiot\img\lte_nbiot_dlframeinband.png" width=100% height=100% />
+<br>
+
+---
+
 #### References
 
-1. 
+1. [Rohde & Schwarz](https://cdn.rohde-schwarz.com/pws/dl_downloads/dl_application/application_notes/1ma266/1MA266_0e_NB_IoT.pdf)
 2. 
