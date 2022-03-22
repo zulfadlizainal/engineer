@@ -48,7 +48,7 @@ TBS/MCS  <br>
 #### Protocol and Procedures 
 
 - [MIB-NB Repetitions](/lte_nbiot/lte_nbiot_procedure.md?id=MIB-NB-Repetitions)<br>
-SIB1-NB Repetitions  <br>
+- [SIB 1-NB Repetitions](/lte_nbiot/lte_nbiot_procedure.md?id=SIB-1-NB-Repetitions)<br>
 Initial Access  <br>
 Cell Selection  <br>
 Paging  <br>
