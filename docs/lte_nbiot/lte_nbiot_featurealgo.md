@@ -79,11 +79,11 @@ Table form [2]
 
 #### NPDSCH Scheduling Rules
 
-!> NPDSCH is always scheduled 4ms after received NPDCCH (DCI). 
+>NPDSCH is always scheduled 4ms after received NPDCCH (DCI). 
 
-!> NPUSCH ACK/NACK for NPDSCH is sent 12ms after all NPDSCH received.
+>NPUSCH ACK/NACK for NPDSCH is sent 12ms after all NPDSCH received.
 
-!> Next NPDCCH (DCI) for next transmission is 3ms after NPUSCH ACK/NACK.
+>Next NPDCCH (DCI) for next transmission is 3ms after NPUSCH ACK/NACK.
 
 <br>
 <img src="\lte_nbiot\img\lte_nbiot_npdschsch.png" width=100% height=100% />
@@ -97,11 +97,11 @@ Table form [2]
 
 #### NPUSCH Scheduling Rules
 
-!> NPUSCH is always scheduled 8ms after received NPDCCH (DCI). 
+>NPUSCH is always scheduled 8ms after received NPDCCH (DCI). 
 
-!> ACK/NACK for NPUSCH is sent inside NPDCCH because NB-IoT does not have PHICH like LTE.
+>ACK/NACK for NPUSCH is sent inside NPDCCH because NB-IoT does not have PHICH like LTE.
 
-!> Next NPDCCH (DCI) for next transmission is 3ms after NPUSCH. Same NPDCCH is used for ACK/NACK for NPUSCH.
+>Next NPDCCH (DCI) for next transmission is 3ms after NPUSCH. Same NPDCCH is used for ACK/NACK for NPUSCH.
 
 <br>
 <img src="\lte_nbiot\img\lte_nbiot_npuschsch.png" width=100% height=100% />
