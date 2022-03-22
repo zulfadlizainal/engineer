@@ -18,7 +18,7 @@ Date Edited: 2022/03/22<br>
 
 Table form [2]
 
-| System BW  | RBS Size  |
+| System BW  | RBG Size  |
 |------------|-----------|
 | 1.4        | 1         |
 | 3          | 2         |
@@ -36,6 +36,32 @@ Table form [2]
     Eg:
     LTE CRS RE = 20dBm, so LTE NRS RE = 26dBm
     LTE Non CRS RE = 17dBm, so LTE Non NRS RE = 23dBm
+
+---
+
+#### Coverage Level (CE Level)
+
+1. Coverage enhancement (CE) are introduced to adapt to the coverage depth and capacity performance requirements of NB-IoT UE.
+2. Dividing the coverage allowing UE to selects an appropriate coverage level based on the signal strength to provide reliable transmission in poor RF without trading off good performance in good RF.
+3. NB-IoT supports three CE levels: 0, 1, and 2.
+4. To achieve deep coverage, number of repetitions can be set separately for different coverage areas.
+
+<br>
+<img src="\lte_nbiot\img\lte_nbiot_cel.png" width=100% height=100% />
+<br>
+
+---
+
+#### Physical Channel Repetitions Structures
+
+1. Physical channel repetitions is also one important features in NB-IoT.
+2. Repetition is a technique consisting on repeating the same data transmission several times to ensure its reliability.
+3. In areas with good coverage, high data rates can be reached using a few repetitions or even without repetition. In areas with poor coverage, coverage performance can be ensured by using more repetitions.
+4. These repetitions settings can be divided based on Coverage Level concept, meet objective to extend coverage.
+
+<br>
+<img src="\lte_nbiot\img\lte_nbiot_repstruct.png" width=100% height=100% />
+<br>
 
 ---
 

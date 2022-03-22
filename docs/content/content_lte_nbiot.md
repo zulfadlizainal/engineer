@@ -24,9 +24,10 @@ Date Edited: 2022/03/22<br>
 #### Features and Algorithm 
 
 - [NRS Signal Boost](/lte_nbiot/lte_nbiot_featurealgo.md?id=NRS-Signal-Boost)<br>
+- [Coverage Level (CE Level)](/lte_nbiot/lte_nbiot_featurealgo.md?id=Coverage-Level-CE-Level)<br>
+- [Physical Channel Repetitions Structures](/lte_nbiot/lte_nbiot_featurealgo.md?id=Physical-Channel-Repetitions-Structures)<br>
 Evolved Discontinues Reception (eDRX)  <br>
 Power Saving Mode (PSM)  <br>
-Coverage Level (CE Level)  <br>
 Anchor and Non Anchor Carrier  <br>
 
 #### Layer 1: PHY
