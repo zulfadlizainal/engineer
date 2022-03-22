@@ -98,8 +98,33 @@ Table version for easy copy.
 
 ---
 
+#### UL Resource Unit (RU)
+
+Refer [4] [5]
+
+1. For NB-IoT uplink, new concept of UL resource assignment is being introduced called RU (Resource Unit).
+2. RU is the smallest unit to map with a transport block.
+3. The definition of RU is depending on NPUSCH format and subcarrier spacing.
+
+<mark>RU size is being determined by the NPUSCH format type defined in 3GPP</mark>. The number of subcarrier and slots in an RU is defined by table below.
+
+<br>
+<img src="\lte_nbiot\img\lte_nbiot_ru.png" width=100% height=100% />
+<br>
+
+<mark>Concept of Tones is being used in NB-IoT</mark>. Tones are equivalent to number of subcarrier used in uplink transmission. 
+
+    ST = Single Tone Uplink Transmission
+    MT = Multi Tone Uplink Transmission
+
+---
+
 #### References
 
 1. [Rohde & Schwarz](https://cdn.rohde-schwarz.com/pws/dl_downloads/dl_application/application_notes/1ma266/1MA266_0e_NB_IoT.pdf)
 2. 3GPP TS 36.211 Section 10.1
 3. [Sharetechnote](https://www.sharetechnote.com/html/Handbook_LTE_NB_LTE.html)
+4. 3GPP TS 36.211 Section 10.1
+5. 3GPP TS 36.213 Section 16.5
+  
+
