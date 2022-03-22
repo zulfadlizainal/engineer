@@ -20,11 +20,10 @@ Date Edited: 2022/03/22<br>
 - [DL RE Mapping](/lte_nbiot/lte_nbiot_framestructure.md?id=DL-RE-Mapping)<br>
 - [UL Subcarrier Spacing](/lte_nbiot/lte_nbiot_framestructure.md?id=UL-Subcarrier-Spacing)<br>
 - [UL Resource Unit (RU)](/lte_nbiot/lte_nbiot_framestructure.md?id=UL-Resource-Unit-RU)<br>
-UL Tone Number  <br>
 
 #### Features and Algorithm 
 
-NRS Signal Boost  <br>
+- [NRS Signal Boost](/lte_nbiot/lte_nbiot_featurealgo.md?id=NRS-Signal-Boost)<br>
 Evolved Discontinues Reception (eDRX)  <br>
 Power Saving Mode (PSM)  <br>
 Coverage Level (CE Level)  <br>

@@ -91,9 +91,13 @@ Table version for easy copy.
 <mark>Narration form the picture:</mark>
 
 >Subcarrier spacing in 3.75 Khz became narrower by 4 times comparing to 15 Khz resource grid
+
 >Symbol length in 3.75 Khz resource grid became longer by 4 times comparing to 15 Khz resource  grid
+
 >Length of a Radio Frame is defined to be same (10 ms) in both 3.75 Khz resource grid and 15 Khz resource grid
+
 >The number of slots within a radio frame in 3.75 Khz resource grid became smaller by 4 times comparing to 15 Khz resource grid.
+
 >The number of OFDM symbols within a slot is same (7) in both 3.75 Khz resource grid and 15 Khz.
 
 ---
