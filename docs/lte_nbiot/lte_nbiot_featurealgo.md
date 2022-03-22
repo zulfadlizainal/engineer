@@ -31,6 +31,12 @@ Table form [2]
 <img src="\lte_nbiot\img\lte_nbiot_nrsboost.png" width=100% height=100% />
 <br>
 
+<mark>Note:</mark> All RE in NB-IoT PRB is 6dB boost from common LTE. This include NRS and also Non-NRS RE.
+
+    Eg:
+    LTE CRS RE = 20dBm, so LTE NRS RE = 26dBm
+    LTE Non CRS RE = 17dBm, so LTE Non NRS RE = 23dBm
+
 ---
 
 #### References
