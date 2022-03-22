@@ -63,6 +63,18 @@ Table form [2]
 <img src="\lte_nbiot\img\lte_nbiot_repstruct.png" width=100% height=100% />
 <br>
 
+| L3 Msg | Phy Channel Repetition       | L3 Parameter Name | CE Level 0 | CE Level 1 | CE Level 2 |
+|--------|------------------------------|-------------------|------------|------------|------------|
+| SIB2   | ① NPDCCH for Paging          |                   | X          | X          | X          |
+| SIB2   | ② NPDCCH for RA              |                   | X          | X          | X          |
+| SIB2   | ③ NPUSCH (ACK/NACK for MSG4) |                   | X          | X          | X          |
+| SIB2   | ④ NPRACH (Preamble)          |                   | X          | X          | X          |
+| Setup  | ⑤ NPDCCH (DCI Format N0, N1) |                   | X          | X          | X          |
+| Setup  | ⑥ NPUSCH (ACK/NACK)          |                   | X          | X          | X          |
+|        | ⑦ NPDSCH                     |                   | X          | X          | X          |
+| SIB2   | ⑧ NPUSCH (Format 1)          |                   | X          | X          | X          |
+|        | ⑨ NPDSCH for Paging          |                   | X          | X          | X          |
+
 ---
 
 #### References
