@@ -58,7 +58,48 @@ Assuming, LTE FDD DL having CF1 Format 3 for PDCCH, using 4 antenna port for CRS
 
 ---
 
+#### UL Subcarrier Spacing
+
+1. For NB-IoT uplink, while maintaining the SC-FDMA waveform as LTE, new frequency domain concept is introduced.
+2. 2 types of uplink frame structure is being introduced based on subcarrier spacing.
+3. Instead of using PRB, a smaller unit called Resource Unit (RU) is being introduced.
+
+***2 Types of Subcarrier Spacing for NB-IoT UL***
+
+Refer [2] Picture from [3]
+
+<br>
+<img src="\lte_nbiot\img\lte_nbiot_ulscs.png" width=100% height=100% />
+<br>
+
+<br>
+<img src="\lte_nbiot\img\lte_nbiot_ulscs2.png" width=100% height=100% />
+<br>
+
+<br>
+<img src="\lte_nbiot\img\lte_nbiot_ulscs3.png" width=100% height=100% />
+<br>
+
+Table version for easy copy.
+
+| Subcarrier Spacing | No of UL Subcarrier | Timeslot | No of Timeslot/Radio Frame |
+|--------------------|---------------------|----------|----------------------------|
+| 15 kHz             | 12                  | 0.5 ms   | 20 -> {0,1,…,19}           |
+| 3.75 kHz           | 48                  | 2 ms     | 5 -> {0,1,…,4}             |
+
+
+<mark>Narration form the picture:</mark>
+
+>Subcarrier spacing in 3.75 Khz became narrower by 4 times comparing to 15 Khz resource grid
+>Symbol length in 3.75 Khz resource grid became longer by 4 times comparing to 15 Khz resource  grid
+>Length of a Radio Frame is defined to be same (10 ms) in both 3.75 Khz resource grid and 15 Khz resource grid
+>The number of slots within a radio frame in 3.75 Khz resource grid became smaller by 4 times comparing to 15 Khz resource grid.
+>The number of OFDM symbols within a slot is same (7) in both 3.75 Khz resource grid and 15 Khz.
+
+---
+
 #### References
 
 1. [Rohde & Schwarz](https://cdn.rohde-schwarz.com/pws/dl_downloads/dl_application/application_notes/1ma266/1MA266_0e_NB_IoT.pdf)
-2. 
+2. 3GPP TS 36.211 Section 10.1
+3. [Sharetechnote](https://www.sharetechnote.com/html/Handbook_LTE_NB_LTE.html)
