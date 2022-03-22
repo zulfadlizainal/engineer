@@ -66,7 +66,7 @@ Table for easy copy:
 | 9                         | 4                  |
 | 10                        | 8                  |
 | 11                        | 16                 |
-| 15-Dec                    | Reserved           |
+| 12 to 15                  | Reserved           |
 
 ***SIB 1-NB TBS*** from [4]
 

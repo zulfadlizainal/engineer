@@ -26,6 +26,8 @@ Date Edited: 2022/03/22<br>
 - [NRS Signal Boost](/lte_nbiot/lte_nbiot_featurealgo.md?id=NRS-Signal-Boost)<br>
 - [Coverage Level (CE Level)](/lte_nbiot/lte_nbiot_featurealgo.md?id=Coverage-Level-CE-Level)<br>
 - [Physical Channel Repetitions Structures](/lte_nbiot/lte_nbiot_featurealgo.md?id=Physical-Channel-Repetitions-Structures)<br>
+- [NPDSCH Scheduling Rules](/lte_nbiot/lte_nbiot_featurealgo.md?id=NPDSCH-Scheduling-Rules)<br>
+- [NPUSCH Scheduling Rules](/lte_nbiot/lte_nbiot_featurealgo.md?id=NPUSCH-Scheduling-Rules)<br>
 
 #### Layer 1: PHY
 
@@ -35,7 +37,6 @@ Date Edited: 2022/03/22<br>
 - [NPBCH](/lte_nbiot/lte_nbiot_layer1.md?id=NPBCH)<br>
 - [NPDCCH](/lte_nbiot/lte_nbiot_layer1.md?id=NPDCCH)<br>
 
-
 #### Protocol and Procedures 
 
 - [MIB-NB Repetitions](/lte_nbiot/lte_nbiot_procedure.md?id=MIB-NB-Repetitions)<br>
@@ -44,8 +45,11 @@ Date Edited: 2022/03/22<br>
 #### Idle Mode Mobility 
 
 - Cell Reselection Design
- 
+
+
 #### Connected Mode Mobility 
+
+- 
 
 #### Practical Analysis 
 

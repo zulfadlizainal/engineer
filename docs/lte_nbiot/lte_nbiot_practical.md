@@ -13,6 +13,8 @@ Conversion table form <mark>ISF to N-SF</mark> refer [1]
 <img src="\lte_nbiot\img\lte_nbiot_nsf.png" width=100% height=100% />
 <br>
 
+Based on this, <mark>N-SF utilization</mark> can be calculated. [5]
+
 ---
 
 #### Calculate UL N-RU from DCI
@@ -24,6 +26,8 @@ Conversion table form <mark>ISC to Number of UL Slots</mark> refer [3]
 <br>
 <img src="\lte_nbiot\img\lte_nbiot_nru.png" width=100% height=100% />
 <br>
+
+Based on this, <mark>N-RU utilization</mark> can be calculated. [6]
 
 ---
 
@@ -81,3 +85,5 @@ Conversion table form <mark>ISC to Number of UL Slots</mark> refer [3]
 2. 3GPP TS 36.213 Section 16.5.1.1
 3. 3GPP TS 36.211 Section 10.1.2.3
 4. 3GPP TS 24.008
+5. [Github](https://github.com/zulfadlizainal/4G-NB-IoT-Resource-Utilization/tree/master/DL%20NSF%20Resource%20Utilization)
+6. [Github](https://github.com/zulfadlizainal/4G-NB-IoT-Resource-Utilization/tree/master/UL%20NRU%20Resource%20Utilization)
