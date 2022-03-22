@@ -31,6 +31,20 @@ Based on this, <mark>N-RU utilization</mark> can be calculated. [6]
 
 ---
 
+#### Calculate NPDCCH Utilization
+
+NPDCCH repetitions is limited based on <mark>Rmax</mark> value. From Rmax, actual NPDCCH repetition can be converted.
+
+<br>
+<img src="\lte_nbiot\img\lte_nbiot_npdcchutil.png" width=100% height=100% />
+<br>
+
+<br>
+<img src="\lte_nbiot\img\lte_nbiot_npdcchutil2.png" width=100% height=100% />
+<br>
+
+---
+
 #### Check eDRX Settings 
 
 ***PTW Settings Index:*** [4]

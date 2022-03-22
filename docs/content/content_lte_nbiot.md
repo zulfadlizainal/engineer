@@ -28,6 +28,7 @@ Date Edited: 2022/03/22<br>
 - [Physical Channel Repetitions Structures](/lte_nbiot/lte_nbiot_featurealgo.md?id=Physical-Channel-Repetitions-Structures)<br>
 - [NPDSCH Scheduling Rules](/lte_nbiot/lte_nbiot_featurealgo.md?id=NPDSCH-Scheduling-Rules)<br>
 - [NPUSCH Scheduling Rules](/lte_nbiot/lte_nbiot_featurealgo.md?id=NPUSCH-Scheduling-Rules)<br>
+- [Anchor and Non Anchor Carrier](/lte_nbiot/lte_nbiot_featurealgo.md?id=Anchor-and-Non-Anchor-Carrier)<br>
 
 #### Layer 1: PHY
 
@@ -52,6 +53,7 @@ Date Edited: 2022/03/22<br>
 
 #### Practical Analysis 
 
-- [Calculate DL N-SF from DCI](/lte_nbiot/lte_nbiot_practical.md?id=Calculate-UL-N-RU-from-DCI)<br>
+- [Calculate DL N-SF from DCI](/lte_nbiot/lte_nbiot_practical.md?id=Calculate-DL-N-SF-from-DCI)<br>
 - [Calculate UL N-RU from DCI](/lte_nbiot/lte_nbiot_practical.md?id=Calculate-UL-N-RU-from-DCI)<br>
+- [Calculate NPDCCH Utilization](/lte_nbiot/lte_nbiot_practical.md?id=Calculate-NPDCCH-Utilization)<br>
 - [Check eDRX Settings](/lte_nbiot/lte_nbiot_practical.md?id=Check-eDRX-Settings)<br>
