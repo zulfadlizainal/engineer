@@ -19,7 +19,8 @@ Date Edited: 2022/03/23<br>
 - [eMTC vs NB-IoT Frame Structure](/lte_nbiot/lte_nbiot_framestructure.md?id=eMTC-vs-NB-IoT-Frame-Structure)<br>
 - [DL RE Mapping](/lte_nbiot/lte_nbiot_framestructure.md?id=DL-RE-Mapping)<br>
 - [UL Subcarrier Spacing](/lte_nbiot/lte_nbiot_framestructure.md?id=UL-Subcarrier-Spacing)<br>
-- [UL Resource Unit (RU)](/lte_nbiot/lte_nbiot_framestructure.md?id=UL-Resource-Unit-RU)<br>
+- [UL Resource Unit (RU) - Single Tone vs Multi Tone](/lte_nbiot/lte_nbiot_framestructure.md?id=UL-Resource-Unit-RU-Single-Tone-vs-Multi-Tone)<br>
+- [NPRACH UL Frame Structure](/lte_nbiot/lte_nbiot_framestructure.md?id=NPRACH-UL-Frame-Structure)<br>
 
 #### Features and Algorithm 
 
@@ -59,3 +60,4 @@ Date Edited: 2022/03/23<br>
 - [Calculate UL N-RU from DCI](/lte_nbiot/lte_nbiot_practical.md?id=Calculate-UL-N-RU-from-DCI)<br>
 - [Calculate NPDCCH Utilization](/lte_nbiot/lte_nbiot_practical.md?id=Calculate-NPDCCH-Utilization)<br>
 - [Check eDRX Settings](/lte_nbiot/lte_nbiot_practical.md?id=Check-eDRX-Settings)<br>
+- [Design NPRACH Resource](/lte_nbiot/lte_nbiot_practical.md?id=Design-NPRACH-Resource)<br>

@@ -102,7 +102,7 @@ Table version for easy copy.
 
 ---
 
-#### UL Resource Unit (RU)
+#### UL Resource Unit (RU) - Single Tone vs Multi Tone
 
 Refer [4] [5]
 
@@ -120,6 +120,35 @@ Refer [4] [5]
 
     ST = Single Tone Uplink Transmission
     MT = Multi Tone Uplink Transmission
+
+---
+
+#### NPRACH UL Frame Structure
+
+Key Concepts:
+
+    Single Tone, 3.75kHz SCS
+    1 Preamble = 4 Symbol Group (Format 0: 5.6ms, Format 1: 6.4ms)
+    1 Symbol Group = (Format 0: 1.4ms, Format 1: 1.6ms)
+    4x Hopping / Preamble
+
+<br>
+<img src="\lte_nbiot\img\lte_nbiot_nprach.png" width=100% height=100% />
+<br>
+
+Parameters to adjust preamble <mark>subcarriers boundaries during hopping:</mark>
+
+<br>
+<img src="\lte_nbiot\img\lte_nbiot_nprach2.png" width=100% height=100% />
+<br>
+
+Parameters to adjust preamble <mark>periodicity and start time:</mark>
+
+!> Differnt periodicity and start time may impact the perfromance of RACH setup time.
+
+<br>
+<img src="\lte_nbiot\img\lte_nbiot_nprach3.png" width=100% height=100% />
+<br>
 
 ---
 
