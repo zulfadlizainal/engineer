@@ -46,6 +46,7 @@ Date Edited: 2022/03/23<br>
 - [CE Level Selection Criteria](/lte_nbiot/lte_nbiot_procedure.md?id=CE-Level-Selection-Criteria)<br>
 - [CE Level Conversion](/lte_nbiot/lte_nbiot_procedure.md?id=CE-Level-Conversion)<br>
 - [RACH MSG3 Multi Tone Decision](/lte_nbiot/lte_nbiot_procedure.md?id=RACH-MSG3-Multi-Tone-Decision)<br>
+- [Paging](/lte_nbiot/lte_nbiot_procedure.md?id=Paging)<br>
 
 #### Idle Mode Mobility 
 
@@ -62,3 +63,4 @@ Date Edited: 2022/03/23<br>
 - [Calculate NPDCCH Utilization](/lte_nbiot/lte_nbiot_practical.md?id=Calculate-NPDCCH-Utilization)<br>
 - [Check eDRX Settings](/lte_nbiot/lte_nbiot_practical.md?id=Check-eDRX-Settings)<br>
 - [Design NPRACH Resource](/lte_nbiot/lte_nbiot_practical.md?id=Design-NPRACH-Resource)<br>
+- [Calculate Paging Capacity](/lte_nbiot/lte_nbiot_practical.md?id=Calculate-Paging-Capacity)<br>

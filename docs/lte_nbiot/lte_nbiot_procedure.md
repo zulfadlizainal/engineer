@@ -1,7 +1,7 @@
 Topic: 4G LTE<br>
 Sub-Topic: NB-IoT<br>
 Date Written: 2019/05/18<br>
-Date Edited: 2022/03/22<br>
+Date Edited: 2022/03/23<br>
 
 ---
 
@@ -191,6 +191,125 @@ When UE Sending NPRACH, <mark>the subcarrier index used by the UE to send NPRACH
 
 ---
 
+#### Paging
+
+<mark>Paging</mark> - A process where network is telling the UE that there is something for the UE. [8]
+
+1. UE will decode the paging message (paging cause).
+2. UE will then initiate the appropriate procedure.
+3. Most cases paging process happen in Idle Mode.
+4. UE have to wake up and monitor whether there is a paging being scheduled.
+5. Always monitor this paging is a waste of energy.  
+
+<mark>To solve this:</mark>
+
+6. In Network side -> Network will not send paging continuously. However, only transmit paging in burst mode using certain interval.
+7. In UE Side -> UE will go sleep when network not transmitting Paging and UE will just wake up exactly at the time you are transmitting the paging message. <mark>This method is called Discontinues Reception (DRX) -  where UE receive info from network discontinuously.</mark>
+8. Paging messages are sent by a MME to all eNodeBs in a Tracking Area and those eNodeBs in a Tracking Area is transmitting the same paging message.
+9. Each eNodeB can contain cells belonging to different tracking areas but each cell can only belong to one Tracking Area.
+
+***Types of Paging***
+
+1. Core Initiated paging (Incoming call, SMS, Incoming data).
+2. eNB initiated paging (Change of SI, Emergency notifications, Earthquake or Tsunami Warning).
+
+<br>
+<img src="\lte_nbiot\img\lte_nbiot_pagingtype.png" width=100% height=100% />
+<br>
+
+***Paging Mechanism***
+
+1. During the idle mode, UE gets into and stay in sleeping mode defined in DRX cycle (Discontinuous Receive Cycle). (This DRX is cycle is defined in SIB2).
+2. UE periodically wake up and monitor PDCCH in order to check for the presence of a paging message (UE looks for any information encrypted by P-RNTI).
+3. If the PDCCH indicates that a paging message is transmitted in the subframe, then UE needs to demodulate the PCH to see if the paging message is directed to it.
+
+<br>
+<img src="\lte_nbiot\img\lte_nbiot_pagingsignaling.png" width=100% height=100% />
+<br>
+
+?> Note: UE dont know whether the paging message (PDSCH) contain his TMSI or not. He just decode the paging message (PDSCH) if he observed any PDCCH with P-RNTI.
+
+<mark>Sample paging parameter in SIB2:</mark>
+
+<br>
+<img src="\lte_nbiot\img\lte_nbiot_pagingparam.png" width=100% height=100% />
+<br>
+
+***Paging Occasion & Paging Frame***
+
+Refer [9]
+
+<mark>Paging Occasion (PO)</mark> is a subframe where there may be P-RNTI transmitted on PDCCH addressing the paging message.
+
+<mark>Paging Frame (PF)</mark> is one Radio Frame which may contain one or multiple Paging Occasion(s).
+
+***Paging Frame Formula:***
+
+Paging frame is derived from below formula: [9]
+
+    PF = SFN mod T = (T div N) x (UE_ID mod N) 
+
+<mark>T Derivation:</mark>
+
+T = DRX Cycle of the UE  
+
+T can be received by 3 different source: (2 if NB-IoT)
+
+1. SIB2: IE defaultPagingCycle-r13.
+2. Upper Layer: Use this value if provided (Through Attach Request or TAU).
+3. UE specify own DRX value - Not supported in NB-IoT.
+
+<mark>N and nB Derivation:</mark>
+
+    N = min (T, nB) -->> Which means the smaller one among T and nB. 
+    nB = paging frame, can be received from SIB2 IE nB-r13.
+
+    Where:
+    nB value can be -> 4T, 2T, T, T/2, T/4, T/8, T/16, T/32, T/64, T/128, and T/256, and for NB-IoT also T/512, and T/1024.  
+
+Table:
+
+| nB  | 4T  | 2T  | T  | 1/2 T  | 1/4 T  | 1/8 T  | 1/16 T  | 1/32 T  |
+|-----|-----|-----|----|--------|--------|--------|---------|---------|
+| N   | 1   | 1   | 1  | 1/2    | 1/4    | 1/8    | 1/16    | 1/32    |
+
+
+<mark>UE ID Derivation:</mark>
+
+UE_ID = IMSI mod XXX, where IMSI should be used in Decimal format and is stored in USIM. 
+
+    IMSI mod 1024, if P-RNTI is monitored on PDCCH.  
+    IMSI mod 4096, if P-RNTI is monitored on NPDCCH.  
+    IMSI mod 16384, if P-RNTI is monitored on MPDCCH or if P-RNTI is monitored on NPDCCH and the UE supports paging on a non-anchor carrier, and if paging configuration for non-anchor carrier is provided in system information.  
+
+***Paging Occasion Formula:***
+
+    PO = Based on Tables
+
+    Where:
+    Ns = Number of paging occasions. 
+    Ns = max(1, nB/T), which means that Ns is the larger value between 1 and NB/T. 
+
+Table:
+
+| nB  | 4T  | 2T  | T  | 1/2 T  | 1/4 T  | 1/8 T  | 1/16 T  | 1/32 T  |
+|-----|-----|-----|----|--------|--------|--------|---------|---------|
+| Ns  | 4   | 2   | 1  | 1      | 1      | 1      | 1       | 1       |
+
+Scenario:
+
+1. When Ns = 1, there can be only one paging occation (only one subframe where paging message is carried) within a Paging Frame and the subframe number is 9.
+2. When Ns = 2, there can be two paging occations (two subframes where paging message is carried) within a Paging Frame and the subframe number is 4 and 9.
+3. When Ns = 4, there can be four paging occations (four subframes where paging message is carried) within a Paging Frame and the subframe number is 0,4,5 and 9.
+
+3GPP Table for PO subframe number:
+
+<br>
+<img src="\lte_nbiot\img\lte_nbiot_pagingsubframe.png" width=100% height=100% />
+<br>
+
+---
+
 #### References
 
 1. 3GPP TS 36.331 Section 5.2.1.2
@@ -200,3 +319,5 @@ When UE Sending NPRACH, <mark>the subcarrier index used by the UE to send NPRACH
 5. 3GPP TS 36.321 Section 5.1.1
 6. 3GPP TS 36.331
 7. 3GPP TS 36.133 Section 9.1.4
+8. [Sharetechnote](https://www.sharetechnote.com/html/Paging_LTE.html)
+9. 3GPP TS 36.304

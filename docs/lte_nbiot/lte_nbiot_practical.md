@@ -113,6 +113,25 @@ To plan the NPRACH Resource, <mark>need to ensure that NPRACH resource not overl
 
 ---
 
+#### Calculate Paging Capacity
+
+<br>
+<img src="\lte_nbiot\img\lte_nbiot_pagingcapacity.png" width=70% height=70% />
+<br>
+
+Table for easy copy:
+
+| Parameter        | Description                                         | Param Set 1 | Param Set 2 | Param Set 3 |
+|------------------|-----------------------------------------------------|-------------|-------------|-------------|
+| Paging Cycle (T) | Received from SIB2.                                 | 256rf       | 256rf       | 256rf       |
+|                  | Also called as DRX Cycle.                           |             |             |             |
+| nB               | Received from SIB2.                                 | one64thT    | one128thT   | one256thT   |
+| Paging Record    | Vendor support capability.                          | 1           | 10          | 15          |
+|                  | Number of TMSI can be included per paging occasion. |             |             |             |
+| Paging Capacity  | For every cycle, how many TMSI can be paged?        | 4           | 20          | 15          |
+
+---
+
 #### References
 
 1. 3GPP TS 36.213 Section 16.4.1.3
