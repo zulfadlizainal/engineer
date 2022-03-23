@@ -136,19 +136,19 @@ Key Concepts:
 <img src="\lte_nbiot\img\lte_nbiot_nprach.png" width=100% height=100% />
 <br>
 
-Parameters to adjust preamble <mark>subcarriers boundaries during hopping:</mark>
+***Parameters to adjust preamble subcarriers boundaries during hopping:***
 
 <br>
 <img src="\lte_nbiot\img\lte_nbiot_nprach2.png" width=100% height=100% />
 <br>
 
-Parameters to adjust preamble <mark>periodicity and start time:</mark>
-
-!> Differnt periodicity and start time may impact the perfromance of RACH setup time.
+***Parameters to adjust preamble periodicity and start time:***
 
 <br>
 <img src="\lte_nbiot\img\lte_nbiot_nprach3.png" width=100% height=100% />
 <br>
+
+!> Differnt periodicity and start time may impact the perfromance of RACH setup time.
 
 ---
 

@@ -115,8 +115,16 @@ To plan the NPRACH Resource, <mark>need to ensure that NPRACH resource not overl
 
 #### Calculate Paging Capacity
 
+Paging capacity can be calculated based on SIB2 parameters and also the capability of vendor to support as many TMSI possible per paging message.
+
+> If paging cycle is shorter, paging capacity is higher but more resources is utilized for paging.
+
+> If paging ocassion is higher, paging capacity is higher but more resources is utilized for paging.
+
+> If more TMSI can be included in 1 paging message, more UE can be paged hence improve the capacity of paging.
+
 <br>
-<img src="\lte_nbiot\img\lte_nbiot_pagingcapacity.png" width=70% height=70% />
+<img src="\lte_nbiot\img\lte_nbiot_pagingcapacity.png" width=100% height=100% />
 <br>
 
 Table for easy copy:

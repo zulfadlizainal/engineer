@@ -12,15 +12,11 @@ Date Edited: 2022/03/23<br>
 
 Key Concepts: [1]
 
->The MIB scheduling period is always 640ms.
-
->MIB repetitions made within 640 ms.
-
->The first transmission of the MIB is scheduled in subframe #0 of radio frames for which the SFN mod 64 = 0.
-
->MIB repetitions are scheduled in subframe #0 of all other radio frames.
-
->The transmissions are arranged in 8 independently decodable blocks of 80ms duration.
+    The MIB scheduling period is always 640ms.
+    MIB repetitions made within 640 ms.
+    The first transmission of the MIB is scheduled in subframe #0 of radio frames for which the SFN mod 64 = 0.
+    MIB repetitions are scheduled in subframe #0 of all other radio frames.
+    The transmissions are arranged in 8 independently decodable blocks of 80ms duration.
 
 <mark>Content of MIB-NB:</mark> Have Scheduling for SIB1-NB [2]
 
@@ -44,7 +40,7 @@ Key Concepts: [1]
 3. Pre defined table is being used to determine the location of frequency domain & time domain for SIB 1-NB.
 4. Pre defined table will determine number of NPDSCH repetitions for SIB 1-NB, TBS Index for NPDSCH SIB 1-NB, and resource location of SIB 1-NB.
 
-***SIB 1-NB Repetitions*** from [2]
+<mark>SIB 1-NB Repetitions</mark> from [2]
 
 <br>
 <img src="\lte_nbiot\img\lte_nbiot_sib1nbrep.png" width=100% height=100% />
@@ -68,7 +64,7 @@ Table for easy copy:
 | 11                        | 16                 |
 | 12 to 15                  | Reserved           |
 
-***SIB 1-NB TBS*** from [4]
+<mark>SIB 1-NB TBS</mark> from [4]
 
 <br>
 <img src="\lte_nbiot\img\lte_nbiot_sib1nbtbs.png" width=100% height=100% />
@@ -95,7 +91,7 @@ Table for easy copy:
 | 14   | Reserved |
 | 15   | Reserved |
 
-***SIB 1-NB Location*** from [2]
+<mark>SIB 1-NB Location</mark> from [2]
 
 The starting radio frame for the first transmission of the NPDSCH carrying SystemInformationBlockType1-NB is determined according to Table 16.4.1.3-4.
 
@@ -232,7 +228,7 @@ When UE Sending NPRACH, <mark>the subcarrier index used by the UE to send NPRACH
 <mark>Sample paging parameter in SIB2:</mark>
 
 <br>
-<img src="\lte_nbiot\img\lte_nbiot_pagingparam.png" width=100% height=100% />
+<img src="\lte_nbiot\img\lte_nbiot_pagingparam.png" width=70% height=70% />
 <br>
 
 ***Paging Occasion & Paging Frame***
@@ -267,7 +263,7 @@ T can be received by 3 different source: (2 if NB-IoT)
     Where:
     nB value can be -> 4T, 2T, T, T/2, T/4, T/8, T/16, T/32, T/64, T/128, and T/256, and for NB-IoT also T/512, and T/1024.  
 
-Table:
+N based on T and nB:
 
 | nB  | 4T  | 2T  | T  | 1/2 T  | 1/4 T  | 1/8 T  | 1/16 T  | 1/32 T  |
 |-----|-----|-----|----|--------|--------|--------|---------|---------|
@@ -278,9 +274,11 @@ Table:
 
 UE_ID = IMSI mod XXX, where IMSI should be used in Decimal format and is stored in USIM. 
 
-    IMSI mod 1024, if P-RNTI is monitored on PDCCH.  
-    IMSI mod 4096, if P-RNTI is monitored on NPDCCH.  
-    IMSI mod 16384, if P-RNTI is monitored on MPDCCH or if P-RNTI is monitored on NPDCCH and the UE supports paging on a non-anchor carrier, and if paging configuration for non-anchor carrier is provided in system information.  
+> IMSI mod 1024, if P-RNTI is monitored on PDCCH.  
+
+> IMSI mod 4096, if P-RNTI is monitored on NPDCCH.  
+
+> IMSI mod 16384, if P-RNTI is monitored on MPDCCH or if P-RNTI is monitored on NPDCCH and the UE supports paging on a non-anchor carrier, and if paging configuration for non-anchor carrier is provided in system information.  
 
 ***Paging Occasion Formula:***
 
@@ -290,19 +288,20 @@ UE_ID = IMSI mod XXX, where IMSI should be used in Decimal format and is stored 
     Ns = Number of paging occasions. 
     Ns = max(1, nB/T), which means that Ns is the larger value between 1 and NB/T. 
 
-Table:
+Ns based on T and nB:
 
 | nB  | 4T  | 2T  | T  | 1/2 T  | 1/4 T  | 1/8 T  | 1/16 T  | 1/32 T  |
 |-----|-----|-----|----|--------|--------|--------|---------|---------|
 | Ns  | 4   | 2   | 1  | 1      | 1      | 1      | 1       | 1       |
 
-Scenario:
+
+<mark>Scenario:</mark>
 
 1. When Ns = 1, there can be only one paging occation (only one subframe where paging message is carried) within a Paging Frame and the subframe number is 9.
 2. When Ns = 2, there can be two paging occations (two subframes where paging message is carried) within a Paging Frame and the subframe number is 4 and 9.
 3. When Ns = 4, there can be four paging occations (four subframes where paging message is carried) within a Paging Frame and the subframe number is 0,4,5 and 9.
 
-3GPP Table for PO subframe number:
+<mark>3GPP Table for PO subframe number:</mark>
 
 <br>
 <img src="\lte_nbiot\img\lte_nbiot_pagingsubframe.png" width=100% height=100% />

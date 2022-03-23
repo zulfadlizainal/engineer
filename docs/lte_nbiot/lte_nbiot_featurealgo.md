@@ -31,7 +31,7 @@ Table form [2]
 <img src="\lte_nbiot\img\lte_nbiot_nrsboost.png" width=100% height=100% />
 <br>
 
-<mark>Note:</mark> All RE in NB-IoT PRB is 6dB boost from common LTE. This include NRS and also Non-NRS RE.
+?> Note: All RE in NB-IoT PRB is 6dB boost from common LTE. This include NRS and also Non-NRS RE.
 
     Eg:
     LTE CRS RE = 20dBm, so LTE NRS RE = 26dBm
@@ -79,11 +79,9 @@ Table form [2]
 
 #### NPDSCH Scheduling Rules
 
->NPDSCH is always scheduled 4ms after received NPDCCH (DCI). 
-
->NPUSCH ACK/NACK for NPDSCH is sent 12ms after all NPDSCH received.
-
->Next NPDCCH (DCI) for next transmission is 3ms after NPUSCH ACK/NACK.
+1. NPDSCH is always scheduled 4ms after received NPDCCH (DCI).
+2. NPUSCH ACK/NACK for NPDSCH is sent 12ms after all NPDSCH received.
+3. Next NPDCCH (DCI) for next transmission is 3ms after NPUSCH ACK/NACK.
 
 <br>
 <img src="\lte_nbiot\img\lte_nbiot_npdschsch.png" width=100% height=100% />
@@ -97,11 +95,9 @@ Table form [2]
 
 #### NPUSCH Scheduling Rules
 
->NPUSCH is always scheduled 8ms after received NPDCCH (DCI). 
-
->ACK/NACK for NPUSCH is sent inside NPDCCH because NB-IoT does not have PHICH like LTE.
-
->Next NPDCCH (DCI) for next transmission is 3ms after NPUSCH. Same NPDCCH is used for ACK/NACK for NPUSCH.
+1. NPUSCH is always scheduled 8ms after received NPDCCH (DCI).
+2. ACK/NACK for NPUSCH is sent inside NPDCCH because NB-IoT does not have PHICH like LTE.
+3. Next NPDCCH (DCI) for next transmission is 3ms after NPUSCH. Same NPDCCH is used for ACK/NACK for NPUSCH.
 
 <br>
 <img src="\lte_nbiot\img\lte_nbiot_npuschsch.png" width=100% height=100% />
@@ -154,7 +150,7 @@ When NB-IoT is operating in <mark>'inband' mode</mark>, only a specific PRB with
 
 >In Idle Mode UE only listen to MIB/SIB from Anchor Carrier. 
 
-***Procedure Changing to Non Anchor***
+***Procedure: Assignmnet to Non Anchor***
 
 <br>
 <img src="\lte_nbiot\img\lte_nbiot_nonanchsig.png" width=100% height=100% />
@@ -181,7 +177,7 @@ When NB-IoT is operating in <mark>'inband' mode</mark>, only a specific PRB with
 <img src="\lte_nbiot\img\lte_nbiot_nonanchsig3.png" width=70% height=70% />
 <br>
 
-***Scheduling Example*** based on [5]
+<mark>Scheduling Example</mark> based on [5]
 
 1. UE1 is configured with the anchor carrier.  
 2. UE2 with other carrier in DL and UL 
