@@ -1,7 +1,7 @@
 Topic: 4G LTE<br>
 Sub-Topic: NB-IoT<br>
 Date Written: 2019/10/16<br>
-Date Edited: 2022/03/22<br>
+Date Edited: 2022/03/23<br>
 
 ---
 
@@ -89,6 +89,26 @@ NPDCCH repetitions is limited based on <mark>Rmax</mark> value. From Rmax, actua
 
 <br>
 <img src="\lte_nbiot\img\lte_nbiot_edrxcycle2.png" width=100% height=100% />
+<br>
+
+---
+
+#### Design NPRACH Resource
+
+To plan the NPRACH Resource, <mark>need to ensure that NPRACH resource not overlapped within CE Level.</mark> What it means is, every CE level have their own dedicated NPRACH resource with their own NPRACH repetition and periodicity settings. 
+
+<br>
+<img src="\lte_nbiot\img\lte_nbiot_nprachperiodicity.png" width=100% height=100% />
+<br>
+
+!> Note: UL NPRACH does not follow the the same time slot rules as NPUSCH. It uses different timing unit based on preamble transmission structure.
+
+?> Timing reference is given using 2ms slot format because of UL NPRACH uses 3.75kHz SCS (devide 4 from 15kHz SCS in LTE). So, UL slots become 2ms (multiply 4 from 0.5ms timeslot in LTE).
+
+***Sample Parameter Structure:*** <mark>Parameter is not shared between differnt CE Level</mark>
+
+<br>
+<img src="\lte_nbiot\img\lte_nbiot_nprachparam.png" width=100% height=100% />
 <br>
 
 ---
