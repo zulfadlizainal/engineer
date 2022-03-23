@@ -108,7 +108,7 @@ To plan the NPRACH Resource, <mark>need to ensure that NPRACH resource not overl
 ***Sample Parameter Structure:*** <mark>Parameter is not shared between differnt CE Level</mark>
 
 <br>
-<img src="\lte_nbiot\img\lte_nbiot_nprachparam.png" width=100% height=100% />
+<img src="\lte_nbiot\img\lte_nbiot_nprachparam.png" width=70% height=70% />
 <br>
 
 ---

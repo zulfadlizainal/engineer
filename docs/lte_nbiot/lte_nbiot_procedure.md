@@ -154,6 +154,43 @@ Based on 3GPP, RSRP threshold for CE level is mapped into RSRP range information
 
 ---
 
+#### RACH MSG3 Multi Tone Decision
+
+When UE Sending NPRACH, <mark>the subcarrier index used by the UE to send NPRACH will indicates whether UE support MSG multitone or not.</mark> This is decided by <mark>'nprach-subcarrierMSG3-RangeStart-r13'</mark> parameter provided by SIB2.
+
+***How This Parameter Works?***
+
+1. eNB will send a range of preamble that can be used by the UE to send NPRACH.
+2. nprach-NumCBRA-StartSubcarriers (SIB2) - This parameter will tell UE the range.
+3. After UE know this range UE will read another parameter in SIB2 to know whether this range is being partition or not.
+4. nprach-SubcarrierMSG3-RangeStart (SIB2) - This parameter will tell UE whether the range is being partitioned or not.
+5. So, <mark>if UE support multitone in MSG3, UE will send NPRACH using multitone partition.</mark> If UE not support multitone in MSG3, UE will send NPRACH using single tone partition.
+6. This partition does not mean anything for NPRACH. It is just an indication to eNB that UE support Multitone in MSG3 transmission.
+
+<br>
+<img src="\lte_nbiot\img\lte_nbiot_npuschmsg3.png" width=100% height=100% />
+<br>
+
+<br>
+<img src="\lte_nbiot\img\lte_nbiot_npuschmsg32.png" width=100% height=100% />
+<br>
+
+<br>
+<img src="\lte_nbiot\img\lte_nbiot_npuschmsg33.png" width=100% height=100% />
+<br>
+
+<mark>3GPP Snapshot:</mark>
+
+<br>
+<img src="\lte_nbiot\img\lte_nbiot_npuschmsg34.png" width=100% height=100% />
+<br>
+
+<br>
+<img src="\lte_nbiot\img\lte_nbiot_npuschmsg35.png" width=100% height=100% />
+<br>
+
+---
+
 #### References
 
 1. 3GPP TS 36.331 Section 5.2.1.2

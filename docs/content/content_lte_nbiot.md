@@ -45,6 +45,7 @@ Date Edited: 2022/03/23<br>
 - [SIB1-NB Repetitions](/lte_nbiot/lte_nbiot_procedure.md?id=SIB1-NB-Repetitions)<br>
 - [CE Level Selection Criteria](/lte_nbiot/lte_nbiot_procedure.md?id=CE-Level-Selection-Criteria)<br>
 - [CE Level Conversion](/lte_nbiot/lte_nbiot_procedure.md?id=CE-Level-Conversion)<br>
+- [RACH MSG3 Multi Tone Decision](/lte_nbiot/lte_nbiot_procedure.md?id=RACH-MSG3-Multi-Tone-Decision)<br>
 
 #### Idle Mode Mobility 
 
