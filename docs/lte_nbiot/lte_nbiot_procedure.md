@@ -118,10 +118,48 @@ Table for easy copy:
 
 ---
 
+#### CE Level Selection Criteria
+
+The important thing is how UE consider itself to be in specific CE based on RSRP measurement. Based on 3GPP, UE shall consider to be in the designated CE Level when measured RSRP is < than Threshold in Higher Layer. It means if your index value translated into table range, when UE RSRP is less than the range, UE should consider itself to be in lower CE Level. [5] 
+
+<br>
+<img src="\lte_nbiot\img\lte_nbiot_ceselect.png" width=100% height=100% />
+<br>
+
+---
+
+#### CE Level Conversion 
+
+Based on 3GPP, RSRP threshold for CE level is mapped into RSRP range information element table. [6]
+
+<br>
+<img src="\lte_nbiot\img\lte_nbiot_ceconv.png" width=100% height=100% />
+<br>
+
+<br>
+<img src="\lte_nbiot\img\lte_nbiot_ceconv2.png" width=100% height=100% />
+<br>
+
+!> In some cases, vendors and UE might have different understanding on how to covert this value to a CE level value. For example, in this case TEMS using lower limit in their tool while XCAP using upper limit. 3GPP only define a range of RSRP for each index, maybe to save some index space. [7]
+
+<br>
+<img src="\lte_nbiot\img\lte_nbiot_ceconv3.png" width=100% height=100% />
+<br>
+
+?> Easy Tips: If SIB 2 Threshold says 15, Change CE Level when RSRP < -126dBm 
+
+| CE Level Change Value  | SIB 2 IE  |
+|------------------------|-----------|
+| -126  <= X < -125      | (15)      |
+
+---
+
 #### References
 
 1. 3GPP TS 36.331 Section 5.2.1.2
 2. 3GPP TS 36.213 Section 16.4.1.3
 3. [Rohde & Schwarz](https://cdn.rohde-schwarz.com/pws/dl_downloads/dl_application/application_notes/1ma266/1MA266_0e_NB_IoT.pdf)
 4. 3GPP TS 36.213 Section 16.4.1.5.2
-
+5. 3GPP TS 36.321 Section 5.1.1
+6. 3GPP TS 36.331
+7. 3GPP TS 36.133 Section 9.1.4

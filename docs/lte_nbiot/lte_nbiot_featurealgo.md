@@ -178,7 +178,7 @@ When NB-IoT is operating in <mark>'inband' mode</mark>, only a specific PRB with
 <br>
 
 <br>
-<img src="\lte_nbiot\img\lte_nbiot_nonanchsig3.png" width=100% height=100% />
+<img src="\lte_nbiot\img\lte_nbiot_nonanchsig3.png" width=70% height=70% />
 <br>
 
 ***Scheduling Example*** based on [5]

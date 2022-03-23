@@ -1,7 +1,7 @@
 Topic: 4G LTE<br>
 Sub-Topic: NB-IoT<br>
 Date Written: 2019/02/26<br>
-Date Edited: 2022/03/22<br>
+Date Edited: 2022/03/23<br>
 
 ---
 
@@ -42,6 +42,8 @@ Date Edited: 2022/03/22<br>
 
 - [MIB-NB Repetitions](/lte_nbiot/lte_nbiot_procedure.md?id=MIB-NB-Repetitions)<br>
 - [SIB1-NB Repetitions](/lte_nbiot/lte_nbiot_procedure.md?id=SIB1-NB-Repetitions)<br>
+- [CE Level Selection Criteria](/lte_nbiot/lte_nbiot_procedure.md?id=CE-Level-Selection-Criteria)<br>
+- [CE Level Conversion](/lte_nbiot/lte_nbiot_procedure.md?id=CE-Level-Conversion)<br>
 
 #### Idle Mode Mobility 
 
