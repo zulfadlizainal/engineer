@@ -129,14 +129,12 @@ Paging capacity can be calculated based on SIB2 parameters and also the capabili
 
 Table for easy copy:
 
-| Parameter        | Description                                         | Param Set 1 | Param Set 2 | Param Set 3 |
-|------------------|-----------------------------------------------------|-------------|-------------|-------------|
-| Paging Cycle (T) | Received from SIB2.                                 | 256rf       | 256rf       | 256rf       |
-|                  | Also called as DRX Cycle.                           |             |             |             |
-| nB               | Received from SIB2.                                 | one64thT    | one128thT   | one256thT   |
-| Paging Record    | Vendor support capability.                          | 1           | 10          | 15          |
-|                  | Number of TMSI can be included per paging occasion. |             |             |             |
-| Paging Capacity  | For every cycle, how many TMSI can be paged?        | 4           | 20          | 15          |
+| Parameter        | Description                                                                    | Param Set 1 | Param Set 2 | Param Set 3 |
+|------------------|--------------------------------------------------------------------------------|-------------|-------------|-------------|
+| Paging Cycle (T) | Received from SIB2. Also called as DRX Cycle.                                  | 256rf       | 256rf       | 256rf       |
+| nB               | Received from SIB2.                                                            | one64thT    | one128thT   | one256thT   |
+| Paging Record    | Vendor support capability. Number of TMSI can be included per paging occasion. | 1           | 10          | 15          |
+| Paging Capacity  | For every cycle, how many TMSI can be paged?                                   | 4           | 20          | 15          |
 
 ---
 
