@@ -149,15 +149,13 @@ Picture from [4]
 
 In FDD Cases:
 
-?> In 4G LTE FDD, Grant -> Data -> HARQ (-> = 4ms)
-
-?> In 5G NR FDD, Grant -> Data -> HARQ (-> = Slot Length)
+    In 4G LTE FDD, Grant -> Data -> HARQ (-> = 4ms)
+    In 5G NR FDD, Grant -> Data -> HARQ (-> = Slot Length)
 
 In TDD Cases:
 
-?> In 4G LTE TDD, Grant -> Data -> HARQ (-> = Depends on TDD Subframe Config)
-
-?> In 5G NR TDD, Grant -> Data -> HARQ (-> = In Same Slot)
+    In 4G LTE TDD, Grant -> Data -> HARQ (-> = Depends on TDD Subframe Config)
+    In 5G NR TDD, Grant -> Data -> HARQ (-> = In Same Slot)
 
 Picture modified from [4]
 

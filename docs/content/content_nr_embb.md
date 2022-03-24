@@ -15,12 +15,11 @@ Date Edited: 2022/03/23<br>
 
 #### Network Architecture
 
-- Basic Architecture
-- gNB Architecture
-- SA and NSA Deployment
-- CA and DC Concept
+- [Network Architecture](/nr_embb/nr_embb_nwarchitecture.md?id=Network-Architecture)<br>
+- [SA vs NSA](/nr_embb/nr_embb_nwarchitecture.md?id=SA-vs-NSA)<br>
+- [CA vs DC](/nr_embb/nr_embb_nwarchitecture.md?id=CA-vs-DC)<br>
 - Deployment Options
-- EN-DC Option 3 Family
+- EN-DC Option 3 Family (Most Famous Implementation)
 - Protocol Structure
 - Functional Split in gNB
 - User Plane Data Split in CA and DC
