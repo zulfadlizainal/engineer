@@ -1,7 +1,7 @@
 Topic: 5G NR<br>
 Sub-Topic: eMBB<br>
 Date Written: 2020/08/31<br>
-Date Edited: 2022/03/24<br>
+Date Edited: 2022/03/29<br>
 
 ---
 
@@ -124,8 +124,51 @@ Operation Level:
 
 ---
 
+#### Deployment Options
+
+Key Concepts: [4]
+
+1. 3GPP has aligned 7 deployment options standards where MNO can choose based on their strategy.
+2. The deployment options are categorized based on SA and NSA implementation.
+
+<br>
+<img src="\nr_embb\img\nr_embb_depopt.png" width=100% height=100% />
+<br>
+
+Table for easy copy:
+
+| Type          | Options | Core | RAN         | Description                    |
+|---------------|---------|------|-------------|--------------------------------|
+| SA (No DC)    | 1       | EPC  | eNB         | Common 4G implementation       |
+|               | 2       | 5GC  | gNB         | Common 5G implementation       |
+|               | 5       | 5GC  | ng-eNB      | LTE air interface with 5G core |
+|               | 6       | EPC  | gNB         | NR air interface with 4G core  |
+| NSA (Need DC) | 3/3a/3x | EPC  | eNB, en-gNB | LTE eNB as Anchor (EN-DC)      |
+|               | 4/4a    | EPC  | ng-eNB, gNB | NR gNB as Anchor (NE-DC)       |
+|               | 7/7a/7x | 5GC  | ng-eNB, gNB | LTE ng-eNB as Anchor (NGEN-DC) |
+
+Visual representation of 5G NR deployment options excluding Option 6. [5]
+
+<br>
+<img src="\nr_embb\img\nr_embb_depopt2.png" width=100% height=100% />
+<br>
+
+***Popular Deployment Strategy***
+
+1. Most MNO with 4G network assets will tend to start with NSA deployment for fast implementation and cost efficiency.
+2. Option 6 are rarely discussed by the industries because of its an unlikeliness possibility to happen but it is still defined in the specifications as a choice.
+
+<br>
+<img src="\nr_embb\img\nr_embb_depopt3.png" width=100% height=100% />
+<br>
+
+---
+
 #### References
 
 1. 3GPP TS 38.300
 2. 3GPP TS 38.401
 3. [Qualcomm](https://www.qualcomm.com/media/documents/files/whitepaper-making-5g-nr-a-reality.pdf)
+4. 3GPP TS 38.804
+5. Docomo - Unable to find link.
+6. 

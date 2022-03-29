@@ -1,7 +1,7 @@
 Topic: 5G NR<br>
 Sub-Topic: eMBB<br>
 Date Written: 2020/08/31<br>
-Date Edited: 2022/03/23<br>
+Date Edited: 2022/03/29<br>
 
 ---
 
@@ -18,8 +18,8 @@ Date Edited: 2022/03/23<br>
 - [Network Architecture](/nr_embb/nr_embb_nwarchitecture.md?id=Network-Architecture)<br>
 - [SA vs NSA](/nr_embb/nr_embb_nwarchitecture.md?id=SA-vs-NSA)<br>
 - [CA vs DC](/nr_embb/nr_embb_nwarchitecture.md?id=CA-vs-DC)<br>
-- Deployment Options
-- EN-DC Option 3 Family (Most Famous Implementation)
+- [Deployment Options](/nr_embb/nr_embb_nwarchitecture.md?id=Deployment-Options)<br>
+- Option 3: EN-DC
 - Protocol Structure
 - Functional Split in gNB
 - User Plane Data Split in CA and DC
