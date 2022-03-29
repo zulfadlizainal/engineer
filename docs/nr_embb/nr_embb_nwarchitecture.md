@@ -228,7 +228,6 @@ Control plane implementation is totally separate concept from user plane impleme
 <img src="\nr_embb\img\nr_embb_endccpenhance.png" width=100% height=100% />
 <br>
 
-
 ---
 
 #### References
