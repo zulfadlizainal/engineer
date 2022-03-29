@@ -19,7 +19,7 @@ Date Edited: 2022/03/29<br>
 - [SA vs NSA](/nr_embb/nr_embb_nwarchitecture.md?id=SA-vs-NSA)<br>
 - [CA vs DC](/nr_embb/nr_embb_nwarchitecture.md?id=CA-vs-DC)<br>
 - [Deployment Options](/nr_embb/nr_embb_nwarchitecture.md?id=Deployment-Options)<br>
-- Option 3: EN-DC
+- [Option 3: EN-DC](/nr_embb/nr_embb_nwarchitecture.md?id=Option-3-EN-DC)<br>
 - Protocol Structure
 - Functional Split in gNB
 - User Plane Data Split in CA and DC

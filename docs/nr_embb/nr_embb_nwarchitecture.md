@@ -164,6 +164,73 @@ Visual representation of 5G NR deployment options excluding Option 6. [5]
 
 ---
 
+#### Option 3: EN-DC
+
+1. Option 3: EPC as core network, DC for RAN with LTE eNB as Anchor and NR en-gNB as Non Anchor.
+2. MN is always LTE eNB as it handles Control Plane RRC for the DC.
+3. Difference between 3/3a/3x -> <mark>Different User Plane path options.</mark>
+
+Picture from [3]
+
+<br>
+<img src="\nr_embb\img\nr_embb_option3.png" width=100% height=100% />
+<br>
+
+***<mark>NSA Option 3 (EN-DC): UP Bearers from Network Perspective</mark>***
+
+Concept from [6]
+
+1. In case of Split Bearer, the PDCP will perform the split (for DL) and aggregation (for UL).
+2. When no SCG bearer added or SCG fail to add, only MCG bearer will be used.
+3. PDCP in MN can be upgraded to NR PDCP protocol.
+
+<br>
+<img src="\nr_embb\img\nr_embb_endcupnet.png" width=100% height=100% />
+<br>
+
+***<mark>NSA Option 3 (EN-DC): UP Bearers from UE Perspective</mark>***
+
+Concept from [6]
+
+1. From UE perspective, the deployment options concept does not apply.
+2. UE shall only understand whether to split or not (for UL) and whether to aggregate or not (for DL).
+
+<br>
+<img src="\nr_embb\img\nr_embb_endcupue.png" width=100% height=100% />
+<br>
+
+***<mark>NSA Option 3 (EN-DC): UP Bearers Bearer Reconfigurations</mark>***
+
+Concept from [6]
+
+?> Deployment options are not fixed. Depends on implementation, options can switch with PDCP reconfig.
+
+<br>
+<img src="\nr_embb\img\nr_embb_endcupbearer.png" width=100% height=100% />
+<br>
+
+Example of Split Bearer Implementation by OEM: [7]
+
+?> Generally, most OEM try to utilize NR leg in good NR RF, and split User Plane (UP) to LTE once NR RF become lower.
+
+<br>
+<img src="\nr_embb\img\nr_embb_splitbearerericsson.png" width=100% height=100% />
+<br>
+
+***<mark>NSA Option 3 (EN-DC): CP Enhancement</mark>***
+
+Control plane implementation is totally separate concept from user plane implementation. 
+
+> Enhancement 1: SRB3 is optional. Both RAN and UE need to support SRB3 to be able to enable it.
+> Enhancement 2: Can be configured as both air interface transmit same RRC or transmit different RRC.
+
+<br>
+<img src="\nr_embb\img\nr_embb_endccpenhance.png" width=100% height=100% />
+<br>
+
+
+---
+
 #### References
 
 1. 3GPP TS 38.300
@@ -171,4 +238,5 @@ Visual representation of 5G NR deployment options excluding Option 6. [5]
 3. [Qualcomm](https://www.qualcomm.com/media/documents/files/whitepaper-making-5g-nr-a-reality.pdf)
 4. 3GPP TS 38.804
 5. Docomo - Unable to find link.
-6. 
+6. [5G NR by Sassan Ahmadi](https://www.sciencedirect.com/book/9780081022672/5g-nr)
+7. Ericsson
