@@ -51,7 +51,7 @@ Refer [2]
 <br>
 
 <br>
-<img src="\nr_embb\img\nr_embb_gnbarchitecture2.png" width=100% height=100% />
+<img src="\nr_embb\img\nr_embb_gnbarchitecture2.png" width=70% height=70% />
 <br>
 
 ---
