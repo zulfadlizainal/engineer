@@ -27,10 +27,7 @@ Date Edited: 2022/03/29<br>
 #### Frame Structure
 
 - [Resource Grid and Waveform](/nr_embb/nr_embb_framestructure.md?id=Resource-Grid-and-Waveform)<br>
-
-- Numerology
-- Channel Bandwidth
-- Guard Band
+- [Frequency Domain](/nr_embb/nr_embb_framestructure.md?id=Frequency-Domain)<br>
 - Slot Length
 - Slot Format
 - TDD Structure
@@ -39,7 +36,6 @@ Date Edited: 2022/03/29<br>
 #### Features and Algorithm 
 
 - ENDC Dynamic UL Power Control
-- 
 
 #### Layer 1: PHY
 
@@ -71,7 +67,8 @@ Date Edited: 2022/03/29<br>
 - SIB
 - Initial Access Procedures
 - RACH Procedures
-- UE Measurement Procedures 
+- UE Measurement Procedures
+- 5G MGAP
 
 #### Idle Mode Mobility 
 
