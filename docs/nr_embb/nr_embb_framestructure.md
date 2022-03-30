@@ -77,7 +77,7 @@ Table for easy copy:
 | 4              | 240       | Normal                | No                                | Yes                               |
 
 <br>
-<img src="\nr_embb\img\nr_embb_numerology2.png" width=100% height=100% />
+<img src="\nr_embb\img\nr_embb_numerology2.png" width=70% height=70% />
 <br>
 
 ?> Note: Number of RBs within the channel bandwidth will reduced when numerology (µ) is higher. 
@@ -91,7 +91,7 @@ Table for easy copy:
 Operating bands are separated into 2 categories in NR: 1) <mark>FR1 (Sub 6)</mark> 2) <mark>FR2 (mmWave).</mark> [6]
 
 <br>
-<img src="\nr_embb\img\nr_embb_fr.png" width=70% height=70% />
+<img src="\nr_embb\img\nr_embb_fr.png" width=100% height=100% />
 <br>
 
 Table for easy copy:
