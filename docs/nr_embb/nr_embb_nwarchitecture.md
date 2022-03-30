@@ -219,7 +219,7 @@ Example of Split Bearer Implementation by OEM: [7]
 
 ***<mark>NSA Option 3 (EN-DC): CP Enhancement</mark>***
 
-Control plane implementation is totally separate concept from user plane implementation. 
+Control plane implementation is totally separate concept from user plane implementation. [3] [5]
 
 > Enhancement 1: SRB3 is optional. Both RAN and UE need to support SRB3 to be able to enable it.
 > Enhancement 2: Can be configured as both air interface transmit same RRC or transmit different RRC.

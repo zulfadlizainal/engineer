@@ -26,9 +26,8 @@ Date Edited: 2022/03/29<br>
 
 #### Frame Structure
 
-- Resource Grid
-- Resource Structure
-- Waveform
+- [Resource Grid and Waveform](/nr_embb/nr_embb_framestructure.md?id=Resource-Grid-and-Waveform)<br>
+
 - Numerology
 - Channel Bandwidth
 - Guard Band
@@ -39,7 +38,8 @@ Date Edited: 2022/03/29<br>
 
 #### Features and Algorithm 
 
-- Test
+- ENDC Dynamic UL Power Control
+- 
 
 #### Layer 1: PHY
 
