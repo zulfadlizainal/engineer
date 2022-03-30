@@ -16,13 +16,15 @@ Refer [1]
 <img src="\nr_embb\img\nr_embb_resourcegrid.png" width=100% height=100% />
 <br>
 
-Terminology:
+Some important terminologies:
 
     FFT: Fast Fourier Transform
     RB: Resource Block
     RE: Resource Element
     SCS: Sub Carrier Spacing
     OFDM: Orthogonal Frequency Division Multiplexing
+    CP: Cyclic Prefix
+    ISI: Inter-Symbol Interference
 
 
 ***NR Resource Structure*** 
@@ -186,6 +188,66 @@ Based on design and service requirements, numerology implementation can be estim
 
 ---
 
+#### Time Domain
+
+Key Concept: [5]
+
+1. NR slot length changes depending on the SCS used in frequency domain.
+2. The definition of <mark>Radio Frame = 10ms</mark> and <mark>Subframe = 1ms</mark> is still similar with LTE.
+
+<br>
+<img src="\nr_embb\img\nr_embb_radioframe.png" width=100% height=100% />
+<br>
+
+***Slot Length*** [1] [3]
+
+1. Slot Length in NR is measured based on how many slot can be fit inside 1ms Subframe.
+2. Slot Length is affected based on the numerology (µ) used in frequency domain.
+3. Slot Length is will not be affected by CP config, only symbol number is changed based on CP config.
+
+<br>
+<img src="\nr_embb\img\nr_embb_slotlength.png" width=100% height=100% />
+<br>
+
+<br>
+<img src="\nr_embb\img\nr_embb_slotlength2.png" width=100% height=100% />
+<br>
+
+***Scalable TTI*** [8]
+
+1. In LTE, TTI is always fixed which is every 1ms Subframe.
+2. NR allows the options to choose whether to use a Slot based TTI or Non Slot based TTI (Mini Slot).
+3. Mini Slot concepts allows for more lower TTI to adopt low latency scheduling.
+
+<br>
+<img src="\nr_embb\img\nr_embb_scalabletti2.png" width=100% height=100% />
+<br>
+
+***<mark>5G Frame Structure Summary</mark>***
+
+NR frame structure overall overview in time domain. [7]
+
+<br>
+<img src="\nr_embb\img\nr_embb_timedomain.png" width=100% height=100% />
+<br>
+
+***Slot Format*** [3] [9] [8]
+
+1. Slot Format in NR indicates the types of direction (DL, UL, Flexible) for symbol transmission in a slot.
+2. Flexible symbol have 2 purpose 1) DL-UL Transmission Gap 2) Semi Static & Dynamic TDD.
+
+Legend:
+
+    D: Downlink
+    U: Uplink
+    F: Flexible 
+
+<br>
+<img src="\nr_embb\img\nr_embb_timedomain.png" width=100% height=100% />
+<br>
+
+---
+
 #### References
 
 1. 3GPP TR 38.802
@@ -195,3 +257,5 @@ Based on design and service requirements, numerology implementation can be estim
 5. [Sharetechnote](https://www.sharetechnote.com/html/5G/5G_Phy_Numerology.html)
 6. 3GPP TS 38.101
 7. [5G NR by Sassan Ahmadi](https://www.sciencedirect.com/book/9780081022672/5g-nr)
+8. [Keysight](https://www.3g4g.co.uk/5G/5Gtech_video0022_01.pdf)
+9. 3GPP TS 38.213
