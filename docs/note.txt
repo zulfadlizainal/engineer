@@ -2,9 +2,7 @@ To be added:
 
 LTE: Uplink Tput Simulation
 LTE: Calculate RP, RQ, SINR 
-
 LTE: RRC Release with IMMCI -> remove all sib include sib24 -> until timer expires
 
 NR: MGAP
 NR: UE Cap
-NR MGAP

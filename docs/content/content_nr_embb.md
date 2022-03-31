@@ -29,8 +29,7 @@ Date Edited: 2022/03/29<br>
 - [Resource Grid and Waveform](/nr_embb/nr_embb_framestructure.md?id=Resource-Grid-and-Waveform)<br>
 - [Frequency Domain](/nr_embb/nr_embb_framestructure.md?id=Frequency-Domain)<br>
 - [Time Domain](/nr_embb/nr_embb_framestructure.md?id=Time-Domain)<br>
-- TDD Structure
-- TDD Coexistence
+- [TDD Structures](/nr_embb/nr_embb_framestructure.md?id=TDD-Structures)<br>
 
 #### Features and Algorithm 
 

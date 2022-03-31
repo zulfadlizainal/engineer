@@ -1,7 +1,7 @@
 Topic: 5G NR<br>
 Sub-Topic: eMBB<br>
 Date Written: 2020/08/31<br>
-Date Edited: 2022/03/30<br>
+Date Edited: 2022/03/31<br>
 
 ---
 
@@ -243,7 +243,85 @@ Legend:
     F: Flexible 
 
 <br>
-<img src="\nr_embb\img\nr_embb_timedomain.png" width=100% height=100% />
+<img src="\nr_embb\img\nr_embb_slotformat.png" width=100% height=100% />
+<br>
+
+---
+
+#### TDD Structures
+
+NR TDD frame structure are designed to be flexible in terms DL and UL allocation compared to LTE that dependent on predefined table. NR starts supporting Dynamic and Semi Static TDD configuration on symbol level by using Dedicated RRC Signaling and DCI carrying SFI-RNTI. [8] [10]
+
+<br>
+<img src="\nr_embb\img\nr_embb_tddframe.png" width=100% height=100% />
+<br>
+
+<mark>Different characteristics between NR and LTE:</mark>
+
+<br>
+<img src="\nr_embb\img\nr_embb_tddnrlte.png" width=100% height=100% />
+<br>
+
+| Parameter              | NR                           | LTE      |
+|------------------------|------------------------------|----------|
+| Time Domain Level      | Slot, Symbol                 | Subframe |
+| Operation Flexibility  | Static, Semi-Static, Dynamic | Static   |
+| Predefined Table       | No                           | Yes      |
+
+***<mark>Static TDD Configuration (via RMSI SIB1)</mark>***
+
+Key concept: [9] [11]
+
+1. UE will be provided with TDD slot patterns (Pattern 2 is optional) via RMSI (SIB1).
+2. UE will sets the slot configuration based on Pattern 1 followed by Pattern 2 if provided.
+
+<br>
+<img src="\nr_embb\img\nr_embb_statictddconfig.png" width=100% height=100% />
+<br>
+
+?> RMSI: Required Minimum System Information (SIB1)
+
+***Eg: TDD Pattern Illustration***
+
+In Example below, TDD slot format translates to <mark>DL = 74.4% UL = 22.8% Flex = 2.8%.</mark>
+
+<br>
+<img src="\nr_embb\img\nr_embb_tddpatternexample.png" width=100% height=100% />
+<br>
+
+Eg: SIB 1 parameters:
+
+| tdd-UL-DL-ConfigurationCommon       | Pattern1 | Pattern2 |
+|-------------------------------------|----------|----------|
+| dl-UL-TransmissionPeriodicity       | ms2      | ms2      |
+| nrofDownlinkSlots                   | 3        | 4        |
+| nrofDownlinkSymbols                 | 6        | 0        |
+| nrofUplinkSlots                     | 2        | 0        |
+| nrofUplinkSymbols                   | 4        | 0        |
+| dl-UL-TransmissionPeriodicity-v1530 | ms3      | -        |
+
+***<mark>Semi-Static TDD Configuration (via RRC Configuration)</mark>***
+
+If the UE is additionally provided tdd-UL-DL-ConfigurationDedicated, the parameter tdd-UL-DLConfigurationDedicated overrides only flexible symbols per slot over the number of slots as provided by tdd-UL-DLConfigurationCommon. [9] [11]
+
+?> Semi-Static TDD Configuration is provided to dedicated UE via RRC. Only flexible symbols are entitled to be overridden by this configuration
+
+<br>
+<img src="\nr_embb\img\nr_embb_semistatictddconfig.png" width=100% height=100% />
+<br>
+
+!> Note: Reference SCS will always follow Static configuration SCS
+
+!> Note: Static and Semi-Static configuration will be common for each configured BWP
+
+***<mark>Dynamic TDD Configuration (via PDCCH DCI Format 2_0)</mark>***
+
+Dynamic TDD introduces scheduling based TDD configuration changed by instructing config via PDCCH DCI Format 2_0. [9] [11]
+
+?> From RRC, UE will understand on which PDCCH to be monitored. If PDCCH contains SFI-RNTI (DCI Format 2_0), UE will change it slots based on SFI.
+
+<br>
+<img src="\nr_embb\img\nr_embb_dynamictddconfig.png" width=100% height=100% />
 <br>
 
 ---
@@ -259,3 +337,5 @@ Legend:
 7. [5G NR by Sassan Ahmadi](https://www.sciencedirect.com/book/9780081022672/5g-nr)
 8. [Keysight](https://www.3g4g.co.uk/5G/5Gtech_video0022_01.pdf)
 9. 3GPP TS 38.213
+10. [Qualcomm](https://www.qualcomm.com/media/documents/files/whitepaper-making-5g-nr-a-reality.pdf)
+11. 3GPP TS 38.331
