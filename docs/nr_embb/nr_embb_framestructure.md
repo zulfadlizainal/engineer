@@ -259,7 +259,7 @@ NR TDD frame structure are designed to be flexible in terms DL and UL allocation
 <mark>Different characteristics between NR and LTE:</mark>
 
 <br>
-<img src="\nr_embb\img\nr_embb_tddnrlte.png" width=70% height=70% />
+<img src="\nr_embb\img\nr_embb_tddnrlte.png" width=50% height=50% />
 <br>
 
 | Parameter              | NR                           | LTE      |
