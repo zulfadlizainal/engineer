@@ -12,7 +12,7 @@ Based on the flexible symbol, guard band can be estimated, max cell range can be
 ***<mark>Symbol Length (Normal CP Case)</mark>***
 
 <br>
-<img src="\nr_embb\img\nr_embb_symbollength.png" width=100% height=100% />
+<img src="\nr_embb\img\nr_embb_symbollength.png" width=70% height=70% />
 <br>
 
 | Numerology  | SCS   | OFDM Symbol Duration | Cyclic Prefix Duration | OFDM Symbol including CP  |
@@ -29,17 +29,17 @@ Based on the flexible symbol, guard band can be estimated, max cell range can be
     Distance (m) = c (m/sec) × t (sec)
 
 Eg: 30kHz SCS
-Distance (m) = 3x(10^8) x 35.68x(10^-6)
-             = 10650 m
 
-<mark>
+    Distance (m) 
+    = 3x(10^8) x 35.68x(10^-6)
+    = 10650 m
+
 1 Symbol CP provides protection for:
-10.65km (2 Way Propagation)
-5.33km (1 Way Propagation)
-</mark>
+    10.65km (2 Way Propagation)
+    5.33km (1 Way Propagation)
 
 <br>
-<img src="\nr_embb\img\nr_embb_cellrange.png" width=100% height=100% />
+<img src="\nr_embb\img\nr_embb_cellrange.png" width=70% height=70% />
 <br>
 
 ---
