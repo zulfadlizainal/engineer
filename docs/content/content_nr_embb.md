@@ -79,4 +79,4 @@ Date Edited: 2022/03/29<br>
 
 #### Practical Analysis
 
-- Test
+- [Design Cell Range for TDD](/nr_embb/nr_embb_practical.md?id=Design-Cell-Range-for-TDD)<br>
