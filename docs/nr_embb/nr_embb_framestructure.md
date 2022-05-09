@@ -326,6 +326,27 @@ Dynamic TDD introduces scheduling based TDD configuration changed by instructing
 
 ---
 
+#### TDD Flexible Symbols
+
+Key concept: [7]
+
+1. One of the purpose of Flexible symbols is to be a transmission guard bands between DL to UL in UE.
+2. Gap for DL-UL transmissions are planned based on the propagation delay (TA from gNB).
+
+<mark>Propagation delay</mark> impact dfferently based on how far the user form the gnb:
+
+<br>
+<img src="\nr_embb\img\nr_embb_tddpropdelay.png" width=70% height=70% />
+<br>
+
+gNB informing UE how much to fasten UL transmission:
+
+<br>
+<img src="\nr_embb\img\nr_embb_ta.png" width=70% height=70% />
+<br>
+
+---
+
 #### References
 
 1. 3GPP TR 38.802
