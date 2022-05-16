@@ -335,7 +335,7 @@ Dynamic TDD introduces scheduling based TDD configuration changed by instructing
 ***<mark>Dynamic TDD Requirements</mark>***
 
 <br>
-<img src="\nr_embb\img\nr_embb_dynamictddreq.png" width=50% height=50% />
+<img src="\nr_embb\img\nr_embb_dynamictddreq.png" width=40% height=40% />
 <br>
 
 ***<mark>Use Cases for Dynamic TDD</mark>***
