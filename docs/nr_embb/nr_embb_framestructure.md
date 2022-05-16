@@ -324,6 +324,39 @@ Dynamic TDD introduces scheduling based TDD configuration changed by instructing
 <img src="\nr_embb\img\nr_embb_dynamictddconfig.png" width=100% height=100% />
 <br>
 
+Dynamic TDD will need high requirements on Cell/UE coverage overlapping to avoid Cell to UE interference or vice versa. Beamforming on DL and UL useful to support dynamic TDD implementation.
+
+***<mark>Typical Static TDD Environment</mark>***
+
+<br>
+<img src="\nr_embb\img\nr_embb_tddstaticenv.png" width=100% height=100% />
+<br>
+
+***<mark>Dynamic TDD Reason</mark>***
+
+<br>
+<img src="\nr_embb\img\nr_embb_dynamictddreason.png" width=10% height=10% />
+<br>
+
+***<mark>Use Cases for Dynamic TDD</mark>***
+
+Dynamic TDD may benefit small cell environment where mmWave will typically be used.
+
+Dynamic TDD Use Cases (On Demand Flexibility):
+
+   1. High Traffic Demand Scenario: DL and UL can be balanced
+   2. Low Latency Scenario: Self contained slots
+
+Typical Environment to utilize Dynamic TDD:
+
+   1. Small Cell Environment: In mmWave where less overlapping risk with other TDD
+   2. Low User Environment: Easy to manage interference between different Cells/UEs
+   3. Cell and UE Beamforming in Place: Better overlapping coverage management
+
+<br>
+<img src="\nr_embb\img\nr_embb_dynamictddenv.png" width=100% height=100% />
+<br>
+
 ---
 
 #### TDD Flexible Symbols
