@@ -324,7 +324,7 @@ Dynamic TDD introduces scheduling based TDD configuration changed by instructing
 <img src="\nr_embb\img\nr_embb_dynamictddconfig.png" width=100% height=100% />
 <br>
 
-Dynamic TDD will need high requirements on Cell/UE coverage overlapping to avoid Cell to UE interference or vice versa. Beamforming on DL and UL useful to support dynamic TDD implementation.
+?> Dynamic TDD will need high requirements on Cell/UE coverage overlapping to avoid Cell to UE interference or vice versa. Beamforming on DL and UL useful to support dynamic TDD implementation.
 
 ***<mark>Typical Static TDD Environment</mark>***
 
@@ -332,10 +332,10 @@ Dynamic TDD will need high requirements on Cell/UE coverage overlapping to avoid
 <img src="\nr_embb\img\nr_embb_tddstaticenv.png" width=100% height=100% />
 <br>
 
-***<mark>Dynamic TDD Reason</mark>***
+***<mark>Dynamic TDD Requirements</mark>***
 
 <br>
-<img src="\nr_embb\img\nr_embb_dynamictddreason.png" width=10% height=10% />
+<img src="\nr_embb\img\nr_embb_dynamictddreq.png" width=50% height=50% />
 <br>
 
 ***<mark>Use Cases for Dynamic TDD</mark>***
