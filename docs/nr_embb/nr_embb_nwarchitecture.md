@@ -299,6 +299,10 @@ Everything related to Radio Resource Control is handles by RRC.
 8. Radio Configuration Control Eg: Resource
 9. Recovery from RLF
 
+>? Physical sublayer will mapped all user plane and control plane from higher layer with physical channels.
+
+>! Physical channels is a broad discussion because it involves many kind of channels and signals with its own proprietary functionality.
+
 ---
 
 #### User Plane Functionality
@@ -358,6 +362,10 @@ Beam Management is being done in MAC layer for fast beam recovery.
 8. RACH Procedures
 9. Maintenance of UL Timing (TA)
 10. Support for Multiple Numerology <mark>[New in NR]</mark>
+
+>? Physical sublayer will mapped all user plane and control plane from higher layer with physical channels.
+
+>! Physical channels is a broad discussion because it involves many kind of channels and signals with its own proprietary functionality.
 
 ---
 
