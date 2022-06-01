@@ -230,6 +230,27 @@ Control plane implementation is totally separate concept from user plane impleme
 
 ---
 
+#### Protocol Stack
+
+2 types of protocol stack: [8]
+
+1. Control Plane
+2. User Plane
+
+***<mark>End to End Control Plane protocol stack in NR system.</mark>***
+
+<br>
+<img src="\nr_embb\img\nr_embb_cpstack.png" width=100% height=100% />
+<br>
+
+***<mark>End to End User Plane protocol stack in NR system.</mark>***
+
+<br>
+<img src="\nr_embb\img\nr_embb_upstack.png" width=100% height=100% />
+<br>
+
+---
+
 #### References
 
 1. 3GPP TS 38.300
@@ -239,3 +260,4 @@ Control plane implementation is totally separate concept from user plane impleme
 5. Docomo - Unable to find link.
 6. [5G NR by Sassan Ahmadi](https://www.sciencedirect.com/book/9780081022672/5g-nr)
 7. Ericsson
+8. Netmanias
