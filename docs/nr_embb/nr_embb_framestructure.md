@@ -380,6 +380,16 @@ gNB informing UE how much to fasten UL transmission:
 
 ---
 
+#### TTD Coexistence with LTE
+
+Adjacent band need to be considered while designing Slot and Special Slot configuration to avoid any interference caused by spurious emissions. [12]
+
+<br>
+<img src="\nr_embb\img\nr_embb_tddcoexistence.png" width=100% height=100% />
+<br>
+
+---
+
 #### References
 
 1. 3GPP TR 38.802
@@ -393,3 +403,4 @@ gNB informing UE how much to fasten UL transmission:
 9. 3GPP TS 38.213
 10. [Qualcomm](https://www.qualcomm.com/media/documents/files/whitepaper-making-5g-nr-a-reality.pdf)
 11. 3GPP TS 38.331
+12. Ericsson
