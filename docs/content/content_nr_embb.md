@@ -71,6 +71,7 @@ Date Edited: 2022/06/01<br>
 - RACH Procedures
 - UE Measurement Procedures
 - 5G MGAP
+- RRC State
 
 #### Idle Mode Mobility 
 

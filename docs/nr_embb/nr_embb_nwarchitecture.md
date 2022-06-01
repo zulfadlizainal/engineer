@@ -299,9 +299,9 @@ Everything related to Radio Resource Control is handles by RRC.
 8. Radio Configuration Control Eg: Resource
 9. Recovery from RLF
 
->? Physical sublayer will mapped all user plane and control plane from higher layer with physical channels.
+?> Physical sublayer will mapped all user plane and control plane from higher layer with physical channels.
 
->! Physical channels is a broad discussion because it involves many kind of channels and signals with its own proprietary functionality.
+!> Physical channels is a broad discussion because it involves many kind of channels and signals with its own proprietary functionality.
 
 ---
 
@@ -363,9 +363,9 @@ Beam Management is being done in MAC layer for fast beam recovery.
 9. Maintenance of UL Timing (TA)
 10. Support for Multiple Numerology <mark>[New in NR]</mark>
 
->? Physical sublayer will mapped all user plane and control plane from higher layer with physical channels.
+?> Physical sublayer will mapped all user plane and control plane from higher layer with physical channels.
 
->! Physical channels is a broad discussion because it involves many kind of channels and signals with its own proprietary functionality.
+!> Physical channels is a broad discussion because it involves many kind of channels and signals with its own proprietary functionality.
 
 ---
 
@@ -380,6 +380,8 @@ The decision of implementation is based on hardware capability and requirements.
 <img src="\nr_embb\img\nr_embb_protocolfuncsplit.png" width=100% height=100% />
 <br>
 
+***<mark>Configuration Options:</mark>***
+
 <br>
 <img src="\nr_embb\img\nr_embb_protocolfuncsplit2.png" width=100% height=100% />
 <br>
@@ -388,7 +390,7 @@ The decision of implementation is based on hardware capability and requirements.
 
 #### User Plane Data Split in CA and DC
 
-CA split the User Plane in MAC (Ideal backhaul necessary) while DC split the User Plane in PDCP layer.
+CA split the User Plane in MAC <mark>(Ideal backhaul necessary)</mark> while DC split the User Plane in PDCP layer.
 
 <br>
 <img src="\nr_embb\img\nr_embb_cadcdatasplit.png" width=100% height=100% />
