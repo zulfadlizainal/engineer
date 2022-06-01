@@ -21,7 +21,8 @@ Date Edited: 2022/03/29<br>
 - [Deployment Options](/nr_embb/nr_embb_nwarchitecture.md?id=Deployment-Options)<br>
 - [Option 3: EN-DC](/nr_embb/nr_embb_nwarchitecture.md?id=Option-3-EN-DC)<br>
 - [Protocol Stack](/nr_embb/nr_embb_nwarchitecture.md?id=Protocol-Stack)<br>
-- Protocol Structure
+- [Control Plane Functionality](/nr_embb/nr_embb_nwarchitecture.md?id=Control-Plane-Functionality)<br>
+- [User Plane Functionality](/nr_embb/nr_embb_nwarchitecture.md?id=Control-Plane-Functionality)<br>
 - Functional Split in gNB
 - User Plane Data Split in CA and DC
 

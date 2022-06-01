@@ -249,6 +249,116 @@ Control plane implementation is totally separate concept from user plane impleme
 <img src="\nr_embb\img\nr_embb_upstack.png" width=100% height=100% />
 <br>
 
+***<mark>CP and UP - How it Connects?</mark>***
+
+NR radio access protocol stack are similar with LTE. SDAP protocol is the only addition in NR. [6]
+
+<br>
+<img src="\nr_embb\img\nr_embb_cpupstack.png" width=100% height=100% />
+<br>
+
+Protocol layer <mark>functional mapping</mark> with channel coding remain the same with LTE.
+
+<br>
+<img src="\nr_embb\img\nr_embb_cpupfunctionmap.png" width=100% height=100% />
+<br>
+
+---
+
+#### Control Plane Functionality
+
+Refer [3]
+
+***<mark>Control Plane: NAS Layer Function</mark>***
+
+For a system that dependent on 5GC for Control Plane, NAS will be terminated to 5GC’s AMF.
+For a system that dependent on EPC for control plane, NAS will be terminated at EPC’s MME
+
+1. NAS chippering and integrity protection
+2. Registration Management
+3. Connection Management
+4. Reachability Management
+5. Mobility Management
+6. Transport for Session Management
+7. Access Authentication
+8. Access Authorization
+9. Transport for SMS Messages
+
+***<mark>Control Plane: RRC Layer Function</mark>***
+
+RRC handles important Control Plane information for AS (Access Stratum).
+Everything related to Radio Resource Control is handles by RRC.
+
+1. Broadcast System Information
+2. Measurement Configurations and Reporting
+3. Paging
+4. Initial Security Activation
+5. Connection Control Eg: RRC Establishment, Release, Suspend, Resume.
+6. Mobility Control Eg: Handover
+7. DRB Configuration and Modification
+8. Radio Configuration Control Eg: Resource
+9. Recovery from RLF
+
+---
+
+#### User Plane Functionality
+
+Refer [1]
+
+***<mark>User Plane: SDAP Layer Function</mark>*** 
+
+SDAP sublayer is added to NR when 5GC is being used in User Plane.
+SDAP main functions is to handles QoS Flow ID – A enhanced concept of QCIs in LTE.
+
+1. Transfer User Plane Data <mark>[New in NR]</mark>
+2. QoS Flow ID mapping with DRB for DL & UL <mark>[New in NR]</mark>
+
+***<mark>User Plane: PDCP Layer Function</mark>*** 
+
+PDCP hold the bridge to combine both User Plane and Control Plane.
+PDCP sublayer introduced few new functions in NR such as handling user plane split bearer.
+
+1. Transfer of Data (User Plane to Control Plane)
+2. IP Header Compressions
+3. Security Functions
+4. Retransmissions of Missing Packets
+5. Reordering and Duplication Detection <mark>[New in NR]</mark>
+6. PDCP PDU Routing in case of Split Bearer <mark>[New in NR]</mark>
+7. Timer Based Packet Discarding
+8. PDCP Re-establishment and Data Recovery
+9. Duplication of PDCP PDUs <mark>[New in NR]</mark>
+
+***<mark>User Plane: RLC Layer Function</mark>*** 
+
+RLC sublayer holds a lot of functionalities but all functionalities are mostly similar wit LTE.
+The only difference in NR is ‘Reordering & Duplication Detection’ function has been moved to PDCP.
+
+1. Transfer of upper layer PDUs
+2. Error Correction through ARQ (AM only)
+3. Segmentation (AM and UM) of RLC SDUs 
+4. Re-segmentation (AM only) of RLC SDUs
+5. Reassembly of SDU (AM and UM)
+6. Duplicate Detection (AM only)
+7. RLC SDU discard (AM and UM)
+8. RLC re-establishment
+9. Protocol error detection (AM only)
+
+***<mark>User Plane: MAC Layer Function</mark>*** 
+
+Key functions for MAC sublayer 1) Scheduling 2) HARQ 3) Beam Management 4) RACH 5) TA 
+Beam Management is being done in MAC layer for fast beam recovery.
+
+1. Assignment DL & UL Resources
+2. HARQ Retransmission
+3. Packet to TB conversion (Mux/Demux)
+4. Priority Handling of Logical Channel
+5. Error Correction Through HARQ
+6. Beam Quality Feedback <mark>[New in NR]</mark>
+7. Beam Switch Procedures <mark>[New in NR]</mark>
+8. RACH Procedures
+9. Maintenance of UL Timing (TA)
+10. Support for Multiple Numerology <mark>[New in NR]</mark>
+
 ---
 
 #### References
