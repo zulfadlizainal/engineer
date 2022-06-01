@@ -1,7 +1,7 @@
 Topic: 5G NR<br>
 Sub-Topic: eMBB<br>
 Date Written: 2020/08/31<br>
-Date Edited: 2022/03/31<br>
+Date Edited: 2022/06/01<br>
 
 ---
 
