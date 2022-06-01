@@ -26,7 +26,7 @@ Date Edited: 2022/06/01<br>
 - [Protocol Functional Split in gNB](/nr_embb/nr_embb_nwarchitecture.md?id=Protocol-Functional-Split-in-gNB)<br>
 - [User Plane Data Split in CA and DC](/nr_embb/nr_embb_nwarchitecture.md?id=User-Plane-Data-Split-in-CA-and-DC)<br>
 - [User Plane QOS Framework](/nr_embb/nr_embb_nwarchitecture.md?id=User-Plane-QOS-Framework)<br>
-  
+
 #### Frame Structure
 
 - [Resource Grid and Waveform](/nr_embb/nr_embb_framestructure.md?id=Resource-Grid-and-Waveform)<br>
@@ -42,38 +42,19 @@ Date Edited: 2022/06/01<br>
 
 #### Layer 1: PHY
 
-- PHY Layer
-- Synchronization Signals 
-- Synchronization Raster
-- SSB
-- PSS and SSS
-- PCI
-- PBCH
-- Reference Signals
-- Control Channels
-- Data Channels
+- Test
 
 #### Layer 2: MAC, RLC, PDCP, SDAP
 
-- MAC Layer
-- RLC Layer
-- PDCP Layer
-- SDAP Layer
+- Test
 
 #### Layer 3: RRC, NAS 
 
-- RRC Layer
-- NAS Layer
+- Test
 
 #### Protocol and Procedures 
 
 - [RRC State](/nr_embb/nr_embb_procedure.md?id=RRC-State)<br>
-- SIB
-- Initial Access Procedures
-- RACH Procedures
-- UE Measurement Procedures
-- 5G MGAP
-- RRC State
 
 #### Idle Mode Mobility 
 
