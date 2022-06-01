@@ -398,6 +398,32 @@ CA split the User Plane in MAC <mark>(Ideal backhaul necessary)</mark> while DC 
 
 ---
 
+#### User Plane QOS Framework
+
+Refer [10]
+
+In LTE, strict one-to-one mapping approach is being used for UP bearers.<br>
+In NR, different QoS flows can be mapped with similar DRB. SDAP layer is introduced for this purpose. 
+
+<br>
+<img src="\nr_embb\img\nr_embb_qosflow.png" width=100% height=100% />
+<br>
+
+?> LTE: High E2E signaling overhead needed for bearer setup and release every time service start or end.
+
+?> NR: No bearer setup in E2E is needed (Because no bearer). QoS flow is just an IP flow based on services. It will dynamically created and stopped based on user plane data transfer.
+
+***<mark>NR vs LTE QOS Framework Differences</mark>***
+
+| Parameter       | NR                             | LTE                           |
+|-----------------|--------------------------------|-------------------------------|
+| QoS Identifier  | 5G QoS Identifier - 5QI        | Quality Class Indicator - QCI |
+| IP Flow         | QoS Flow                       | EPS Bearer                    |
+| Flow Identifier | QoS Flow Identifier - QFI      | EPS Bearer Identity - EBI     |
+| Reflective QoS  | Reflective QoS Indicator - RQI | N/A                           |
+
+---
+
 #### References
 
 1. 3GPP TS 38.300
@@ -409,3 +435,4 @@ CA split the User Plane in MAC <mark>(Ideal backhaul necessary)</mark> while DC 
 7. Ericsson
 8. Netmanias
 9. 3GPP TR 38.801
+10. Huawei - Can't find link
