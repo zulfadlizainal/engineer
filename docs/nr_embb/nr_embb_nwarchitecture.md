@@ -422,6 +422,91 @@ In NR, different QoS flows can be mapped with similar DRB. SDAP layer is introdu
 | Flow Identifier | QoS Flow Identifier - QFI      | EPS Bearer Identity - EBI     |
 | Reflective QoS  | Reflective QoS Indicator - RQI | N/A                           |
 
+***<mark>Visualizing NR QoS Framework</mark>***
+
+Refer [6] [8]
+
+Representation of NR QoS Framework for every PDU Session.<br>
+Network Slice will slice the network from core to radio based on service requirements.
+
+<br>
+<img src="\nr_embb\img\nr_embb_qosflow2.png" width=100% height=100% />
+<br>
+
+---
+
+#### 5QI QOS Identifier
+
+<mark>For GBR</mark> case, whenever data is transported across QoS Flow, it will be treated based on the 5QI parameters definition for both DL and UL. <br>
+However, <mark>for Non-GBR</mark>, UE will use similar QoS treatment in UL based on DL 5QI parameters - RQI.<br>
+No NAS signaling needed for both cases as 5QI parameters is embedded inside packet header.
+
+<br>
+<img src="\nr_embb\img\nr_embb_5qi.png" width=70% height=70% />
+<br>
+
+***<mark>User Plane 5QI Specifications - Table A for GBR and Non GBR</mark>***
+
+Table A is designed for QoS requirements under services that based on GBR and Non-GBR. [11]
+
+<br>
+<img src="\nr_embb\img\nr_embb_5qitablea.png" width=100% height=100% />
+<br>
+
+Table version for easy copy:
+
+| 5QI | Resource Type | Priority Level | Packet Delay    Budget (PDB) | Packet Error Loss Rate | Services                                         |
+|-----|---------------|----------------|------------------------------|------------------------|--------------------------------------------------|
+| 1   | GBR           | 2              | 100ms                        | 10^-2                  | Conversational Voice                             |
+| 2   | GBR           | 4              | 150ms                        | 10^-3                  | Conversational Video                             |
+| 3   | GBR           | 3              | 50ms                         | 10^-3                  | Real Time Gaming                                 |
+| 4   | GBR           | 5              | 300ms                        | 10^-6                  | Non Conversational Video (Buffered Streaming)    |
+| 65  | GBR           | 0.7            | 75ms                         | 10^-2                  | Mission Critical Push to Talk Voice (MCPTT)      |
+| 66  | GBR           | 2              | 100ms                        | 10^-2                  | Non-Mission Critical Push to Talk Voice (MCPTT)  |
+| 67  | GBR           | 1.5            | 100ms                        | 10^-3                  | Mission Critical Video                           |
+| 75  | GBR           | 2.5            | 50ms                         | 10^-2                  | V2X Messages                                     |
+| 5   | Non-GBR       | 1              | 100ms                        | 10^-6                  | IMS Signaling                                    |
+| 6   | Non-GBR       | 6              | 300ms                        | 10^-6                  | Video (Buffered Streaming), TCP Based            |
+| 7   | Non-GBR       | 7              | 100ms                        | 10^-3                  | Voice, Live Streaming, Interactive Gaming        |
+| 8   | Non-GBR       | 8              | 300ms                        | 10^-6                  | Video (Buffered Streaming), TCP Based            |
+| 9   | Non-GBR       | 9              | 300ms                        | 10^-6                  | Video (Buffered Streaming), TCP Based            |
+| 69  | Non-GBR       | 0.5            | 60ms                         | 10^-6                  | Mission Critical Delay Sensitive Signaling       |
+| 70  | Non-GBR       | 5.5            | 200ms                        | 10^-6                  | Mission Critical Data                            |
+| 79  | Non-GBR       | 6.5            | 50ms                         | 10^-2                  | V2X Messages                                     |
+| 80  | Non-GBR       | 6.8            | 10ms                         | 10^-6                  | Low Latency eMMB applications, Augmented Reality |
+
+***<mark>User Plane 5QI Specifications - Table B for Delay Critical GBR</mark>***
+
+Table B is designed for QoS requirements under services that based on GBR but delay critical. [11]
+
+<br>
+<img src="\nr_embb\img\nr_embb_5qitableb.png" width=100% height=100% />
+<br>
+
+Table version for easy copy:
+
+| 5QI | Resource Type        | Priority Level | Packet Delay Budget (PDB) | Packet Error Loss Rate | Maximum Burst Size | Data Rate Averaging Window   | Services                                             |
+|-----|----------------------|----------------|---------------------------|------------------------|--------------------|------------------------------|------------------------------------------------------|
+| 82  | GBR (Delay Critical) | 1.9            | 10ms                      | 10^-4                  | 255 bytes          | 2s                           | Discrete Automation                                  |
+| 83  | GBR (Delay Critical) | 2.2            | 10ms                      | 10^-4                  | 1358 bytes         | 2s                           | Discrete Automation                                  |
+| 84  | GBR (Delay Critical) | 2.4            | 30ms                      | 10^-5                  | 1358 bytes         | 2s                           | Intelligent Transport System                         |
+| 85  | GBR (Delay Critical) | 2.1            | 6ms                       | 10^-5                  | 255 bytes          | 2s                           | Electricity Distribution – High Volt, Remote Control |
+
+Notes:
+
+1. The Maximum Burst Size is the amount of data which the RAN is expected to deliver within the part of the PDB.
+2. The Data Rate Averaging Window is the 'sliding window’ duration over which the GBR and MBR shall be calculated.
+3. PDB or Packet Delay Budget is calculation between UE and PCEF (Element inside Core Getaway). PDB defines an upper bound.
+4. Delay amount of assumption XXms value should be deducted from PCEF to gNB to derive PDB at radio interfaces, 3GPP Delay Assumptions for PCEF to gNB, Example: 20 ms delay (Average value), 10ms delay (gNB close to PCEF), 50ms delay (roaming with home routed), 10ms delay (mission critical services), etc etc.
+
+***<mark>Reflective QoS Identifier (RQI) for UL in Non GBR</mark>***
+
+For Non-GBR, UE will use similar QoS treatment in UL based on DL 5QI parameters - RQI.
+
+<br>
+<img src="\nr_embb\img\nr_embb_5qirqi.png" width=100% height=100% />
+<br>
+
 ---
 
 #### References
@@ -436,3 +521,4 @@ In NR, different QoS flows can be mapped with similar DRB. SDAP layer is introdu
 8. Netmanias
 9. 3GPP TR 38.801
 10. Huawei - Can't find link
+11. 3GPP TS 23.303

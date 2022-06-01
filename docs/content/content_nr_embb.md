@@ -26,6 +26,7 @@ Date Edited: 2022/06/01<br>
 - [Protocol Functional Split in gNB](/nr_embb/nr_embb_nwarchitecture.md?id=Protocol-Functional-Split-in-gNB)<br>
 - [User Plane Data Split in CA and DC](/nr_embb/nr_embb_nwarchitecture.md?id=User-Plane-Data-Split-in-CA-and-DC)<br>
 - [User Plane QOS Framework](/nr_embb/nr_embb_nwarchitecture.md?id=User-Plane-QOS-Framework)<br>
+- [5QI QOS Identifier](/nr_embb/nr_embb_nwarchitecture.md?id=5QI-QOS-Identifier)<br>
 
 #### Frame Structure
 
