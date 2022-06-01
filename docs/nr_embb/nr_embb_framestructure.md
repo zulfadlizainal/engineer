@@ -380,7 +380,7 @@ gNB informing UE how much to fasten UL transmission:
 
 ---
 
-#### TTD Coexistence with LTE
+#### TDD Coexistence with LTE
 
 Adjacent band need to be considered while designing Slot and Special Slot configuration to avoid any interference caused by spurious emissions. [12]
 

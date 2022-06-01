@@ -31,6 +31,7 @@ Date Edited: 2022/03/29<br>
 - [Time Domain](/nr_embb/nr_embb_framestructure.md?id=Time-Domain)<br>
 - [TDD Structures](/nr_embb/nr_embb_framestructure.md?id=TDD-Structures)<br>
 - [TDD Flexible Symbols](/nr_embb/nr_embb_framestructure.md?id=TDD-Flexible-Symbols)<br>
+- [TDD Coexistence with LTE](/nr_embb/nr_embb_framestructure.md?id=TDD-Coexistence-with-LTE)<br>
 
 #### Features and Algorithm 
 
