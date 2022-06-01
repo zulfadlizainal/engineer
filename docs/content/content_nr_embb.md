@@ -23,8 +23,8 @@ Date Edited: 2022/06/01<br>
 - [Protocol Stack](/nr_embb/nr_embb_nwarchitecture.md?id=Protocol-Stack)<br>
 - [Control Plane Functionality](/nr_embb/nr_embb_nwarchitecture.md?id=Control-Plane-Functionality)<br>
 - [User Plane Functionality](/nr_embb/nr_embb_nwarchitecture.md?id=Control-Plane-Functionality)<br>
-- Functional Split in gNB
-- User Plane Data Split in CA and DC
+- [Protocol Functional Split in gNB](/nr_embb/nr_embb_nwarchitecture.md?id=Protocol-Functional-Split-in-gNB)<br>
+- [User Plane Data Split in CA and DC](/nr_embb/nr_embb_nwarchitecture.md?id=User-Plane-Data-Split-in-CA-and-DC)<br>
 
 #### Frame Structure
 

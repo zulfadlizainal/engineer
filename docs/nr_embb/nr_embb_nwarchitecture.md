@@ -271,7 +271,7 @@ Refer [3]
 
 ***<mark>Control Plane: NAS Layer Function</mark>***
 
-For a system that dependent on 5GC for Control Plane, NAS will be terminated to 5GC’s AMF.
+For a system that dependent on 5GC for Control Plane, NAS will be terminated to 5GC’s AMF.<br> 
 For a system that dependent on EPC for control plane, NAS will be terminated at EPC’s MME
 
 1. NAS chippering and integrity protection
@@ -286,7 +286,7 @@ For a system that dependent on EPC for control plane, NAS will be terminated at 
 
 ***<mark>Control Plane: RRC Layer Function</mark>***
 
-RRC handles important Control Plane information for AS (Access Stratum).
+RRC handles important Control Plane information for AS (Access Stratum).<br> 
 Everything related to Radio Resource Control is handles by RRC.
 
 1. Broadcast System Information
@@ -311,7 +311,7 @@ Refer [1]
 
 ***<mark>User Plane: SDAP Layer Function</mark>*** 
 
-SDAP sublayer is added to NR when 5GC is being used in User Plane.
+SDAP sublayer is added to NR when 5GC is being used in User Plane.<br> 
 SDAP main functions is to handles QoS Flow ID – A enhanced concept of QCIs in LTE.
 
 1. Transfer User Plane Data <mark>[New in NR]</mark>
@@ -319,7 +319,7 @@ SDAP main functions is to handles QoS Flow ID – A enhanced concept of QCIs in 
 
 ***<mark>User Plane: PDCP Layer Function</mark>*** 
 
-PDCP hold the bridge to combine both User Plane and Control Plane.
+PDCP hold the bridge to combine both User Plane and Control Plane.<br> 
 PDCP sublayer introduced few new functions in NR such as handling user plane split bearer.
 
 1. Transfer of Data (User Plane to Control Plane)
@@ -334,7 +334,7 @@ PDCP sublayer introduced few new functions in NR such as handling user plane spl
 
 ***<mark>User Plane: RLC Layer Function</mark>*** 
 
-RLC sublayer holds a lot of functionalities but all functionalities are mostly similar wit LTE.
+RLC sublayer holds a lot of functionalities but all functionalities are mostly similar wit LTE.<br> 
 The only difference in NR is ‘Reordering & Duplication Detection’ function has been moved to PDCP.
 
 1. Transfer of upper layer PDUs
@@ -349,7 +349,7 @@ The only difference in NR is ‘Reordering & Duplication Detection’ function h
 
 ***<mark>User Plane: MAC Layer Function</mark>*** 
 
-Key functions for MAC sublayer 1) Scheduling 2) HARQ 3) Beam Management 4) RACH 5) TA 
+Key functions for MAC sublayer 1) Scheduling 2) HARQ 3) Beam Management 4) RACH 5) TA<br> 
 Beam Management is being done in MAC layer for fast beam recovery.
 
 1. Assignment DL & UL Resources
@@ -369,6 +369,33 @@ Beam Management is being done in MAC layer for fast beam recovery.
 
 ---
 
+#### Protocol Functional Split in gNB
+
+Refer [5] [9]
+
+Protocol layer functional split can be implemented based on few standardized Options.<br> 
+The decision of implementation is based on hardware capability and requirements.
+
+<br>
+<img src="\nr_embb\img\nr_embb_protocolfuncsplit.png" width=100% height=100% />
+<br>
+
+<br>
+<img src="\nr_embb\img\nr_embb_protocolfuncsplit2.png" width=100% height=100% />
+<br>
+
+---
+
+#### User Plane Data Split in CA and DC
+
+CA split the User Plane in MAC (Ideal backhaul necessary) while DC split the User Plane in PDCP layer.
+
+<br>
+<img src="\nr_embb\img\nr_embb_cadcdatasplit.png" width=100% height=100% />
+<br>
+
+---
+
 #### References
 
 1. 3GPP TS 38.300
@@ -379,3 +406,4 @@ Beam Management is being done in MAC layer for fast beam recovery.
 6. [5G NR by Sassan Ahmadi](https://www.sciencedirect.com/book/9780081022672/5g-nr)
 7. Ericsson
 8. Netmanias
+9. 3GPP TR 38.801
