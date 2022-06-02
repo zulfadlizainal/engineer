@@ -55,7 +55,7 @@ Date Edited: 2022/06/01<br>
 
 #### Protocol and Procedures 
 
-- [Initial Access: Synchronization Establishment](/nr_embb/nr_embb_procedure.md?id=Initial-Access-Synchronization-Establishment)<br>
+- [Initial Access: Synchronization Establishment](/nr_embb/nr_embb_procedure?id=initial-access-synchronization-establishment)<br>
 - [RRC State](/nr_embb/nr_embb_procedure.md?id=RRC-State)<br>
 
 #### Idle Mode Mobility 
