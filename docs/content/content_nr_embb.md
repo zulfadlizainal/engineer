@@ -43,7 +43,7 @@ Date Edited: 2022/06/01<br>
 
 #### Layer 1: PHY
 
-- Test
+- [SCS for SSB](/nr_embb/nr_embb_layer1.md?id=SCS-for-SSB)<br>
 
 #### Layer 2: MAC, RLC, PDCP, SDAP
 
@@ -56,6 +56,7 @@ Date Edited: 2022/06/01<br>
 #### Protocol and Procedures 
 
 - [Initial Access: Synchronization Establishment](/nr_embb/nr_embb_procedure?id=initial-access-synchronization-establishment)<br>
+- [Initial Access: Synchronization Raster](/nr_embb/nr_embb_procedure?id=initial-access-synchronization-raster)<br>
 - [RRC State](/nr_embb/nr_embb_procedure.md?id=RRC-State)<br>
 
 #### Idle Mode Mobility 
