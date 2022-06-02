@@ -39,7 +39,7 @@ Date Edited: 2022/06/01<br>
 
 #### Features and Algorithm 
 
-- ENDC Dynamic UL Power Control
+- Test
 
 #### Layer 1: PHY
 
