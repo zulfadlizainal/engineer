@@ -7,9 +7,13 @@ Date Edited: 2022/06/02<br>
 
 #### SCS for SSB
 
-<mark>Single SSB SCS</mark> is defined for most of frequency band to reduce UE blind search. [1]
+Refer [1]
+
+<mark>Single SSB SCS</mark> is defined for most of frequency band to reduce UE blind search.
 
 !> Few bands use 2 SCS due to having coexistence with LTE. LTE use 15kHz SCS. Eg: Band n5
+
+Table from [2]
 
 ***<mark>Sub 6 (FR1):</mark>***
 

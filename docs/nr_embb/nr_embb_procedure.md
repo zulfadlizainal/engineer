@@ -59,7 +59,7 @@ Table form [4]
 | 3000 - 24250 MHz    | Multiple of 1.44 MHz                |
 | 242450 - 100000 MHz | Multiple of 17.82 MHz               |
 
-The SSB is used by the UE during the initial cell search procedure. The <mark>center frequency</mark> of the SSB is defined as the frequency of subcarrier O belonging to RB 10. [5]
+The SSB is used by the UE during the initial cell search procedure. The <mark>center frequency</mark> of the SSB is defined as the frequency of subcarrier 0 belonging to RB 10. [5]
 
 <br>
 <img src="\nr_embb\img\nr_embb_centerfreq.png" width=100% height=100% />
