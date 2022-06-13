@@ -107,7 +107,7 @@ Multiple SSB can be scheduled in a cell - typically used for beamsweeping.
 ***<mark>Number of Max SSB in one SS Burst Set:</mark>***
 
 <br>
-<img src="\nr_embb\img\nr_embb_maxssb.png" width=70% height=70% />
+<img src="\nr_embb\img\nr_embb_maxssb.png" width=60% height=60% />
 <br>
 
 
@@ -132,7 +132,15 @@ Refer [4]
 
 1. SS Burst Set = <mark>Collection of SSB broadcast in a cell.</mark>
 2. SS Burst Set = <mark>Contain 1 or more SSB.</mark>
-3. Max number of SSB (L) in a SS Burst Set based on carrier frequency. [Table](/nr_embb/nr_embb_layer1?id=ssb-time-domain-resource/)
+3. Max number of SSB (L) in a SS Burst Set based on carrier frequency. 
+
+
+| Carrier          | SCS      | Max No of SSB (L) |
+|------------------|----------|-------------------|
+| f <= 3GHz        | 15, 30   | 4                 |
+| 3GHz < f <= 6GHz | 15, 30   | 8                 |
+| f > 6GHz         | 120, 240 | 64                |
+
 
 Picture from [1]
 

@@ -1,7 +1,7 @@
 Topic: 5G NR<br>
 Sub-Topic: eMBB<br>
 Date Written: 2020/08/31<br>
-Date Edited: 2022/06/02<br>
+Date Edited: 2022/06/13<br>
 
 ---
 
@@ -69,6 +69,62 @@ The SSB is used by the UE during the initial cell search procedure. The <mark>ce
 
 ---
 
+#### MIB and SIB Acquisition
+
+***<mark>MIB</mark>***
+
+1. MIB is decoded from PBCH that is being carried by SSB.
+2. Identical MIB (same & different SSB) is transmitted 4 times in 80ms -> <mark>Ease decoding using soft combining.</mark>
+
+Picture from [4]
+
+<br>
+<img src="\nr_embb\img\nr_embb_mibperiodicity.png" width=100% height=100% />
+<br>
+
+***<mark>SIB</mark>***
+
+LTE vs NR: 
+
+1. In LTE: SI is always broadcasted.
+2. In NR: Minimum SI can be delivered, and remaining information can be set upon request.
+3. In NR: NR SI support for beam sweeping.
+
+SIB Numbering Differences: [6] [7]
+
+| No | Item                            | LTE          | NR      |
+|----|---------------------------------|--------------|---------|
+| 1  | Cell Access, Cell Selection     | SIB 1        | SIB 1   |
+| 2  | RACH, PC, Timer, Access Barring | SIB 2        | SIB 1   |
+| 3  | Intra Freq Reselection          | SIB 3        | SIB 2   |
+| 4  | Intra Freq Ncell                | SIB 4        | SIB 3   |
+| 5  | Inter Freq Ncell                | SIB 5        | SIB 4   |
+| 6  | EUTRA Freq Ncell                |              | SIB 5   |
+| 7  | UTRAN Freq Ncell                | SIB 6        |         |
+| 8  | GERAN Freq Ncell                | SIB 7        |         |
+| 9  | CDMA Freq Ncell                 | SIB 8        |         |
+| 10 | Femtocell Name                  | SIB 9        |         |
+| 11 | ETWS                            | SIB 10/11    | SIB 6/7 |
+| 12 | CMAS                            | SIB 12       | SIB 8   |
+| 13 | MBMS                            | SIB 13/15/20 |         |
+| 14 | Extended Access Barring         | SIB 14       |         |
+| 15 | GPS                             | SIB 16       | SIB 9   |
+| 16 | WLAN                            | SIB 17       |         |
+| 17 | Sidelink                        | SIB 18/19/21 |         |
+| 18 | NR Ncell                        | SIB 24       |         |
+
+***<mark>SI Acquisition SA vs NSA</mark>***
+
+Picture from [4]
+
+<br>
+<img src="\nr_embb\img\nr_embb_siacquisitionsansa.png" width=100% height=100% />
+<br>
+
+?> NSA operation does not need RMSI and SIB to be OTA broadcast. MIB still needed to get some timing information.
+
+---
+
 #### RRC State
 
 Refer [1] [2] [3]
@@ -88,3 +144,5 @@ Overview of RRC State difference in Mobility Management based on implementation.
 3. 3GPP TS 38.804
 4. [Qualcomm](https://www.qualcommwirelessacademy.com/)
 5. [5G NR Bullets by Chris Johnson](https://www.amazon.co.jp/-/en/Chris-Johnson/dp/1081444592)
+6. [Sharetechnote 1](https://sharetechnote.com/html/Handbook_LTE_SIB.html)
+7. [Sharetechnote 2](https://www.sharetechnote.com/html/5G/5G_Mib_Sib.html)
