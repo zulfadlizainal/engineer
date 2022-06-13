@@ -102,7 +102,7 @@ Picture from [4]
 
 Multiple SSB can be scheduled in a cell - typically used for beamsweeping.
 
-!> Simple logic: Higher frequency -> Narrower beam -> More steps of beam sweeping -> more SSB needed.
+?> Simple logic: Higher frequency -> Narrower beam -> More steps of beam sweeping -> more SSB needed.
 
 ***<mark>Number of Max SSB in one SS Burst Set:</mark>***
 
@@ -125,6 +125,27 @@ Refer [4]
 <br>
 <img src="\nr_embb\img\nr_embb_ssb startsymbol.png" width=100% height=100% />
 <br>
+
+---
+
+#### SSB Burst Set and Periodicity
+
+1. SS Burst Set = <mark>Collection of SSB broadcast in a cell.</mark>
+2. SS Burst Set = <mark>Contain 1 or more SSB.</mark>
+3. Max number of SSB (L) in a SS Burst Set based on carrier frequency. [Table](https://zul.engineer/#/nr_embb/nr_embb_layer1?id=ssb-time-domain-resource/)
+
+Picture from [1]
+
+<br>
+<img src="\nr_embb\img\nr_embb_ssburstperiodicity.png" width=100% height=100% />
+<br>
+
+?> SSB Periodicity is Configurable = 5 to 160 ms
+
+Refer [1]
+
+SSB Periodicity for Initial Acquisition: <mark>20ms.</mark>
+SSB Periodicity for Idle/Connected Mode: <mark>10ms.</mark> ---> Is this compulsory??
 
 ---
 
