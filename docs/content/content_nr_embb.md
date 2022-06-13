@@ -47,6 +47,7 @@ Date Edited: 2022/06/13<br>
 - [SSB](/nr_embb/nr_embb_layer1.md?id=SSB)<br>
 - [SSB Frequency Domain Resource](/nr_embb/nr_embb_layer1.md?id=SSB-Frequency-Domain-Resource)<br>
 - [SSB Time Domain Resource](/nr_embb/nr_embb_layer1.md?id=SSB-Time-Domain-Resource)<br>
+- [SSB Burst Set and Periodicity](/nr_embb/nr_embb_layer1.md?id=SSB-Burst-Set-and-Periodicity)<br>
 
 #### Layer 2: MAC, RLC, PDCP, SDAP
 

@@ -132,7 +132,7 @@ Refer [4]
 
 1. SS Burst Set = <mark>Collection of SSB broadcast in a cell.</mark>
 2. SS Burst Set = <mark>Contain 1 or more SSB.</mark>
-3. Max number of SSB (L) in a SS Burst Set based on carrier frequency. [Table](https://zul.engineer/#/nr_embb/nr_embb_layer1?id=ssb-time-domain-resource/)
+3. Max number of SSB (L) in a SS Burst Set based on carrier frequency. [Table](/nr_embb/nr_embb_layer1?id=ssb-time-domain-resource/)
 
 Picture from [1]
 
@@ -144,7 +144,7 @@ Picture from [1]
 
 Refer [1]
 
-SSB Periodicity for Initial Acquisition: <mark>20ms.</mark>
+SSB Periodicity for Initial Acquisition: <mark>20ms.</mark><br>
 SSB Periodicity for Idle/Connected Mode: <mark>10ms.</mark> ---> Is this compulsory??
 
 ---
