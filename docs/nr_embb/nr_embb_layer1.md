@@ -1,7 +1,7 @@
 Topic: 5G NR<br>
 Sub-Topic: eMBB<br>
 Date Written: 2020/06/02<br>
-Date Edited: 2022/06/02<br>
+Date Edited: 2022/06/13<br>
 
 ---
 
@@ -68,7 +68,23 @@ Table from [2]
 
 ---
 
+#### SSB
+
+1. PSS, SSS, and PBCH is encapsulated in 4 consecutive symbols.
+2. SCS is same within SSB.
+
+Picture from [3]
+
+<br>
+<img src="\nr_embb\img\nr_embb_ssb.png" width=100% height=100% />
+<br>
+
+?> Why there is No Tx subcarriers besides PSS and SSS? Answer: To ease sync sgnal detection.
+
+---
+
 #### References
 
 1. [Qualcomm](https://www.qualcommwirelessacademy.com/)
 2. 3GPP TS 38.104
+3. [Anritsu](https://dl.cdn-anritsu.com/ja-jp/test-measurement/reffiles/About-Anritsu/R_D/Technical/95/95-01.pdf)

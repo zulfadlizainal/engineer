@@ -1,7 +1,7 @@
 Topic: 5G NR<br>
 Sub-Topic: eMBB<br>
 Date Written: 2020/08/31<br>
-Date Edited: 2022/06/01<br>
+Date Edited: 2022/06/13<br>
 
 ---
 
@@ -44,6 +44,7 @@ Date Edited: 2022/06/01<br>
 #### Layer 1: PHY
 
 - [SCS for SSB](/nr_embb/nr_embb_layer1.md?id=SCS-for-SSB)<br>
+- [SSB](/nr_embb/nr_embb_layer1.md?id=SSB)<br>
 
 #### Layer 2: MAC, RLC, PDCP, SDAP
 
