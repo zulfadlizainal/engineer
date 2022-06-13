@@ -125,6 +125,51 @@ Picture from [4]
 
 ---
 
+#### RACH
+
+***<mark>Similarities: LTE vs NR</mark>***
+
+1. RACH Procedure (MSG1 -> MSG4).
+2. Preamble Based on Zadoff Chu Sequence.
+3. Two types: Contention Free & Contention Based.
+
+***<mark>Differences: LTE vs NR</mark>***
+
+1. RACH Config in SIB 1 (LTE in SIB 2).
+2. Beam correspondences.
+3. Preamble formats.
+4. New RACH reasons.
+   
+***<mark>New RACH Reasons in NR</mark>***
+
+1. Beam failure recovery.
+2. SCG cell add and change failure.
+3. Request for other SI.
+4. Transition from RRC_INACTIVE.
+
+***<mark>Random Access Triggers: SA vs NSA</mark>***
+
+Refer [4]
+
+| RACH Trigger                                       | NSA | SA  | Initiated by?   | New? |
+|----------------------------------------------------|-----|-----|-----------------|------|
+| NR Initial Access                                  | YES | YES | RRC             |      |
+| Transition from NR RRC_INACTIVE                    | NO  | YES | RRC             | YES  |
+| NR Scell Change                                    | YES | NO  | RRC             |      |
+| NR Handover                                        | NO  | YES | RRC             |      |
+| RRC Connection Re-establishment Following RLF      | YES | YES | RRC             |      |
+| To Establish Time Alignment at Scell Addition      | YES | YES | RRC             |      |
+| DL/UL Data Arrival with UE Out of UL Sync          | YES | YES | PDCCH Order/MAC |      |
+| Request for Other System Information (OSI)         | NO  | YES | RRC             | YES  |
+| Beam Failure Recovery                              | YES | YES | MAC             | YES  |
+| Maximum Number of Scheduling Request Transmissions | YES | YES | MAC             |      |
+
+<br>
+<img src="\nr_embb\img\nr_embb_rachtrigger.png" width=100% height=100% />
+<br>
+
+---
+
 #### RRC State
 
 Refer [1] [2] [3]
