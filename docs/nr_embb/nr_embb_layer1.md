@@ -79,7 +79,7 @@ Picture from [3]
 <img src="\nr_embb\img\nr_embb_ssb.png" width=100% height=100% />
 <br>
 
-?> Why there is No Tx subcarriers besides PSS and SSS? Answer: To ease sync sgnal detection.
+?> Why there is No Tx subcarriers besides PSS and SSS? Answer: To ease sync signal detection.
 
 ---
 
@@ -100,14 +100,14 @@ Picture from [4]
 
 #### SSB Time Domain Resource
 
-1. Multiple SSB can be scheduled in a cell - typically used for beamsweeping.
+Multiple SSB can be scheduled in a cell - typically used for beamsweeping.
 
 !> Simple logic: Higher frequency -> Narrower beam -> More steps of beam sweeping -> more SSB needed.
 
 ***<mark>Number of Max SSB in one SS Burst Set:</mark>***
 
 <br>
-<img src="\nr_embb\img\nr_embb_maxssb.png" width=50% height=50% />
+<img src="\nr_embb\img\nr_embb_maxssb.png" width=70% height=70% />
 <br>
 
 
