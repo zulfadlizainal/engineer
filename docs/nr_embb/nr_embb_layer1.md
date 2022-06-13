@@ -15,7 +15,7 @@ Refer [1]
 
 Table from [2]
 
-***<mark>Sub 6 (FR1):</mark>***
+***<mark>Sub 6 (FR1): 15kHz or 30kHz</mark>***
 
 | Band | SSB SCS (Freq) | SSB Pattern (Time) | GSCN (First – Step Size – Last) |
 |------|----------------|--------------------|---------------------------------|
@@ -51,7 +51,7 @@ Table from [2]
 | n79  | 30 kHz         | Case C             | 8480 – <16> – 8880              |
 
 
-***<mark>mmWave (FR2):</mark>***
+***<mark>mmWave (FR2): 120kHz or 240kHz</mark>***
 
 | Band  | SSB SCS (Freq) | SSB Pattern (Time) | GSCN (First – Step Size – Last) |
 |-------|----------------|--------------------|---------------------------------|
@@ -83,8 +83,54 @@ Picture from [3]
 
 ---
 
+#### SSB Frequency Domain Resource
+
+1. N(ssb,crb) = SIB1_offsetToPointA = RB offset between CRB0 and the CRB that overlap with the start of SSB.
+2. k(ssb) = MIB_ssb-SubcarrierOffset = subcarrier offset from subcarrier 0 of the CRB identified by offsetToPointA to subcarrier 0 of SSB.
+
+Picture from [4]
+
+<br>
+<img src="\nr_embb\img\nr_embb_ssbfreq.png" width=100% height=100% />
+<br>
+
+!> SSB need to be defined in sycronization raster for UE to be able to do cell search and find the SSB. In case of NSA ENDC, UE will find the SSB through embedded 5G MIB and SIB1 since cell search procedure not required.
+
+---
+
+#### SSB Time Domain Resource
+
+1. Multiple SSB can be scheduled in a cell - typically used for beamsweeping.
+
+!> Simple logic: Higher frequency -> Narrower beam -> More steps of beam sweeping -> more SSB needed.
+
+***<mark>Number of Max SSB in one SS Burst Set:</mark>***
+
+<br>
+<img src="\nr_embb\img\nr_embb_maxssb.png" width=50% height=50% />
+<br>
+
+
+| Carrier          | SCS      | Max No of SSB (L) |
+|------------------|----------|-------------------|
+| f <= 3GHz        | 15, 30   | 4                 |
+| 3GHz < f <= 6GHz | 15, 30   | 8                 |
+| f > 6GHz         | 120, 240 | 64                |
+
+
+***<mark>Good summary on start symbol candidate for SSB: </mark>*** 
+
+Refer [4]
+
+<br>
+<img src="\nr_embb\img\nr_embb_ssb startsymbol.png" width=100% height=100% />
+<br>
+
+---
+
 #### References
 
 1. [Qualcomm](https://www.qualcommwirelessacademy.com/)
 2. 3GPP TS 38.104
 3. [Anritsu](https://dl.cdn-anritsu.com/ja-jp/test-measurement/reffiles/About-Anritsu/R_D/Technical/95/95-01.pdf)
+4. [5G NR Bullets by Chris Johnson](https://www.amazon.co.jp/-/en/Chris-Johnson/dp/1081444592)

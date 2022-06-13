@@ -45,6 +45,8 @@ Date Edited: 2022/06/13<br>
 
 - [SCS for SSB](/nr_embb/nr_embb_layer1.md?id=SCS-for-SSB)<br>
 - [SSB](/nr_embb/nr_embb_layer1.md?id=SSB)<br>
+- [SSB Frequency Domain Resource](/nr_embb/nr_embb_layer1.md?id=SSB-Frequency-Domain-Resource)<br>
+- [SSB Time Domain Resource](/nr_embb/nr_embb_layer1.md?id=SSB-Time-Domain-Resource)<br>
 
 #### Layer 2: MAC, RLC, PDCP, SDAP
 
