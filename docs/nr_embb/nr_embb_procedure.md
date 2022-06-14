@@ -188,7 +188,7 @@ Picture from [5]
 Eg: RACH MSG1 (Preamble) is sent on selected SSB
 
 <br>
-<img src="\nr_embb\img\nr_embb_msg1ssbid.png" width=100% height=100% />
+<img src="\nr_embb\img\nr_embb_msg1ssbid.png" width=50% height=50% />
 <br>
 
 ---
