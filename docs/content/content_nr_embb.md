@@ -1,7 +1,7 @@
 Topic: 5G NR<br>
 Sub-Topic: eMBB<br>
 Date Written: 2020/08/31<br>
-Date Edited: 2022/06/13<br>
+Date Edited: 2022/06/14<br>
 
 ---
 
@@ -48,6 +48,9 @@ Date Edited: 2022/06/13<br>
 - [SSB Frequency Domain Resource](/nr_embb/nr_embb_layer1.md?id=SSB-Frequency-Domain-Resource)<br>
 - [SSB Time Domain Resource](/nr_embb/nr_embb_layer1.md?id=SSB-Time-Domain-Resource)<br>
 - [SSB Burst Set and Periodicity](/nr_embb/nr_embb_layer1.md?id=SSB-Burst-Set-and-Periodicity)<br>
+- PRACH Preamble Type
+- PRACH Frequency Domain Resource
+- PRACH Time Domain Resource
 
 #### Layer 2: MAC, RLC, PDCP, SDAP
 
@@ -62,7 +65,7 @@ Date Edited: 2022/06/13<br>
 - [Initial Access: Synchronization Establishment](/nr_embb/nr_embb_procedure?id=initial-access-synchronization-establishment)<br>
 - [Initial Access: Synchronization Raster](/nr_embb/nr_embb_procedure?id=initial-access-synchronization-raster)<br>
 - [MIB and SIB Acquisition](/nr_embb/nr_embb_procedure?id=MIB-and-SIB-Acquisition)<br>
-- [RACH Procedure](/nr_embb/nr_embb_procedure?id=RACH)<br>
+- [RACH Procedure](/nr_embb/nr_embb_procedure?id=RACH-Procedure)<br>
 - [RRC State](/nr_embb/nr_embb_procedure.md?id=RRC-State)<br>
 
 #### Idle Mode Mobility 

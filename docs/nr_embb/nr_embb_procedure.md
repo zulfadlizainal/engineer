@@ -1,7 +1,7 @@
 Topic: 5G NR<br>
 Sub-Topic: eMBB<br>
 Date Written: 2020/08/31<br>
-Date Edited: 2022/06/13<br>
+Date Edited: 2022/06/14<br>
 
 ---
 
@@ -203,7 +203,7 @@ Eg: RACH MSG1 (Preamble) is sent on selected SSB
 
 Picture from [5]
 
-!> Beam based PRACH preamble selection is not available in LTE
+!> Beam based preamble selection is not available in LTE
 
 <br>
 <img src="\nr_embb\img\nr_embb_prachprocedure.png" width=100% height=100% />
