@@ -48,7 +48,7 @@ Date Edited: 2022/06/14<br>
 - [SSB Frequency Domain Resource](/nr_embb/nr_embb_layer1.md?id=SSB-Frequency-Domain-Resource)<br>
 - [SSB Time Domain Resource](/nr_embb/nr_embb_layer1.md?id=SSB-Time-Domain-Resource)<br>
 - [SSB Burst Set and Periodicity](/nr_embb/nr_embb_layer1.md?id=SSB-Burst-Set-and-Periodicity)<br>
-- PRACH Preamble Format
+- [PRACH Preamble Format](/nr_embb/nr_embb_layer1.md?id=PRACH-Preamble-Format)<br>
 - PRACH Frequency Domain Resource
 - PRACH Time Domain Resource
 
