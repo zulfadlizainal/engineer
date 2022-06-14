@@ -127,19 +127,18 @@ Picture from [4]
 
 #### RACH
 
-***<mark>Similarities: LTE vs NR</mark>***
+***<mark>Comparison: LTE vs NR</mark>***
 
-1. RACH Procedure (MSG1 -> MSG4).
-2. Preamble Based on Zadoff Chu Sequence.
-3. Two types: Contention Free & Contention Based.
+| No | Similarities                                   | Differences                          |
+|----|------------------------------------------------|--------------------------------------|
+| 1  | RACH Procedure (MSG1-4)                        |                                      |
+| 2  | Preamble Based on Zadoff Chu Sequence.         |                                      |
+| 3  | Two types: Contention Free & Contention Based. |                                      |
+| 4  |                                                | RACH Config in SIB 1 (LTE in SIB 2). |
+| 5  |                                                | Beam correspondences.                |
+| 6  |                                                | Preamble formats.                    |
+| 7  |                                                | New RACH reasons.                    |
 
-***<mark>Differences: LTE vs NR</mark>***
-
-1. RACH Config in SIB 1 (LTE in SIB 2).
-2. Beam correspondences.
-3. Preamble formats.
-4. New RACH reasons.
-   
 ***<mark>New RACH Reasons in NR</mark>***
 
 1. Beam failure recovery.
@@ -166,6 +165,30 @@ Refer [4]
 
 <br>
 <img src="\nr_embb\img\nr_embb_rachtrigger.png" width=100% height=100% />
+<br>
+
+***<mark>Associating RACH with Beams</mark>***
+
+1. RACH configuration is given in RMSI (SIB1).
+2. Association between SSB and RACH preamble is given given in RMSI.
+3. UE will perform RACH Msg 1 by sending preamble for specific SSB id.
+
+Eg: SIB 1 (RMSI) SSB Relation with Preamble
+
+<br>
+<img src="\nr_embb\img\nr_embb_ssbpreamblerelation.png" width=100% height=100% />
+<br>
+
+Picture from [5]
+
+<br>
+<img src="\nr_embb\img\nr_embb_ssbpreamblerelation2.png" width=100% height=100% />
+<br>
+
+Eg: RACH MSG1 (Preamble) is sent on selected SSB
+
+<br>
+<img src="\nr_embb\img\nr_embb_msg1ssbid.png" width=100% height=100% />
 <br>
 
 ---
