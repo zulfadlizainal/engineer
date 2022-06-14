@@ -125,13 +125,13 @@ Picture from [4]
 
 ---
 
-#### RACH
+#### RACH Procedure
 
 ***<mark>Comparison: LTE vs NR</mark>***
 
 | No | Similarities                                   | Differences                          |
 |----|------------------------------------------------|--------------------------------------|
-| 1  | RACH Procedure (MSG1-4)                        |                                      |
+| 1  | RACH Procedure (MSG1-4).                       |                                      |
 | 2  | Preamble Based on Zadoff Chu Sequence.         |                                      |
 | 3  | Two types: Contention Free & Contention Based. |                                      |
 | 4  |                                                | RACH Config in SIB 1 (LTE in SIB 2). |
@@ -181,7 +181,7 @@ Procedure are similar with LTE. [5]
 2. Association between SSB and RACH preamble is given given in RMSI.
 3. UE will perform RACH Msg 1 by sending preamble for specific SSB id.
 
-Eg: SIB 1 (RMSI) SSB Relation with Preamble
+Eg: SIB 1 (RMSI) SSB Relation with Preamble [8]
 
 <br>
 <img src="\nr_embb\img\nr_embb_ssbpreamblerelation.png" width=100% height=100% />
@@ -202,6 +202,8 @@ Eg: RACH MSG1 (Preamble) is sent on selected SSB
 ***<mark>Sending PRACH in Selected Beams</mark>***
 
 Picture from [5]
+
+!> Beam based PRACH preamble selection is not available in LTE
 
 <br>
 <img src="\nr_embb\img\nr_embb_prachprocedure.png" width=100% height=100% />
@@ -230,3 +232,4 @@ Overview of RRC State difference in Mobility Management based on implementation.
 5. [5G NR Bullets by Chris Johnson](https://www.amazon.co.jp/-/en/Chris-Johnson/dp/1081444592)
 6. [Sharetechnote 1](https://sharetechnote.com/html/Handbook_LTE_SIB.html)
 7. [Sharetechnote 2](https://www.sharetechnote.com/html/5G/5G_Mib_Sib.html)
+8. 3GPP TS 38.331

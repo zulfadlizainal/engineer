@@ -62,7 +62,7 @@ Date Edited: 2022/06/13<br>
 - [Initial Access: Synchronization Establishment](/nr_embb/nr_embb_procedure?id=initial-access-synchronization-establishment)<br>
 - [Initial Access: Synchronization Raster](/nr_embb/nr_embb_procedure?id=initial-access-synchronization-raster)<br>
 - [MIB and SIB Acquisition](/nr_embb/nr_embb_procedure?id=MIB-and-SIB-Acquisition)<br>
-- [RACH](/nr_embb/nr_embb_procedure?id=RACH)<br>
+- [RACH Procedure](/nr_embb/nr_embb_procedure?id=RACH)<br>
 - [RRC State](/nr_embb/nr_embb_procedure.md?id=RRC-State)<br>
 
 #### Idle Mode Mobility 
