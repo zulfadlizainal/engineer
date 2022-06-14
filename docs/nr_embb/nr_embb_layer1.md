@@ -188,6 +188,11 @@ Picture from [1]
 | 2      | 1.25 kHz | 839        | 1.08 MHz | 152.60 μs | 4 x 800 μs | 647.40 μs | 4 ms      | 22.1 km     | Large Cells / CE |
 | 3      | 5 kHz    | 839        | 4.32 MHz | 103.13 μs | 4 x 200 μs | 96.88 μs  | 1 ms      | 14.5 km     | High Speed       |
 
+<br>
+<img src="\nr_embb\img\nr_embb_longpreamble2.png" width=100% height=100% />
+<br>
+
+
 Picture from [1]
 
 <br>
