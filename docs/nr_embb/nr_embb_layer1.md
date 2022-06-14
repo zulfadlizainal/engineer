@@ -157,6 +157,43 @@ SSB Periodicity for Idle/Connected Mode: <mark>10ms.</mark> ---> Is this compuls
 
 ---
 
+#### PRACH Preamble Format
+
+1. Based on Zadoff-Chu sequence. Same like LTE.
+2. <mark>64 Preambles</mark> defined in each time-frequency PRACH occasion.
+3. 2 type of preamble: <mark>Long and Short</mark>
+
+<br>
+<img src="\nr_embb\img\nr_embb_preambleformattype.png" width=70% height=70% />
+<br>
+
+***<mark>Structures of Preamble</mark>***
+
+1. Cyclic Prefix (CP)
+2. Preamble (SEQ)
+3. Guard Time (GT)
+
+Picture from [1]
+
+<br>
+<img src="\nr_embb\img\nr_embb_preamblestructure.png" width=50% height=50% />
+<br>
+
+***<mark>Long Preamble Format</mark>***
+
+| Format | SCS      | SEQ Length | BW       | CP Dur    | SEQ Dur    | GT Dur    | Total Dur | Cell Radius | Use Cases        |
+|--------|----------|------------|----------|-----------|------------|-----------|-----------|-------------|------------------|
+| 0      | 1.25 kHz | 839        | 1.08 MHz | 103.13 μs | 1 x 800 μs | 96.88 μs  | 1 ms      | 14.5 km     | LTE Re-Farming   |
+| 1      | 1.25 kHz | 839        | 1.08 MHz | 684.38 μs | 2 x 800 μs | 715.63 μs | 3 ms      | 100.2 km    | Large Cells      |
+| 2      | 1.25 kHz | 839        | 1.08 MHz | 152.60 μs | 4 x 800 μs | 647.40 μs | 4 ms      | 22.1 km     | Large Cells / CE |
+| 3      | 5 kHz    | 839        | 4.32 MHz | 103.13 μs | 4 x 200 μs | 96.88 μs  | 1 ms      | 14.5 km     | High Speed       |
+
+<br>
+<img src="\nr_embb\img\nr_embb_longpreamble.png" width=50% height=50% />
+<br>
+
+---
+
 #### References
 
 1. [Qualcomm](https://www.qualcommwirelessacademy.com/)
