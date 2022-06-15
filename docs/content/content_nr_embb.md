@@ -1,7 +1,7 @@
 Topic: 5G NR<br>
 Sub-Topic: eMBB<br>
 Date Written: 2020/08/31<br>
-Date Edited: 2022/06/14<br>
+Date Edited: 2022/06/15<br>
 
 ---
 
@@ -39,7 +39,9 @@ Date Edited: 2022/06/14<br>
 
 #### Features and Algorithm 
 
-- Test
+- Item 1
+- Item 2
+- Item 3
 
 #### Layer 1: PHY
 
@@ -49,16 +51,21 @@ Date Edited: 2022/06/14<br>
 - [SSB Time Domain Resource](/nr_embb/nr_embb_layer1.md?id=SSB-Time-Domain-Resource)<br>
 - [SSB Burst Set and Periodicity](/nr_embb/nr_embb_layer1.md?id=SSB-Burst-Set-and-Periodicity)<br>
 - [PRACH Preamble Format](/nr_embb/nr_embb_layer1.md?id=PRACH-Preamble-Format)<br>
-- PRACH Frequency Domain Resource
 - PRACH Time Domain Resource
+- PRACH Frequency Domain Resource
+- Reference Signal Map
 
 #### Layer 2: MAC, RLC, PDCP, SDAP
 
-- Test
+- Item 1
+- Item 2
+- Item 3
 
 #### Layer 3: RRC, NAS 
 
-- Test
+- Item 1
+- Item 2
+- Item 3
 
 #### Protocol and Procedures 
 
@@ -70,11 +77,15 @@ Date Edited: 2022/06/14<br>
 
 #### Idle Mode Mobility 
 
-- Test
+- Item 1
+- Item 2
+- Item 3
 
 #### Connected Mode Mobility 
 
-- Test
+- Item 1
+- Item 2
+- Item 3
 
 #### Practical Analysis
 
