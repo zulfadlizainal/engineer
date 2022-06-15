@@ -44,6 +44,8 @@ Date Edited: 2022/06/15<br>
 - PUSCH Power Control
 - SRS Power Control
 - Dynamic Power Control for NSA
+- DSS
+- Carrier Aggregation
 
 #### Layer 1: PHY
 
@@ -73,14 +75,26 @@ Date Edited: 2022/06/15<br>
 - BWP
 - DL HARQ
 - UL HARQ
+- MIMO
+- Beamforming
+- PHR
+- UE Measurment (RP/RQ/SINR)
 
 #### Layer 2: MAC, RLC, PDCP, SDAP
 
-- If Any
+- MAC Layer
+- RLC Layer
+- PDCP Layer
+- SDAP Layer
 
 #### Layer 3: RRC, NAS 
 
-- If Any
+- MIB
+- SIB
+- UE Capability Information
+- RRC Setup
+- Flow Setup
+- RRC Release
 
 #### Protocol and Procedures 
 
@@ -88,13 +102,20 @@ Date Edited: 2022/06/15<br>
 - [Initial Access: Synchronization Raster](/nr_embb/nr_embb_procedure?id=initial-access-synchronization-raster)<br>
 - [MIB and SIB Acquisition](/nr_embb/nr_embb_procedure?id=MIB-and-SIB-Acquisition)<br>
 - [RACH Procedure](/nr_embb/nr_embb_procedure?id=RACH-Procedure)<br>
-- Initial Beam Acquisition
 - BWP Switching
 - Paging
 - [RRC State](/nr_embb/nr_embb_procedure.md?id=RRC-State)<br>
 
+#### Beam Management
+
+- Initial Beam Acquisition
+- Beam Switching
+- Beam Refinement
+- Beam Failure and Recovery
+
 #### Idle Mode Mobility 
 
+- PLMN Selection
 - Cell Selection
 - Cell Reselection
 
@@ -103,10 +124,10 @@ Date Edited: 2022/06/15<br>
 - Measurement Reports
 - Measurement Events
 - Handover
-- Beam Switching
-- Beam Refinement
-- Beam Failure and Recovery
+- RLF
 
 #### Practical Analysis
 
 - [Design Cell Range for TDD](/nr_embb/nr_embb_practical.md?id=Design-Cell-Range-for-TDD)<br>
+- Check Slot Utilization
+- Dimension Channels Capacity
