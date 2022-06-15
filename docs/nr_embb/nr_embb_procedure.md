@@ -199,11 +199,17 @@ Eg: RACH MSG1 (Preamble) is sent on selected SSB
 <img src="\nr_embb\img\nr_embb_msg1ssbid.png" width=50% height=50% />
 <br>
 
-***<mark>Sending PRACH in Selected Beams</mark>***
+***<mark>PRACH MSG 1 Procedure</mark>***
 
 Picture from [5]
 
 !> Beam based preamble selection is not available in LTE
+
+<br>
+<img src="\nr_embb\img\nr_embb_prachprocedure2.png" width=100% height=100% />
+<br>
+
+3GPP detailed flow:
 
 <br>
 <img src="\nr_embb\img\nr_embb_prachprocedure.png" width=100% height=100% />
