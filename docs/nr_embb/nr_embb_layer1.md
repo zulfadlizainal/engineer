@@ -176,7 +176,7 @@ SSB Periodicity for Idle/Connected Mode: <mark>10ms.</mark> ---> Is this compuls
 Picture from [1]
 
 <br>
-<img src="\nr_embb\img\nr_embb_preamblestructure.png" width=50% height=50% />
+<img src="\nr_embb\img\nr_embb_preamblestructure.png" width=70% height=70% />
 <br>
 
 ***<mark>Long Preamble Format</mark>***
@@ -215,13 +215,13 @@ Picture from [1]
 | C1     | 15 kHz | 139        |    |        |         | 94.922 μs |           | 14.2 km     | Normal Cell |
 
 <br>
-<img src="\nr_embb\img\nr_embb_longpreamble.png" width=100% height=100% />
+<img src="\nr_embb\img\nr_embb_shortpreamble.png" width=100% height=100% />
 <br>
 
 !> TODO: How to calculate short preamble SEQ length and total duration.
 
 <br>
-<img src="\nr_embb\img\nr_embb_longpreamble2.png" width=100% height=100% />
+<img src="\nr_embb\img\nr_embb_shortpreamble2.png" width=100% height=100% />
 <br>
 
 ?> Only 1 preamble format can be configured per cell
