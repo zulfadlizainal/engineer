@@ -39,9 +39,11 @@ Date Edited: 2022/06/15<br>
 
 #### Features and Algorithm 
 
-- Item 1
-- Item 2
-- Item 3
+- PRACH Power Control
+- PUCCH Power Control
+- PUSCH Power Control
+- SRS Power Control
+- Dynamic Power Control for NSA
 
 #### Layer 1: PHY
 
@@ -54,18 +56,31 @@ Date Edited: 2022/06/15<br>
 - PRACH Time Domain Resource
 - PRACH Frequency Domain Resource
 - [Reference Signal Map](/nr_embb/nr_embb_layer1.md?id=Reference-Signal-Map)<br>
+- CORESET
+- SFI
+- DCI
+- UCI
+- PDSCH/PUSCH Channel Processing
+- CBG
+- MCS
+- Layer Mapping
+- Transmission Scheme
+- CSI Reporting
+- Frequency Domain Resource Allocation
+- Time Domain Resource Allocation
+- DL Scheduling
+- UL Scheduling
+- BWP
+- DL HARQ
+- UL HARQ
 
 #### Layer 2: MAC, RLC, PDCP, SDAP
 
-- Item 1
-- Item 2
-- Item 3
+- If Any
 
 #### Layer 3: RRC, NAS 
 
-- Item 1
-- Item 2
-- Item 3
+- If Any
 
 #### Protocol and Procedures 
 
@@ -73,19 +88,24 @@ Date Edited: 2022/06/15<br>
 - [Initial Access: Synchronization Raster](/nr_embb/nr_embb_procedure?id=initial-access-synchronization-raster)<br>
 - [MIB and SIB Acquisition](/nr_embb/nr_embb_procedure?id=MIB-and-SIB-Acquisition)<br>
 - [RACH Procedure](/nr_embb/nr_embb_procedure?id=RACH-Procedure)<br>
+- Initial Beam Acquisition
+- BWP Switching
+- Paging
 - [RRC State](/nr_embb/nr_embb_procedure.md?id=RRC-State)<br>
 
 #### Idle Mode Mobility 
 
-- Item 1
-- Item 2
-- Item 3
+- Cell Selection
+- Cell Reselection
 
 #### Connected Mode Mobility 
 
-- Item 1
-- Item 2
-- Item 3
+- Measurement Reports
+- Measurement Events
+- Handover
+- Beam Switching
+- Beam Refinement
+- Beam Failure and Recovery
 
 #### Practical Analysis
 
