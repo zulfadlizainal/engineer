@@ -53,7 +53,7 @@ Date Edited: 2022/06/15<br>
 - [PRACH Preamble Format](/nr_embb/nr_embb_layer1.md?id=PRACH-Preamble-Format)<br>
 - PRACH Time Domain Resource
 - PRACH Frequency Domain Resource
-- Reference Signal Map
+- [Reference Signal Map](/nr_embb/nr_embb_layer1.md?id=Reference-Signal-Map)<br>
 
 #### Layer 2: MAC, RLC, PDCP, SDAP
 

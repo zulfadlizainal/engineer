@@ -228,6 +228,43 @@ Picture from [1]
 
 ---
 
+#### Reference Signal Map
+
+Picture from [1]
+
+<br>
+<img src="\nr_embb\img\nr_embb_rsstructure.png" width=100% height=100% />
+<br>
+
+!> PTRS is only for mmWave.
+
+***<mark>LTE vs NR</mark>***
+
+| RS Use Case                  | LTE         | NR          |
+|------------------------------|-------------|-------------|
+| DL Channel State Information | CRS, CSI-RS | CSI-RS      |
+| UL Channel State Information | SRS         | SRS         |
+| Data Channel Demodulation    | CRS, DMRS   | DMRS        |
+| Control Channel Demodulation | CRS         | DMRS        |
+| Phase Tracking (mmWave)      | -           | PTRS        |
+| Time & Freq Tracking         | CRS         | TRS         |
+| Beam Management              | -           | SSB, CSI-RS |
+| Radio Link Monitoring        | CRS         | SSB, CSI-RS |
+| RRM Measurment               | CRS         | SSB, CSI-RS |
+
+?> LTE CRS (Always ON) is replaced with multiple UE-Specific on demand RS signals in 5G NR
+
+***<mark>RS Based on Channels Comparison</mark>***
+
+| Type             | DMRS                             | PTRS         | CSI-RS            | SRS          |
+|------------------|----------------------------------|--------------|-------------------|--------------|
+| Direction        | UL/DL                            | UL/DL        | DL                | UL           |
+| Frequency        | Sub6/mmWave                      | mmWave       | Sub6/mmWave       | Sub6/mmWave  |
+| Channel          | PDSCH, PDCCH, PBCH, PUSCH, PUCCH | PDSCH, PUSCH | PDSCH, PDCCH, SSB | PUCCH, PUSCH |
+| UE or Cell Level | UE, Cell for PBCH                | UE           | UE                | UE           |
+
+---
+
 #### References
 
 1. [Qualcomm](https://www.qualcommwirelessacademy.com/)
