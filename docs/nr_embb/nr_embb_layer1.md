@@ -192,12 +192,39 @@ Picture from [1]
 <img src="\nr_embb\img\nr_embb_longpreamble2.png" width=100% height=100% />
 <br>
 
-
 Picture from [1]
 
 <br>
 <img src="\nr_embb\img\nr_embb_longpreamble.png" width=100% height=100% />
 <br>
+
+***<mark>Short Preamble Format</mark>***
+
+Picture from [1]
+
+| Format | SCS    | SEQ Length | BW | CP Dur | SEQ Dur | GT Dur    | Total Dur | Cell Radius | Use Cases   |
+|--------|--------|------------|----|--------|---------|-----------|-----------|-------------|-------------|
+| A1     | 15 kHz | 139        |    |        |         | 0 μs      |           | 0.9 km      | Small Cell  |
+| A2     | 15 kHz | 139        |    |        |         | 0 μs      |           | 2.1 km      | Normal Cell |
+| A3     | 15 kHz | 139        |    |        |         | 0 μs      |           | 3.5 km      | Normal Cell |
+| B1     | 15 kHz | 139        |    |        |         | 2.344 μs  |           | 0.35 km     | Small Cell  |
+| B2     | 15 kHz | 139        |    |        |         | 7.031 μs  |           | 1.1 km      | Normal Cell |
+| B3     | 15 kHz | 139        |    |        |         | 11.719 μs |           | 1.8 km      | Normal Cell |
+| B4     | 15 kHz | 139        |    |        |         | 25.781 μs |           | 3.9 km      | Normal Cell |
+| C0     | 15 kHz | 139        |    |        |         | 35.677 μs |           | 5.3 km      | Normal Cell |
+| C1     | 15 kHz | 139        |    |        |         | 94.922 μs |           | 14.2 km     | Normal Cell |
+
+<br>
+<img src="\nr_embb\img\nr_embb_longpreamble.png" width=100% height=100% />
+<br>
+
+!> TODO: How to calculate short preamble SEQ length and total duration.
+
+<br>
+<img src="\nr_embb\img\nr_embb_longpreamble2.png" width=100% height=100% />
+<br>
+
+?> Only 1 preamble format can be configured per cell
 
 ---
 
