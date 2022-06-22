@@ -1,7 +1,7 @@
 Topic: 5G NR<br>
 Sub-Topic: eMBB<br>
 Date Written: 2020/06/02<br>
-Date Edited: 2022/06/15<br>
+Date Edited: 2022/06/22<br>
 
 ---
 
@@ -225,6 +225,32 @@ Picture from [1]
 <br>
 
 ?> Only 1 preamble format can be configured per cell
+
+---
+
+#### CORESET
+
+1. CORESET = Control Resource Set
+2. Semi-statically configured by RRC - Size, Location, Periodicty.
+3. In time domain can occupy - 1 to 3 symbols.
+4. In frequency domain can occupy in sets of 6 PRBs - Min 6 PRBs, Max 270 PRBs.
+5. Might not exist in all BWP - it is cell level config and UE specific.
+6. PDSCH can be allocated in unused CORESET.
+
+***<mark>LTE vs NR: Control Channel Resource Perspective</mark>***
+
+| Item             | LTE                              | NR                              |
+|------------------|----------------------------------|---------------------------------|
+| Frequency Domain | Whole bandwidth                  | Can change (PRB Min 6, Max 270) |
+| Time Domain      | 1 to 3 Symbol (Adaptive, by CFI) | 1 to 3 Symbol (Fix, no CFI)     |
+
+Picture from [1]
+
+<br>
+<img src="\nr_embb\img\nr_embb_coreset2.png" width=100% height=100% />
+<br>
+
+?> Semi Static: RRC can change the configuration using RRC Connection Reconfiguration Message.
 
 ---
 

@@ -1,7 +1,7 @@
 Topic: 5G NR<br>
 Sub-Topic: eMBB<br>
 Date Written: 2020/08/31<br>
-Date Edited: 2022/06/15<br>
+Date Edited: 2022/06/22<br>
 
 ---
 
@@ -58,7 +58,7 @@ Date Edited: 2022/06/15<br>
 - PRACH Time Domain Resource
 - PRACH Frequency Domain Resource
 - [Reference Signal Map](/nr_embb/nr_embb_layer1.md?id=Reference-Signal-Map)<br>
-- CORESET
+- [CORESET](/nr_embb/nr_embb_layer1.md?id=CORESET)<br>
 - SFI
 - DCI
 - UCI
