@@ -230,8 +230,8 @@ Picture from [1]
 
 #### CORESET
 
-1. CORESET = Control Resource Set
-2. Semi-statically configured by RRC - Size, Location, Periodicty.
+1. CORESET = Control Resource Set.
+2. Semi statically configured by RRC - Size, Location, Periodicty.
 3. In time domain can occupy - 1 to 3 symbols.
 4. In frequency domain can occupy in sets of 6 PRBs - Min 6 PRBs, Max 270 PRBs.
 5. Might not exist in all BWP - it is cell level config and UE specific.
@@ -251,6 +251,25 @@ Picture from [1]
 <br>
 
 ?> Semi Static: RRC can change the configuration using RRC Connection Reconfiguration Message.
+
+***<mark>How CORESET is Utilized as PDCCH/DCI?</mark>***
+
+1. 12 RE (12 Subcarriers x 1 Symbol) will form 1 REG.
+2. 6 REG will form 1 CCE.
+3. Depends on CCE aggregation level, CCE will combine to form PDCCH/DCI.
+4. For example, <mark>if CCE aggregation level is = 4, means it needs 4 CCE to form 1 PDCCH/DCI.</mark>
+
+<br>
+<img src="\nr_embb\img\nr_embb_cceagg.png" width=100% height=100% />
+<br>
+
+?> Supported CCE Aggregation Level: 1, 2, 4, 8, 16. Usually it changes dynamically, if in poor RF higher CCE aggregation level is used to give better deoding rate.
+
+Example from real data:
+
+<br>
+<img src="\nr_embb\img\nr_embb_cceagg2.png" width=100% height=100% />
+<br>
 
 ---
 
