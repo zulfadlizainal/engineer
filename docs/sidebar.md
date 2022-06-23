@@ -6,13 +6,13 @@
 - [4G LTE MBB](/content/content_lte_mbb.md)
 - [3GPP Specs](/3gpp/3gpp.md)
 
-<!-- <i class="material-icons">storage</i> <b>Computing</b><br>
+<i class="material-icons">storage</i> <b>Computing</b><br>
 
-- [Data](/content/content_loading.md)
-- [Algorithm](/content/content_loading.md)
-- [Programming](/content/content_loading.md)
+<!-- - [Data](/content/content_loading.md)
+- [Algorithm](/content/content_loading.md) -->
+- [Programming](/content/content_com_program.md)
 
-<i class="material-icons">psychology</i> <b>Artificial Intelligence</b><br>
+<!-- <i class="material-icons">psychology</i> <b>Artificial Intelligence</b><br>
 
 - [Machine Learning](/content/content_loading.md)
 - [Deep Learning](/content/content_loading.md)
@@ -28,9 +28,9 @@
 
 <i class="material-icons">account_tree</i> <b>Others</b><br>
 
-- [Logical Thinking](/content/content_loading.md) -->
+- [Logical Thinking](/content/content_loading.md)
 
-<i class="material-icons">person_outline</i> <b>Contact</b><br>
+<i class="material-icons">person_outline</i> <b>Contact</b><br> -->
 
 - [About Me](/aboutme/aboutme.md)
 
