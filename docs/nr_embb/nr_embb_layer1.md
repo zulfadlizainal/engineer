@@ -263,12 +263,12 @@ Picture from [1]
 <img src="\nr_embb\img\nr_embb_cceagg.png" width=100% height=100% />
 <br>
 
-?> Supported CCE Aggregation Level: 1, 2, 4, 8, 16. Usually it changes dynamically, if in poor RF higher CCE aggregation level is used to give better deoding rate.
+?> Supported CCE Aggregation Level: 1, 2, 4, 8, 16. Usually it changes dynamically. If in poor RF, higher CCE aggregation level is used to give better chance of decoding / higher pdcch decoding success rate.
 
-Example from real data:
+***Example from real data:***
 
 <br>
-<img src="\nr_embb\img\nr_embb_cceagg2.png" width=100% height=100% />
+<img src="\nr_embb\img\nr_embb_cceagg2.png" width=80% height=80% />
 <br>
 
 ---
