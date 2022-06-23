@@ -401,7 +401,7 @@ Table from [7] [8]
 | 3_1        | Scheduling of LTE sidelink in one cell                                                                                                            |
 
 
-?> Fallback-mode: Single Layer Transmission with RA type 1 Supported
+?> Fallback-mode: Single layer transmission with RA type 1 supported
 
 
 ---
@@ -410,6 +410,8 @@ Table from [7] [8]
 
 1. PUCCH carries UCI.
 2. UCI contains <mark>CSI, ACK/NACK, SR</mark>.
+
+UCI carries:
 
     CSI: Channel State Infomation
     ACK/NACK: Acknowledgement Info - When no PUSCH grant available, use PUCCH
