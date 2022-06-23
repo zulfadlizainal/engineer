@@ -293,7 +293,13 @@ Refer [5] [6]
 7. Slot Format Indication informs the UE  whether an OFDM symbol is for Downlink (D), Uplink (U), or Flexible (U).
 8. SFI can be sent through DCI Format 2_0 or higher layer (RRC).
 
+***<mark>SFI Format Table</mark>***
+
 Number 0 - 13 refer to symbols.
+
+    D: Downlink
+    U: Uplink
+    F: Flexible
 
 | Format | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 |
 |--------|---|---|---|---|---|---|---|---|---|---|----|----|----|----|
@@ -354,8 +360,43 @@ Number 0 - 13 refer to symbols.
 | 54     | F | F | F | F | F | F | f | D | D | D | D  | D  | D  | D  |
 | 55     | D | D | F | F | F | U | U | U | D | D | D  | D  | D  | D  |
 
-64 - 254: Reserved.
-255: UE determines the slot format for the slot based on tdd-UL-DL-ConfigurationCommon, or tdd-ULDL-ConfigurationDedicated and, if any, on detected DCI formats.
+Format 64 - 254: Reserved. <br>
+Format 255: UE determines the slot format for the slot based on tdd-UL-DL-ConfigurationCommon, or tdd-ULDL-ConfigurationDedicated and, if any, on detected DCI formats.
+
+***<mark>Eg: Slot Format Combination Through RRC & DCI Format 2-0</mark>***
+
+Picture from [4]
+
+<br>
+<img src="\nr_embb\img\nr_embb_sficomb.png" width=100% height=100% />
+<br>
+
+---
+
+#### DCI Format
+
+1. DCI = Downlink Control information.
+2. DCI is a format/information carried in PDCCH.
+3. DCI contains info the UE needs to identify RBs in that subframe and decode it.
+4. Information in DCI includes MCS, RV, HARQ, RNTI, CRC, and more.
+
+Table from [7] [8]
+
+| DCI Format | Usage                                                                                                                                             |
+|------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
+| Format 0_0 | Scheduling of PUSCH in one cell (fallback-mode)                                                                                                   |
+| Format 0_1 | Scheduling of PUSCH in one cell (regular)                                                                                                         |
+| Format 1_0 | Scheduling of PDSCH in one cell (fallback-mode)                                                                                                   |
+| Format 1_1 | Scheduling of PDSCH in one cell (regular)                                                                                                         |
+| Format 2_0 | Notifying a group of UEs of the slot format - Slot Fromat Indicator (SFI)                                                                         |
+| Format 2_1 | Notifying a group of UEs of the PRB(s) and OFDM symbol(s) where UE may assume no transmission is intended for the UE - Preemption Indicators (PI) |
+| Format 2_2 | Transmission of TPC commands for PUCCH and PUSCH                                                                                                  |
+| Format 2_3 | Transmission of a group of TPC commands for SRS transmissions by one or more Ues                                                                  |
+| Format 2_4 | Notifying the PRB(s) and OFDM symbol(s) where UE cancels the corresponding UL transmission from the UE                                            |
+| Format 2_5 | Notifying the availability of soft resources                                                                                                      |
+| Format 2_6 | Notifying the power saving information outside DRX Active Time for one or more Ues                                                                |
+| Format 3_0 | Scheduling of NR sidelink in one cell                                                                                                             |
+| Format 3_1 | Scheduling of LTE sidelink in one cell                                                                                                            |
 
 ---
 
@@ -404,3 +445,5 @@ Picture from [1]
 4. [5G NR Bullets by Chris Johnson](https://www.amazon.co.jp/-/en/Chris-Johnson/dp/1081444592)
 5. 3GPP TS 38.211 Section 4.2
 6. 3GPP TS 38.213 Section 11.1.1
+7. [Sharetechnote](https://www.sharetechnote.com/html/5G/5G_DCI.html)
+8. 3GPP TS 38.211 Section 7.3

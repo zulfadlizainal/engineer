@@ -61,8 +61,8 @@ Date Edited: 2022/06/23<br>
 - [CORESET](/nr_embb/nr_embb_layer1.md?id=CORESET)<br>
 - Search Space
 - [SFI](/nr_embb/nr_embb_layer1.md?id=SFI)<br>
-- DCI
-- UCI
+- [DCI Format](/nr_embb/nr_embb_layer1.md?id=DCI-Format)<br>
+- UCI Format
 - PDSCH/PUSCH Channel Processing
 - CBG
 - MCS
