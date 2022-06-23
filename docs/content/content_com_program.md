@@ -9,8 +9,11 @@ Date Edited: 2022/06/23<br>
 
 #### Python
 
-- [Fundamentals](/com_program/com_program_python.md?id=Fundamentals)<br>
-- Test
+- [Fundamentals](/com_program/py_fundamentals.md?id=Fundamentals)<br>
+- [Pandas Library](/com_program/py_fundamentals.md?id=Pandas-Library)<br>
+- [Matplotlib Library](/com_program/py_fundamentals.md?id=Matplotlib-Library)<br>
+- [Dash Library](/com_program/py_fundamentals.md?id=Dash-Library)<br>
+- [Tkinter Library](/com_program/py_fundamentals.md?id=Tkinter-Library)<br>
 
 #### MySQL
 

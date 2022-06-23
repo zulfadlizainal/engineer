@@ -9,10 +9,10 @@ Date Edited: 2022/06/23<br>
 
 Training by CodeMosh from Youtube.
 
-- [Print Statement](/com_program/com_program_python.md?id=Print-Statement)<br>
-- [Variable](/com_program/com_program_python.md?id=Variable)<br>
-- [Input](/com_program/com_program_python.md?id=Input)<br>
-- [Data Type](/com_program/com_program_python.md?id=Data-Type)<br>
+- [Print Statement](/com_program/py_fundamentals.md?id=Print-Statement)<br>
+- [Variable](/com_program/py_fundamentals.md?id=Variable)<br>
+- [Input](/com_program/py_fundamentals.md?id=Input)<br>
+- [Data Type](/com_program/py_fundamentals.md?id=Data-Type)<br>
 
 #### Print Statement
 
