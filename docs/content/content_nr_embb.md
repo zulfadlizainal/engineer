@@ -62,7 +62,7 @@ Date Edited: 2022/06/23<br>
 - Search Space
 - [SFI](/nr_embb/nr_embb_layer1.md?id=SFI)<br>
 - [DCI Format](/nr_embb/nr_embb_layer1.md?id=DCI-Format)<br>
-- UCI Format
+- UCI (PUCCH Format)
 - PDSCH/PUSCH Channel Processing
 - CBG
 - MCS

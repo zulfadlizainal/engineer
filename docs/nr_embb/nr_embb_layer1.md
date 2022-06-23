@@ -295,7 +295,7 @@ Refer [5] [6]
 
 ***<mark>SFI Format Table</mark>***
 
-Number 0 - 13 refer to symbols.
+?> Number 0 - 13 refer to symbols.
 
     D: Downlink
     U: Uplink
@@ -357,11 +357,12 @@ Number 0 - 13 refer to symbols.
 | 51     | D | F | F | U | U | U | U | D | F | F | U  | U  | U  | U  |
 | 52     | D | F | F | F | F | F | U | D | F | F | F  | F  | F  | U  |
 | 53     | D | D | F | F | F | F | U | D | D | F | F  | F  | F  | U  |
-| 54     | F | F | F | F | F | F | f | D | D | D | D  | D  | D  | D  |
+| 54     | F | F | F | F | F | F | F | D | D | D | D  | D  | D  | D  |
 | 55     | D | D | F | F | F | U | U | U | D | D | D  | D  | D  | D  |
 
-Format 64 - 254: Reserved. <br>
-Format 255: UE determines the slot format for the slot based on tdd-UL-DL-ConfigurationCommon, or tdd-ULDL-ConfigurationDedicated and, if any, on detected DCI formats.
+!> Format 64 - 254: Reserved.
+
+!> Format 255: UE determines the slot format for the slot based on tdd-UL-DL-ConfigurationCommon, or tdd-ULDL-ConfigurationDedicated and, if any, on detected DCI formats.
 
 ***<mark>Eg: Slot Format Combination Through RRC & DCI Format 2-0</mark>***
 
@@ -370,6 +371,7 @@ Picture from [4]
 <br>
 <img src="\nr_embb\img\nr_embb_sficomb.png" width=100% height=100% />
 <br>
+
 
 ---
 
@@ -384,19 +386,55 @@ Table from [7] [8]
 
 | DCI Format | Usage                                                                                                                                             |
 |------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
-| Format 0_0 | Scheduling of PUSCH in one cell (fallback-mode)                                                                                                   |
-| Format 0_1 | Scheduling of PUSCH in one cell (regular)                                                                                                         |
-| Format 1_0 | Scheduling of PDSCH in one cell (fallback-mode)                                                                                                   |
-| Format 1_1 | Scheduling of PDSCH in one cell (regular)                                                                                                         |
-| Format 2_0 | Notifying a group of UEs of the slot format - Slot Fromat Indicator (SFI)                                                                         |
-| Format 2_1 | Notifying a group of UEs of the PRB(s) and OFDM symbol(s) where UE may assume no transmission is intended for the UE - Preemption Indicators (PI) |
-| Format 2_2 | Transmission of TPC commands for PUCCH and PUSCH                                                                                                  |
-| Format 2_3 | Transmission of a group of TPC commands for SRS transmissions by one or more Ues                                                                  |
-| Format 2_4 | Notifying the PRB(s) and OFDM symbol(s) where UE cancels the corresponding UL transmission from the UE                                            |
-| Format 2_5 | Notifying the availability of soft resources                                                                                                      |
-| Format 2_6 | Notifying the power saving information outside DRX Active Time for one or more Ues                                                                |
-| Format 3_0 | Scheduling of NR sidelink in one cell                                                                                                             |
-| Format 3_1 | Scheduling of LTE sidelink in one cell                                                                                                            |
+| 0_0        | Scheduling of PUSCH in one cell (fallback-mode)                                                                                                   |
+| 0_1        | Scheduling of PUSCH in one cell (regular)                                                                                                         |
+| 1_0        | Scheduling of PDSCH in one cell (fallback-mode)                                                                                                   |
+| 1_1        | Scheduling of PDSCH in one cell (regular)                                                                                                         |
+| 2_0        | Notifying a group of UEs of the slot format - Slot Fromat Indicator (SFI)                                                                         |
+| 2_1        | Notifying a group of UEs of the PRB(s) and OFDM symbol(s) where UE may assume no transmission is intended for the UE - Preemption Indicators (PI) |
+| 2_2        | Transmission of TPC commands for PUCCH and PUSCH                                                                                                  |
+| 2_3        | Transmission of a group of TPC commands for SRS transmissions by one or more UEs                                                                  |
+| 2_4        | Notifying the PRB(s) and OFDM symbol(s) where UE cancels the corresponding UL transmission from the UE                                            |
+| 2_5        | Notifying the availability of soft resources                                                                                                      |
+| 2_6        | Notifying the power saving information outside DRX Active Time for one or more Ues                                                                |
+| 3_0        | Scheduling of NR sidelink in one cell                                                                                                             |
+| 3_1        | Scheduling of LTE sidelink in one cell                                                                                                            |
+
+
+?> Fallback-mode: Single Layer Transmission with RA type 1 Supported
+
+
+---
+
+#### UCI (PUCCH Format)
+
+1. PUCCH carries UCI.
+2. UCI contains <mark>CSI, ACK/NACK, SR</mark>.
+
+    CSI: Channel State Infomation
+    ACK/NACK: Acknowledgement Info - When no PUSCH grant available, use PUCCH
+    SR: Scheduling Request
+
+?> UCI can be carried by PUSCH too. [9]
+
+<mark>PUCCH Format</mark> defined based on:
+
+1. Short/Long Duration
+2. Payload Size Ranges
+3. Multiplexing Capabilities
+
+Table form [1]
+
+| PUCCH Format | OFDM Symbol # Length | UCI Bits | Waveform     | Description                                      |
+|--------------|----------------------|----------|--------------|--------------------------------------------------|
+| 0            | 1-2                  | <= 2     | CGS Sequence | Short PUCCH with 1-2 bits UCI                    |
+| 1            | 4-14                 | <= 2     | CGS Sequence | Long PUCCH with 1-2 bits UCI                     |
+| 2            | 1-2                  | > 2      | OFDM         | Short PUCCH with > 2 bits UCI                    |
+| 3            | 4-14                 | > 2      | DFT-S-OFDM   | Long PUCCH with > 2 bits UCI (No multiplexing)   |
+| 4            | 4-14                 | > 2      | DFT-S-OFDM   | Long PUCCH with > 2 bits UCI (With Multiplexing) |
+
+!> Why in DL term 'DCI Format' is used but in UL term 'PUCCH Format is used'? Why not use term 'UCI Format'?: [Personal Guess] In DL, PDCCH always in the same physical form, but the information that it carries (DCI) defer based on type of scheduling or information that wanted to be sent to the UE. Hence, the DCI itself requires different format. In UL, the PUCCH physical form differs depending on how many bits of UCI needed to be carried by PUCCH.
+
 
 ---
 
@@ -447,3 +485,4 @@ Picture from [1]
 6. 3GPP TS 38.213 Section 11.1.1
 7. [Sharetechnote](https://www.sharetechnote.com/html/5G/5G_DCI.html)
 8. 3GPP TS 38.211 Section 7.3
+9. [Sharetechnote 2](https://www.sharetechnote.com/html/5G/5G_UCI.html#Contents_of_UCI)
