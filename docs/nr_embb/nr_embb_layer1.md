@@ -252,7 +252,7 @@ Picture from [1]
 
 ?> Semi Static: RRC can change the configuration using RRC Connection Reconfiguration Message.
 
-***Example of CORESET settings from RRC RRC Connection Reconfiguration Message:***
+***Example of CORESET settings from RRC Connection Reconfiguration Message:***
 
 <br>
 <img src="\nr_embb\img\nr_embb_coresetsettings.png" width=100% height=100% />
@@ -276,6 +276,86 @@ Picture from [1]
 <br>
 <img src="\nr_embb\img\nr_embb_cceagg2.png" width=70% height=70% />
 <br>
+
+
+---
+
+#### SFI
+
+Refer [5] [6]
+
+1. Slot format concept for 5G NR is almost similar concept to LTE TDD subframe configuration format.
+2. However, slot format in NR is being used for both TDD and FDD and the assignment is at symbol level.
+3. DL and UL assignment changes at a symbol level.
+4. So many diverse slot format to allow flexible allocation in 5G NR.
+5. Slot Format works for both  FDD and TDD (FDD: Use Format 0 and Format 1).
+6. Slot aggregation is supported (Multiple slots in single data transmission).
+7. Slot Format Indication informs the UE  whether an OFDM symbol is for Downlink (D), Uplink (U), or Flexible (U).
+8. SFI can be sent through DCI Format 2_0 or higher layer (RRC).
+
+Number 0 - 13 refer to symbols.
+
+| Format | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 |
+|--------|---|---|---|---|---|---|---|---|---|---|----|----|----|----|
+| 0      | D | D | D | D | D | D | D | D | D | D | D  | D  | D  | D  |
+| 1      | U | U | U | U | U | U | U | U | U | U | U  | U  | U  | U  |
+| 2      | F | F | F | F | F | F | F | F | F | F | F  | F  | F  | F  |
+| 3      | D | D | D | D | D | D | D | D | D | D | D  | D  | D  | F  |
+| 4      | D | D | D | D | D | D | D | D | D | D | D  | D  | F  | F  |
+| 5      | D | D | D | D | D | D | D | D | D | D | D  | F  | F  | F  |
+| 6      | D | D | D | D | D | D | D | D | D | D | F  | F  | F  | F  |
+| 7      | D | D | D | D | D | D | D | D | D | F | F  | F  | F  | F  |
+| 8      | F | F | F | F | F | F | F | F | F | F | F  | F  | F  | U  |
+| 9      | F | F | F | F | F | F | F | F | F | F | F  | F  | U  | U  |
+| 10     | F | U | U | U | U | U | U | U | U | U | U  | U  | U  | U  |
+| 11     | F | F | U | U | U | U | U | U | U | U | U  | U  | U  | U  |
+| 12     | F | F | F | U | U | U | U | U | U | U | U  | U  | U  | U  |
+| 13     | F | F | F | F | U | U | U | U | U | U | U  | U  | U  | U  |
+| 14     | F | F | F | F | F | U | U | U | U | U | U  | U  | U  | U  |
+| 15     | F | F | F | F | F | F | U | U | U | U | U  | U  | U  | U  |
+| 16     | D | F | F | F | F | F | F | F | F | F | F  | F  | F  | F  |
+| 17     | D | D | F | F | F | F | F | F | F | F | F  | F  | F  | F  |
+| 18     | D | D | D | F | F | F | F | F | F | F | F  | F  | F  | F  |
+| 19     | D | F | F | F | F | F | F | F | F | F | F  | F  | F  | U  |
+| 20     | D | D | F | F | F | F | F | F | F | F | F  | F  | F  | U  |
+| 21     | D | D | D | F | F | F | F | F | F | F | F  | F  | F  | U  |
+| 22     | D | F | F | F | F | F | F | F | F | F | F  | F  | U  | U  |
+| 23     | D | D | F | F | F | F | F | F | F | F | F  | F  | U  | U  |
+| 24     | D | D | D | F | F | F | F | F | F | F | F  | F  | U  | U  |
+| 25     | D | F | F | F | F | F | F | F | F | F | F  | U  | U  | U  |
+| 26     | D | D | F | F | F | F | F | F | F | F | F  | U  | U  | U  |
+| 27     | D | D | D | F | F | F | F | F | F | F | F  | U  | U  | U  |
+| 28     | D | D | D | D | D | D | D | D | D | D | D  | D  | F  | U  |
+| 29     | D | D | D | D | D | D | D | D | D | D | D  | F  | F  | U  |
+| 30     | D | D | D | D | D | D | D | D | D | D | F  | F  | F  | U  |
+| 31     | D | D | D | D | D | D | D | D | D | D | D  | F  | U  | U  |
+| 32     | D | D | D | D | D | D | D | D | D | D | F  | F  | U  | U  |
+| 33     | D | D | D | D | D | D | D | D | D | F | F  | F  | U  | U  |
+| 34     | D | F | U | U | U | U | U | U | U | U | U  | U  | U  | U  |
+| 35     | D | D | F | U | U | U | U | U | U | U | U  | U  | U  | U  |
+| 36     | D | D | D | F | U | U | U | U | U | U | U  | U  | U  | U  |
+| 37     | D | F | F | U | U | U | U | U | U | U | U  | U  | U  | U  |
+| 38     | D | D | F | F | U | U | U | U | U | U | U  | U  | U  | U  |
+| 39     | D | D | D | F | F | U | U | U | U | U | U  | U  | U  | U  |
+| 40     | D | F | F | F | U | U | U | U | U | U | U  | U  | U  | U  |
+| 41     | D | D | F | F | F | U | U | U | U | U | U  | U  | U  | U  |
+| 42     | D | D | D | F | F | F | U | U | U | U | U  | U  | U  | U  |
+| 43     | D | D | D | D | D | D | D | D | D | F | F  | F  | F  | U  |
+| 44     | D | D | D | D | D | D | F | F | F | F | F  | F  | U  | U  |
+| 45     | D | D | D | D | D | D | F | F | U | U | U  | U  | U  | U  |
+| 46     | D | D | D | D | D | F | U | D | D | D | D  | D  | F  | U  |
+| 47     | D | D | F | U | U | U | U | D | D | F | U  | U  | U  | U  |
+| 48     | D | F | U | U | U | U | U | D | F | U | U  | U  | U  | U  |
+| 49     | D | D | D | D | F | F | U | D | D | D | D  | F  | F  | U  |
+| 50     | D | D | F | F | U | U | U | D | D | F | F  | U  | U  | U  |
+| 51     | D | F | F | U | U | U | U | D | F | F | U  | U  | U  | U  |
+| 52     | D | F | F | F | F | F | U | D | F | F | F  | F  | F  | U  |
+| 53     | D | D | F | F | F | F | U | D | D | F | F  | F  | F  | U  |
+| 54     | F | F | F | F | F | F | f | D | D | D | D  | D  | D  | D  |
+| 55     | D | D | F | F | F | U | U | U | D | D | D  | D  | D  | D  |
+
+64 - 254: Reserved.
+255: UE determines the slot format for the slot based on tdd-UL-DL-ConfigurationCommon, or tdd-ULDL-ConfigurationDedicated and, if any, on detected DCI formats.
 
 ---
 
@@ -322,3 +402,5 @@ Picture from [1]
 2. 3GPP TS 38.104
 3. [Anritsu](https://dl.cdn-anritsu.com/ja-jp/test-measurement/reffiles/About-Anritsu/R_D/Technical/95/95-01.pdf)
 4. [5G NR Bullets by Chris Johnson](https://www.amazon.co.jp/-/en/Chris-Johnson/dp/1081444592)
+5. 3GPP TS 38.211 Section 4.2
+6. 3GPP TS 38.213 Section 11.1.1

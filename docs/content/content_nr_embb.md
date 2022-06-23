@@ -60,7 +60,7 @@ Date Edited: 2022/06/23<br>
 - [Reference Signal Map](/nr_embb/nr_embb_layer1.md?id=Reference-Signal-Map)<br>
 - [CORESET](/nr_embb/nr_embb_layer1.md?id=CORESET)<br>
 - Search Space
-- SFI
+- [SFI](/nr_embb/nr_embb_layer1.md?id=SFI)<br>
 - DCI
 - UCI
 - PDSCH/PUSCH Channel Processing
