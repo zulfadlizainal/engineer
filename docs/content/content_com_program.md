@@ -9,7 +9,7 @@ Date Edited: 2022/06/23<br>
 
 #### Python
 
-- [Courses: Python Fundamentals by CodeMosh](/com_program/com_program_python.md?id=Courses-Python-Fundamentals-by-CodeMosh)<br>
+- [Fundamentals](/com_program/com_program_python.md?id=Fundamentals)<br>
 - Test
 
 #### MySQL
