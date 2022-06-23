@@ -19,34 +19,26 @@ Date Edited: 2022/06/23<br>
 
 - Test
 
-#### MySQL
+#### R
 
 - Test
 
-#### MySQL
+#### VBA
 
 - Test
 
-#### MySQL
+#### Javascript
 
 - Test
 
-#### MySQL
+#### Markdown
 
 - Test
 
-#### MySQL
+#### MAC Terminal
 
 - Test
 
-#### MySQL
-
-- Test
-  
-#### MySQL
-
-- Test
-
-#### MySQL
+#### Windows Commad Prompt
 
 - Test
