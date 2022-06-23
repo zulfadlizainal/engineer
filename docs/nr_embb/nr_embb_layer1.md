@@ -1,7 +1,7 @@
 Topic: 5G NR<br>
 Sub-Topic: eMBB<br>
 Date Written: 2020/06/02<br>
-Date Edited: 2022/06/22<br>
+Date Edited: 2022/06/23<br>
 
 ---
 
@@ -252,6 +252,12 @@ Picture from [1]
 
 ?> Semi Static: RRC can change the configuration using RRC Connection Reconfiguration Message.
 
+***Example of CORESET settings from RRC RRC Connection Reconfiguration Message:***
+
+<br>
+<img src="\nr_embb\img\nr_embb_coresetsettings.png" width=100% height=100% />
+<br>
+
 ***<mark>How CORESET is Utilized as PDCCH/DCI?</mark>***
 
 1. 12 RE (12 Subcarriers x 1 Symbol) will form 1 REG.
@@ -260,7 +266,7 @@ Picture from [1]
 4. For example, <mark>if CCE aggregation level is = 4, means it needs 4 CCE to form 1 PDCCH/DCI.</mark>
 
 <br>
-<img src="\nr_embb\img\nr_embb_cceagg.png" width=100% height=100% />
+<img src="\nr_embb\img\nr_embb_cceagg.png" width=70% height=70% />
 <br>
 
 ?> Supported CCE Aggregation Level: 1, 2, 4, 8, 16. Usually it changes dynamically. If in poor RF, higher CCE aggregation level is used to give better chance of decoding / higher pdcch decoding success rate.
@@ -268,7 +274,7 @@ Picture from [1]
 ***Example from real data:***
 
 <br>
-<img src="\nr_embb\img\nr_embb_cceagg2.png" width=80% height=80% />
+<img src="\nr_embb\img\nr_embb_cceagg2.png" width=70% height=70% />
 <br>
 
 ---
