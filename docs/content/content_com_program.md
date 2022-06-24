@@ -1,7 +1,7 @@
 Topic: Computing<br>
 Sub-Topic: Programming<br>
 Date Written: 2019/06/14<br>
-Date Edited: 2022/06/23<br>
+Date Edited: 2022/06/24<br>
 
 ---
 
@@ -10,26 +10,27 @@ Date Edited: 2022/06/23<br>
 #### Python
 
 - [Fundamentals](/com_program/py_fundamentals.md?id=Fundamentals)<br>
-- [Pandas Library](/com_program/py_fundamentals.md?id=Pandas-Library)<br>
-- [Matplotlib Library](/com_program/py_fundamentals.md?id=Matplotlib-Library)<br>
-- [Dash Library](/com_program/py_fundamentals.md?id=Dash-Library)<br>
-- [Tkinter Library](/com_program/py_fundamentals.md?id=Tkinter-Library)<br>
+- [Pandas Library](/com_program/py_pandas.md?id=Pandas-Library)<br>
+- [Matplotlib Library](/com_program/py_matplotlib.md?id=Matplotlib-Library)<br>
+- [Dash Library](/com_program/py_dash.md?id=Dash-Library)<br>
+- [Tkinter Library](/com_program/py_tkinter.md?id=Tkinter-Library)<br>
+- Cheat Sheet
 
 #### MySQL
 
-- Test
+- Fundamentals
 
 #### R
 
-- Test
+- Fundamentals
 
 #### VBA
 
-- Test
+- Fundamentals
 
 #### Javascript
 
-- Test
+- Fundamentals
 
 #### Markdown
 

@@ -1,7 +1,7 @@
 Topic: Computing<br>
 Sub-Topic: Programming<br>
 Date Written: 2019/06/14<br>
-Date Edited: 2022/06/23<br>
+Date Edited: 2022/06/24<br>
 
 ---
 
@@ -13,6 +13,8 @@ Training by CodeMosh from Youtube.
 - [Variable](/com_program/py_fundamentals.md?id=Variable)<br>
 - [Input](/com_program/py_fundamentals.md?id=Input)<br>
 - [Data Type](/com_program/py_fundamentals.md?id=Data-Type)<br>
+- [Strings](/com_program/py_fundamentals.md?id=Strings)<br>
+- [Formatted String](/com_program/py_fundamentals.md?id=FormattedString)<br>
 
 #### Print Statement
 
@@ -106,6 +108,85 @@ print('Your weight is ', weight_kg, ' kg.')
 # 3. bool()  -> Convert string to Boolean
 
 #When use input functions, python always accept value as string, so if want to perform operation, always convert to int of float.
+
+```
+
+---
+
+#### Strings
+
+```python
+
+#Example 1 - Incase need to use ' in a string, need to use double quote
+
+course = "Python's Course for Beginners"
+print(course)
+
+#Or vice versa
+
+course = 'Pythons Course for "Beginners"'
+print(course)
+
+
+#Example 2 - For multiline string, use triple quote
+
+print('''
+
+Hi Zul,
+
+Thanks for learning python.
+
+I will practice 2 hours a day.
+
+Regards,
+Zul
+
+''')
+
+
+#Example 3 - Extract value from String
+
+course = 'Python Course for Beginners'
+print(course[0])                                #Return first letter from the strings
+
+course = 'Python Course for Beginners'
+print(course[-1])                                #Return last letter from the strings
+
+course = 'Python Course for Beginners'
+print(course[0:3])                               #Return range of letter from the strings
+
+course = 'Pythons Course for Beginners'
+print(course[:3])                                #Return range of letter from the strings, assume index [0] is the beginning
+
+course = 'Pythons Course for Beginners'
+print(course[:])                                 #Return range of letter from the strings, assume index [0] is the beginning and index [-1] as end
+
+#---Tips---
+
+# [0:3] Python will always exclude the last range define in index, in this case python will only return index [0], [1], [2]. [3] will not be returned.
+
+
+```
+
+---
+
+#### Formatted String
+
+```python
+
+#Example 1 - Concanated string (Long way)
+
+first = 'John'
+last = 'Smith'
+message  = first + ' [' + last + '] is a coder.'        #concatenate string + variable
+print(message)
+
+#Example 2 - Formatted string (Easy way)
+
+first = 'John'
+last = 'Smith'
+msg = f'{first} [{last}] is a coder.'                   #input variable intu formatted strings
+print(message)
 
 ```
 
