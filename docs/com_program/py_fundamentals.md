@@ -14,7 +14,9 @@ Training by CodeMosh from Youtube.
 - [Input](/com_program/py_fundamentals.md?id=Input)<br>
 - [Data Type](/com_program/py_fundamentals.md?id=Data-Type)<br>
 - [Strings](/com_program/py_fundamentals.md?id=Strings)<br>
-- [Formatted String](/com_program/py_fundamentals.md?id=FormattedString)<br>
+- [Formatted String](/com_program/py_fundamentals.md?id=Formatted-String)<br>
+- [Replace String](/com_program/py_fundamentals.md?id=Replace-String)<br>
+- [Arithmethic](/com_program/py_fundamentals.md?id=Arithmethic)<br>
 
 #### Print Statement
 
@@ -187,6 +189,60 @@ first = 'John'
 last = 'Smith'
 msg = f'{first} [{last}] is a coder.'                   #input variable intu formatted strings
 print(message)
+
+```
+
+---
+
+#### Replace String
+
+```python
+
+course = 'Python for Beginners'
+print(course.replace('Beginners', 'Absolute Beginners'))
+
+#---Tips---
+
+#replace() function is case sensitive
+
+#Example 1 - Replace a letter
+
+course = 'Python for Beginners'
+print(course.replace('P', 'J'))
+
+```
+
+---
+
+#### Arithmethic
+
+```python
+
+print(10 / 3)             #Divide and got float
+print(10 // 3)            #Divide and got integer
+print(10 % 3)             #Modulus operator - return the remainder
+print(10 ** 3)            #Power of
+
+#Example 1 - Increement a number (Hard way)
+
+x = 10
+x = x + 3
+print(x)
+
+#Example 2 - Augmented assignment (Short cut)
+
+x = 10
+x += 3                    #add
+print(x)
+
+y = 10
+y -= 3                    #subtract
+print(y)
+
+
+#---Tips---
+
+#Order of operation (Math): Bracket (),  Power (**), Multiply or Division (* or /), Add or Subtract (+ or -)
 
 ```
 
