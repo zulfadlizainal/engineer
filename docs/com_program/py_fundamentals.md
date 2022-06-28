@@ -36,6 +36,8 @@ Training by CodeMosh from Youtube.
 - [Error Handling](/com_program/py_fundamentals.md?id=Error-Handling)<br>
 - [Classes](/com_program/py_fundamentals.md?id=Classes)<br>
 - [__init__ Constructor](/com_program/py_fundamentals.md?id=init-Constructor)<br>
+- [Class Example](/com_program/py_fundamentals.md?id=Class-Example)<br>
+- [Class Inheritances](/com_program/py_fundamentals.md?id=Class-Inheritances)<br>
 
 #### Print Statement
 
@@ -1169,6 +1171,82 @@ print(point.x)
 
 point.x = 200
 print(point.x)
+
+```
+
+---
+
+#### Class Example
+
+```python
+
+# Define Class
+
+
+class Person:
+    def __init__(self, name):
+        self.name = name
+
+    def talk(self):
+        print(f'Hi, I am {self.name}')
+
+
+# Define Object with attributes
+john = Person("John Smith")
+john.talk()
+
+
+# Define another object with attributes
+bob = Person('Bobby')
+bob.talk()
+
+
+# This is the concept of object oriented programming
+
+```
+
+---
+
+#### Class Inheritances
+
+```python
+
+# In programming, there is this common rule of DRY (Dont repeat yourself)
+# If you need to repeat the same line of code, this is bad
+# Because if have mistakes, we need to correct all of them.
+
+
+# Example 1: Bad Class (Repeat same method inside different class)
+
+class Anjing:
+    def walk(self):
+        print('walk')
+
+
+class Kucing:
+    def walk(self):
+        print('walk')
+
+
+# Example 2: Inheritances (To solve previous problem)
+
+# Define a class that contain common method
+
+class Mammal:
+    def walk(self):
+        print('walk')
+
+
+class Cat(Mammal):  # Input Class with inheritances
+    pass  # Class cannot be empty, so put pass inside a class
+
+
+class Dog(Mammal):  # Input Class with inheritances
+    pass  # Class cannot be empty, so put pass inside a class
+
+
+dog1 = Dog()
+dog1.walk()
 
 ```
 
