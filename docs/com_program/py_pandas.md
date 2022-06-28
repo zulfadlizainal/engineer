@@ -7,12 +7,9 @@ Date Edited: 2022/06/28<br>
 
 ### Pandas Library
 
-Training by Keith Gaili from Youtube.<br><br>
+Training by Keith Gaili from Youtube.The files needed for this training: <a href="https://github.com/zulfadlizainal/engineer/blob/main/docs/com_program/resource_py/pandas_py/TestPandaData.csv" target="_blank">Link.csv</a>
 
-The files needed for this training: <a href="http://example.com/" target="_blank">Link.csv</a>
-
-- [Add Column](/com_program/py_fundamentals.md?id=Add-Column)<br>
-
+- [Add Column](/com_program/py_pandas.md?id=Add-Column)<br>
 
 ---
 
