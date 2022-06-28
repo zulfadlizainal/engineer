@@ -26,7 +26,7 @@ Training by CodeMosh from Youtube.
 - [For Loop](/com_program/py_fundamentals.md?id=For-Loop)<br>
 - [Nested Loop](/com_program/py_fundamentals.md?id=Nested-Loop)<br>
 - [List](/com_program/py_fundamentals.md?id=List)<br>
-- [2D List](/com_program/py_fundamentals.md?id=2D-List)<br>
+- [2D List](/com_program/py_fundamentals.md?id=_2D-List)<br>
 - [List Method](/com_program/py_fundamentals.md?id=List-Method)<br>
 - [Tupples](/com_program/py_fundamentals.md?id=Tupples)<br>
 - [Unpacking](/com_program/py_fundamentals.md?id=Unpacking)<br>
@@ -38,6 +38,8 @@ Training by CodeMosh from Youtube.
 - [__init__ Constructor](/com_program/py_fundamentals.md?id=init-Constructor)<br>
 - [Class Example](/com_program/py_fundamentals.md?id=Class-Example)<br>
 - [Class Inheritances](/com_program/py_fundamentals.md?id=Class-Inheritances)<br>
+- [Modules](/com_program/py_fundamentals.md?id=Modules)<br>
+- [Packages](/com_program/py_fundamentals.md?id=Packages)<br>
 
 #### Print Statement
 
@@ -1247,6 +1249,107 @@ class Dog(Mammal):  # Input Class with inheritances
 
 dog1 = Dog()
 dog1.walk()
+
+```
+
+---
+
+#### Modules
+
+File Structure:
+
+<br>
+<img src="\com_program\img_py\com_program_py_modules.png" width=20% height=20% />
+<br>
+
+> main.py
+
+```python
+
+# Modules work like importing library
+# Better organize the files
+
+# Import the whole library
+
+from Functions import lbs_to_kg
+import Functions
+
+x = Functions.lbs_to_kg(100)        # Need to call the library + method
+print(x)
+
+
+# Import a function from the library
+
+
+x = lbs_to_kg(100)          # Only call the function name
+print(x)
+
+```
+
+> modules.py
+
+```python
+
+def lbs_to_kg(weight):
+    return weight * 0.45
+
+
+def kg_to_lbs(weight):
+    return weight / 0.45
+
+```
+
+---
+
+#### Packages
+
+File Structure:
+
+<br>
+<img src="\com_program\img_py\com_program_py_packages.png" width=20% height=20% />
+<br>
+
+> main.py
+
+```python
+
+# Packages is like a folder full of Modules - Easy to mantain
+# Its like a big library
+# Python knows it is a packages if we have empty __init__.py in the folder
+# Then inside the folder, we can put many modules (usually different kind of functions) and we can call from main
+
+import package.module1
+# Import specific module
+
+package.module1.calc_shipping()
+
+# Import specific function inside a module (Best)
+
+from package.module1 import calc_shipping
+calc_shipping()
+
+# Import specific modules
+
+from package import module1
+module1.calc_shipping()
+
+```
+
+> __init__.py
+
+```python
+
+
+
+```
+
+> module1.py
+
+```python
+
+def calc_shipping():
+    print('calc_shipping')
+
 
 ```
 
