@@ -16,6 +16,12 @@ Training by Keith Gaili from Youtube.The files needed for this training: <a href
 - [Export TXT](/com_program/py_pandas?id=Export-TXT)<br>
 - [Export XLS](/com_program/py_pandas?id=Export-XLS)<br>
 - [Filter Content](/com_program/py_pandas?id=Filter-Content)<br>
+- [Filter Row](/com_program/py_pandas?id=Filter-Row)<br>
+- [Group By Pivot](/com_program/py_pandas?id=Group-By-Pivot)<br>
+- [Group By Stats](/com_program/py_pandas?id=Group-By-Stats)<br>
+- [Import CSV](/com_program/py_pandas?id=Import-CSV)<br>
+- [Import TXT](/com_program/py_pandas?id=Import-TXT)<br>
+- [Import XLS](/com_program/py_pandas?id=Import-XLS)<br>
 
 ---
 
@@ -169,6 +175,144 @@ print(x)
 
 y = df.loc[~df['Name'].str.contains('Mega')]
 print(y)
+
+```
+
+---
+
+#### Filter Row
+
+```python
+
+import pandas as pd
+
+df = pd.read_csv('TestPandaData.csv')
+
+#Filter certain row that contains certain text
+
+u = df.loc[df['Type 1'] == 'Fire']
+print(u)
+
+#Filter multiple rows using AND
+#Seperate conditions by ()
+
+v = df.loc[(df['Type 1'] == 'Grass') & (df['Type 2'] == 'Poison')]
+print(v)
+
+#Filter multiple rows using OR
+#Seperate conditions by ()
+
+w = df.loc[(df['Type 1'] == 'Grass') | (df['Type 2'] == 'Poison')]
+print(w)
+
+#Filter multiple rows with > < conditions
+#Seperate conditions by ()
+
+x = df.loc[(df['Type 1'] == 'Grass') & (df['Type 2'] == 'Poison') & (df['HP'] > 70)]
+print(x)
+
+```
+
+---
+
+#### Group By Pivot
+
+```python
+
+import pandas as pd
+
+df = pd.read_csv('TestPandaData.csv')
+
+#Groupby (Similar Like Pivot)
+
+x = df.groupby(['Type 1']).count()['HP']
+print(x)
+
+#Groupby multiple category
+
+x = df.groupby(['Type 1', 'Type 2']).count()['HP']
+print(x)
+
+```
+
+---
+
+#### Group By Stats
+
+```python
+
+import pandas as pd
+
+df = pd.read_csv('TestPandaData.csv')
+
+#Similar like doing pivot in excel
+
+x = df.groupby(['Type 1']).mean()
+print(x)
+
+#Sort after group
+
+y = df.groupby(['Type 1']).mean().sort_values('Defense', ascending = False)
+print(y)
+
+#Sum, Mean, Count, Min, Max
+
+xsum = df.groupby(['Type 1']).sum()
+print(xsum)
+
+xmean = df.groupby(['Type 1']).mean()
+print(xmean)
+
+xcount = df.groupby(['Type 1']).count()
+print(xcount)
+
+xmin = df.groupby(['Type 1']).min()
+print(xmin)
+
+xmax = df.groupby(['Type 1']).max()
+print(xmax)
+
+```
+
+---
+
+#### Import CSV
+
+```python
+
+import pandas as pd
+
+df = pd.read_csv('TestPandaData.csv')
+
+print(df)
+
+```
+
+---
+
+#### Import TXT
+
+```python
+
+import pandas as pd
+
+df = pd.read_csv('TestPandaData.txt',delimiter = '\t') #seperate by tab/coma/semicolon
+
+print(df)
+
+```
+
+---
+
+#### Import XLS
+
+```python
+
+import pandas as pd
+
+df = pd.read_excel('TestPandaData.xlsx')
+
+print(df)
 
 ```
 
