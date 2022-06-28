@@ -41,6 +41,8 @@ Training by CodeMosh from Youtube.
 - [Modules](/com_program/py_fundamentals.md?id=Modules)<br>
 - [Packages](/com_program/py_fundamentals.md?id=Packages)<br>
 
+---
+
 #### Print Statement
 
 ```python
@@ -49,6 +51,8 @@ print('Zulfadli') #Print String
 print('*' * 10) #Print String repeatedly
 
 ```
+
+---
 
 #### Variable
 
@@ -81,6 +85,8 @@ print(name, age, patient_type)
 
 ```
 
+---
+
 #### Input
 
 ```python
@@ -97,6 +103,8 @@ colour = input('What is your favourite colour? ')
 print(name + ' likes ' + colour)
 
 ```
+
+---
 
 #### Data Type
 
