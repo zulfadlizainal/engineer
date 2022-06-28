@@ -1262,7 +1262,7 @@ File Structure:
 <img src="\com_program\img_py\com_program_py_modules.png" width=20% height=20% />
 <br>
 
-> main.py
+***<mark>main.py</mark>***
 
 ```python
 
@@ -1286,7 +1286,7 @@ print(x)
 
 ```
 
-> modules.py
+***<mark>modules.py</mark>***
 
 ```python
 
@@ -1306,10 +1306,10 @@ def kg_to_lbs(weight):
 File Structure:
 
 <br>
-<img src="\com_program\img_py\com_program_py_packages.png" width=20% height=20% />
+<img src="\com_program\img_py\com_program_py_packages.png" width=50% height=50% />
 <br>
 
-> main.py
+***<mark>main.py</mark>***
 
 ```python
 
@@ -1335,7 +1335,7 @@ module1.calc_shipping()
 
 ```
 
-> __init__.py
+***<mark>__init__.py</mark>***
 
 ```python
 
@@ -1343,7 +1343,7 @@ module1.calc_shipping()
 
 ```
 
-> module1.py
+***<mark>module1.py</mark>***
 
 ```python
 
