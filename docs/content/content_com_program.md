@@ -12,8 +12,8 @@ Date Edited: 2022/06/30<br>
 - [Fundamentals](/com_program/py_fundamentals.md?id=Fundamentals)<br>
 - [Pandas Library](/com_program/py_pandas.md?id=Pandas-Library)<br>
 - [Matplotlib Library](/com_program/py_matplotlib.md?id=Matplotlib-Library)<br>
-- [Dash Library](/com_program/py_dash.md?id=Dash-Library)<br>
-- [Tkinter Library](/com_program/py_tkinter.md?id=Tkinter-Library)<br>
+- Dash
+- Tkinter
 - Cheat Sheet
 
 #### MySQL
