@@ -23,11 +23,11 @@ Training by Keith Gaili from Youtube.The files needed for this training: <a href
 - [Import TXT](/com_program/py_pandas?id=Import-TXT)<br>
 - [Import XLS](/com_program/py_pandas?id=Import-XLS)<br>
 - [Iterate Row](/com_program/py_pandas?id=Iterate-Row)<br>
-- [List To Pandas](/com_program/py_pandas?id=Iterate-Row)<br>
+- [List To Pandas](/com_program/py_pandas?id=List-To-Pandas)<br>
 - [Dictionary To Pandas](/com_program/py_pandas?id=Dictionary-To-Pandas)<br>
 - [Pivot](/com_program/py_pandas?id=Pivot)<br>
 - [Pivot Table](/com_program/py_pandas?id=Pivot-Table)<br>
-- [Print First / Last Row](/com_program/py_pandas?id=Prin-First-Last-Row)<br>
+- [Print First / Last Row](/com_program/py_pandas?id=Print-First-Last-Row)<br>
 - [Read Cell](/com_program/py_pandas?id=Read-Cell)<br>
 - [Read Column](/com_program/py_pandas?id=Read-Column)<br>
 - [Read Row](/com_program/py_pandas?id=Read-Row)<br>

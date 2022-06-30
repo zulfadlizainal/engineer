@@ -31,7 +31,7 @@ plt.show()              #Actually show the graph to the user
 Result:
 
 <br>
-<img src="\com_program\img\com_program_py_lineplot.png" width=50% height=50% />
+<img src="\com_program\img_py\com_program_py_lineplot.png" width=50% height=50% />
 <br>
 
 ---
