@@ -7,7 +7,7 @@ Date Edited: 2022/06/30<br>
 
 ### Pandas Library
 
-Training by Keith Gaili from Youtube.The files needed for this training: <a href="https://github.com/KeithGalli/pandas/blob/master/pokemon_data.csv" target="_blank">Link.csv</a>
+Training by Keith Gaili from Youtube. The files needed for this training: <a href="https://github.com/KeithGalli/pandas/blob/master/pokemon_data.csv" target="_blank">Link.csv</a>
 
 - [Add Column](/com_program/py_pandas?id=Add-Column)<br>
 - [Add Content](/com_program/py_pandas?id=Add-Content)<br>
