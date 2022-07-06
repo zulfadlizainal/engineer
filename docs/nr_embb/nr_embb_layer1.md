@@ -1,7 +1,7 @@
 Topic: 5G NR<br>
 Sub-Topic: eMBB<br>
 Date Written: 2020/06/02<br>
-Date Edited: 2022/06/30<br>
+Date Edited: 2022/07/06<br>
 
 ---
 
@@ -228,6 +228,44 @@ Picture from [1]
 
 ---
 
+#### Reference Signal Map
+
+Picture from [1]
+
+<br>
+<img src="\nr_embb\img\nr_embb_rsstructure.png" width=100% height=100% />
+<br>
+
+!> PTRS is only for mmWave.
+
+***<mark>LTE vs NR</mark>***
+
+| RS Use Case                  | LTE         | NR          |
+|------------------------------|-------------|-------------|
+| DL Channel State Information | CRS, CSI-RS | CSI-RS      |
+| UL Channel State Information | SRS         | SRS         |
+| Data Channel Demodulation    | CRS, DMRS   | DMRS        |
+| Control Channel Demodulation | CRS         | DMRS        |
+| Phase Tracking (mmWave)      | -           | PTRS        |
+| Time & Freq Tracking         | CRS         | TRS         |
+| Beam Management              | -           | SSB, CSI-RS |
+| Radio Link Monitoring        | CRS         | SSB, CSI-RS |
+| RRM Measurment               | CRS         | SSB, CSI-RS |
+
+?> LTE CRS (Always ON) is replaced with multiple UE-Specific on demand RS signals in 5G NR
+
+***<mark>RS Based on Channels Comparison</mark>***
+
+| Type             | DMRS                             | PTRS         | CSI-RS            | SRS          |
+|------------------|----------------------------------|--------------|-------------------|--------------|
+| Direction        | UL/DL                            | UL/DL        | DL                | UL           |
+| Frequency        | Sub6/mmWave                      | mmWave       | Sub6/mmWave       | Sub6/mmWave  |
+| Channel          | PDSCH, PDCCH, PBCH, PUSCH, PUCCH | PDSCH, PUSCH | PDSCH, PDCCH, SSB | PUCCH, PUSCH |
+| UE or Cell Level | UE, Cell for PBCH                | UE           | UE                | UE           |
+
+
+---
+
 #### CORESET
 
 1. CORESET = Control Resource Set.
@@ -437,43 +475,21 @@ Table form [1]
 
 !> Why in DL term 'DCI Format' is used but in UL term 'PUCCH Format is used'? Why not use term 'UCI Format'?: [Personal Guess] In DL, PDCCH always in the same physical form, but the information that it carries (DCI) defer based on type of scheduling or information that wanted to be sent to the UE. Hence, the DCI itself requires different format. In UL, the PUCCH physical form differs depending on how many bits of UCI needed to be carried by PUCCH.
 
-
 ---
 
-#### Reference Signal Map
+#### PDSCH/PUSCH Channel Processing
 
-Picture from [1]
+General flow from [4]:
 
 <br>
-<img src="\nr_embb\img\nr_embb_rsstructure.png" width=100% height=100% />
+<img src="\nr_embb\img\nr_embb_chprocessflow.png" width=100% height=100% />
 <br>
 
-!> PTRS is only for mmWave.
+Detailed flow from [1]:
 
-***<mark>LTE vs NR</mark>***
-
-| RS Use Case                  | LTE         | NR          |
-|------------------------------|-------------|-------------|
-| DL Channel State Information | CRS, CSI-RS | CSI-RS      |
-| UL Channel State Information | SRS         | SRS         |
-| Data Channel Demodulation    | CRS, DMRS   | DMRS        |
-| Control Channel Demodulation | CRS         | DMRS        |
-| Phase Tracking (mmWave)      | -           | PTRS        |
-| Time & Freq Tracking         | CRS         | TRS         |
-| Beam Management              | -           | SSB, CSI-RS |
-| Radio Link Monitoring        | CRS         | SSB, CSI-RS |
-| RRM Measurment               | CRS         | SSB, CSI-RS |
-
-?> LTE CRS (Always ON) is replaced with multiple UE-Specific on demand RS signals in 5G NR
-
-***<mark>RS Based on Channels Comparison</mark>***
-
-| Type             | DMRS                             | PTRS         | CSI-RS            | SRS          |
-|------------------|----------------------------------|--------------|-------------------|--------------|
-| Direction        | UL/DL                            | UL/DL        | DL                | UL           |
-| Frequency        | Sub6/mmWave                      | mmWave       | Sub6/mmWave       | Sub6/mmWave  |
-| Channel          | PDSCH, PDCCH, PBCH, PUSCH, PUCCH | PDSCH, PUSCH | PDSCH, PDCCH, SSB | PUCCH, PUSCH |
-| UE or Cell Level | UE, Cell for PBCH                | UE           | UE                | UE           |
+<br>
+<img src="\nr_embb\img\nr_embb_chprocessflow2.png" width=100% height=100% />
+<br>
 
 ---
 

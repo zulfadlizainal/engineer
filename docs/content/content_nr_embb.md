@@ -1,7 +1,7 @@
 Topic: 5G NR<br>
 Sub-Topic: eMBB<br>
 Date Written: 2020/08/31<br>
-Date Edited: 2022/06/30<br>
+Date Edited: 2022/07/06<br>
 
 ---
 
@@ -63,7 +63,8 @@ Date Edited: 2022/06/30<br>
 - [SFI](/nr_embb/nr_embb_layer1.md?id=SFI)<br>
 - [DCI Format](/nr_embb/nr_embb_layer1.md?id=DCI-Format)<br>
 - [UCI (PUCCH Format)](/nr_embb/nr_embb_layer1.md?id=UCI-PUCCH-Format)<br>
-- PDSCH/PUSCH Channel Processing
+- [PDSCH/PUSCH Channel Processing](/nr_embb/nr_embb_layer1.md?id=PDSCH-PUSCH-Channel-Processing)<br>
+- PUSCH Channel Processing
 - CBG
 - MCS
 - Layer Mapping
