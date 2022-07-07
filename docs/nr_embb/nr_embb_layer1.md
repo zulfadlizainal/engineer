@@ -495,7 +495,7 @@ Detailed flow from [1]:
 
 #### UE Measurment (RSRP/RSRQ/SINR)
 
-The best way to understand RSRP/RSRQ/SINR is probably to compare the calculation for both LTE and NR. In that way its easy to understand the calculation and how the measurement is impacted based on network condition.
+The best way to understand RSRP/RSRQ/SINR is probably to compare the calculation for both LTE and NR. In that way, its easy to understand the math and how the measurement is impacted based on network condition.
 
 ***<mark>SS-RSRP</mark>***
 
@@ -505,6 +505,44 @@ The best way to understand RSRP/RSRQ/SINR is probably to compare the calculation
 
 <br>
 <img src="\nr_embb\img\nr_embb_rsrp.png" width=100% height=100% />
+<br>
+
+***<mark>SS-RSRQ</mark>***
+
+General formula of SS-RSRQ is similar with LTE. However, there is slight difference in NR for N value and RSSI measurement range. [3] [4]
+
+?> LTE RSRQ = (N x RSRP) / RSSI 
+
+!> NR SS-RSRQ = (N x SS-RSRP) / RSSI 
+
+> Where:
+>  
+> RSRP = Average received power per one RS/SSS RE
+>
+> RSSI = Total received wide-band power included own cell RS/SSS RE, own cell other RE, other cell interference, thermal noise, & noise figure.
+> 
+> N =  Total number of resource block measured by RSSI.
+
+RSRQ can be derived more easier as:
+
+?> RSRQ = RSRP / (RSSI/N)
+
+> Where:
+>  
+> RSRP = Average received power per one RS/SSS RE
+>
+> RSSI/N = Average RSSI per one RB
+
+Difference in LTE vs NR RSSI components:
+
+| Component        | LTE                          | NR                            |
+|------------------|------------------------------|-------------------------------|
+| N                | Whole Bandwidth              | 20 RB (SSB Bandwidth)         |
+| RSSI (Time)      | 1 Symbol (Avg RS RE Symbols) | 1 Symbol (Avg SSB RE Symbols) |
+| RSSI (Frequency) | Whole Bandwidth RE           | 830 RE (All SSB RE)           |
+
+<br>
+<img src="\nr_embb\img\nr_embb_rsrq.png" width=100% height=100% />
 <br>
 
 ---
