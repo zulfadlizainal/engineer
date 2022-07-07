@@ -1,7 +1,7 @@
 Topic: 5G NR<br>
 Sub-Topic: eMBB<br>
 Date Written: 2020/08/31<br>
-Date Edited: 2022/07/06<br>
+Date Edited: 2022/07/07<br>
 
 ---
 
@@ -131,5 +131,4 @@ Date Edited: 2022/07/06<br>
 #### Practical Analysis
 
 - [Design Cell Range for TDD](/nr_embb/nr_embb_practical.md?id=Design-Cell-Range-for-TDD)<br>
-- Check Slot Utilization
-- Dimension Channels Capacity
+- [Dimension Channels Capacity](/nr_embb/nr_embb_practical.md?id=Dimension-Channels-Capacity)<br>

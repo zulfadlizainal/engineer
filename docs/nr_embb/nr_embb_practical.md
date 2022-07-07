@@ -1,7 +1,7 @@
 Topic: 5G NR<br>
 Sub-Topic: eMBB<br>
 Date Written: 2022/05/09<br>
-Date Edited: 2022/05/09<br>
+Date Edited: 2022/06/07<br>
 
 ---
 
@@ -44,6 +44,23 @@ Eg: 30kHz SCS
 
 ---
 
+#### Dimension Channels Capacity
+
+Total of 8 topics of channel capacity planning and dimensioning uploaded in a form of simulation coding projects on github. Click [here](https://github.com/zulfadlizainal/5G-NR-Planning-And-Dimensioning). [1]
+
+***<mark>Planning & Dimensioning Topic Includes:</mark>***
+
+Part 1: Operating Band, Frame Structure
+Part 2: Synchronization
+Part 3: System Information
+Part 4: DL Common Channel
+Part 5: PDSCH
+Part 6: Paging
+Part 7: UL Common Channel
+Part 8: PUSCH
+
+---
+
 #### References
 
-1. 
+1. [Github](https://github.com/zulfadlizainal/5G-NR-Planning-And-Dimensioning). 
