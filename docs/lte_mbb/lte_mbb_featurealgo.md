@@ -1,7 +1,7 @@
 Topic: 4G LTE<br>
 Sub-Topic: MBB<br>
 Date Written: 2019/08/13<br>
-Date Edited: 2022/03/08<br>
+Date Edited: 2022/07/07<br>
 
 ---
 

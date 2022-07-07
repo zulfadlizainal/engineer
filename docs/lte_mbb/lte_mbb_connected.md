@@ -1,7 +1,7 @@
 Topic: 4G LTE<br>
 Sub-Topic: MBB<br>
 Date Written: 2020/01/26<br>
-Date Edited: 2022/02/11<br>
+Date Edited: 2022/07/07<br>
 
 ---
 
@@ -33,6 +33,30 @@ UE will report below measurement events whenever any criteria of connected mode 
 
 
 <mark>This is a good website to explain this in animation -> [Sqimway](https://www.sqimway.com/lte_event.php).</mark> [3]
+
+---
+
+#### Blind Based CA
+
+The process off blind based CA observed in major vendor:
+
+***<mark>Scell Add Procedure Using Blind Addition:</mark>***
+
+<br>
+<img src="\nr_embb\img\lte_mbb_scelladd.png" width=100% height=100% />
+<br>
+
+***<mark>Scell Add Fail Procedure When Scell Poor CQI:</mark>***
+
+<br>
+<img src="\nr_embb\img\lte_mbb_scelladdfail.png" width=100% height=100% />
+<br>
+
+***<mark>Scell Release Procedure When Scell Poor CQI</mark>***
+
+<br>
+<img src="\nr_embb\img\lte_mbb_scellrel.png" width=100% height=100% />
+<br>
 
 ---
 

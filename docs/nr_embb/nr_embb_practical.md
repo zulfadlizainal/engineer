@@ -50,14 +50,14 @@ Total of 8 topics of channel capacity planning and dimensioning uploaded in a fo
 
 ***<mark>Planning & Dimensioning Topic Includes:</mark>***
 
-Part 1: Operating Band, Frame Structure
-Part 2: Synchronization
-Part 3: System Information
-Part 4: DL Common Channel
-Part 5: PDSCH
-Part 6: Paging
-Part 7: UL Common Channel
-Part 8: PUSCH
+1. Part 1: Operating Band, Frame Structure
+2. Part 2: Synchronization
+3. Part 3: System Information
+4. Part 4: DL Common Channel
+5. Part 5: PDSCH
+6. Part 6: Paging
+7. Part 7: UL Common Channel
+8. Part 8: PUSCH
 
 ---
 

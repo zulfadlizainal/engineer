@@ -1,7 +1,7 @@
 Topic: 4G LTE<br>
 Sub-Topic: MBB<br>
 Date Written: 2019/02/26<br>
-Date Edited: 2022/03/08<br>
+Date Edited: 2022/07/07<br>
 
 ---
 
@@ -31,8 +31,8 @@ Date Edited: 2022/03/08<br>
 
 #### Features and Algorithm 
 
-- Link Adaptation<br> 
-- Carrier Aggregation (CA)<br> 
+- Link Adaptation<br>
+- Carrier Aggregation (CA)
 - [MIMO Concept](/lte_mbb/lte_mbb_featurealgo.md?id=MIMO-Concept)<br>
 - Massive MIMO<br>
 - Beamforming<br>
@@ -93,6 +93,7 @@ Date Edited: 2022/03/08<br>
 - Intra Frequency Handover<br>
 - Inter Frequency Handover<br>
 - Measurement Gap <br>
+- [Blind Based CA](/lte_mbb/lte_mbb_connected.md?id=Blind-Based-CA)<br>
 
 #### Practical Analysis 
 
