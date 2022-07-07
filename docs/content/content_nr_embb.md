@@ -80,7 +80,7 @@ Date Edited: 2022/07/07<br>
 - MIMO
 - Beamforming
 - PHR
-- UE Measurment (RP/RQ/SINR)
+- [UE Measurment (RSRP/RSRQ/SINR)](/nr_embb/nr_embb_layer1.md?id=UE-Measurment-RSRPRSRQSINR)<br>
 
 #### Layer 2: MAC, RLC, PDCP, SDAP
 

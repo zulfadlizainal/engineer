@@ -1,7 +1,7 @@
 Topic: 5G NR<br>
 Sub-Topic: eMBB<br>
 Date Written: 2020/06/02<br>
-Date Edited: 2022/07/06<br>
+Date Edited: 2022/07/07<br>
 
 ---
 
@@ -493,6 +493,22 @@ Detailed flow from [1]:
 
 ---
 
+#### UE Measurment (RSRP/RSRQ/SINR)
+
+The best way to understand RSRP/RSRQ/SINR is probably to compare the calculation for both LTE and NR. In that way its easy to understand the calculation and how the measurement is impacted based on network condition.
+
+***<mark>SS-RSRP</mark>***
+
+?> LTE RSRP = Average received power on RS RE across all bandwidth. [4] [10]
+
+!> NR SS-RSRP = Average received power on SSS RE across all bandwidth. [4] [10]
+
+<br>
+<img src="\nr_embb\img\nr_embb_rsrp.png" width=100% height=100% />
+<br>
+
+---
+
 #### References
 
 1. [Qualcomm](https://www.qualcommwirelessacademy.com/)
@@ -504,3 +520,4 @@ Detailed flow from [1]:
 7. [Sharetechnote](https://www.sharetechnote.com/html/5G/5G_DCI.html)
 8. 3GPP TS 38.211 Section 7.3
 9. [Sharetechnote 2](https://www.sharetechnote.com/html/5G/5G_UCI.html#Contents_of_UCI)
+10. [5G NR by Sassan Ahmadi](https://www.sciencedirect.com/book/9780081022672/5g-nr)
