@@ -43,19 +43,19 @@ The process off blind based CA observed in major vendor:
 ***<mark>Scell Add Procedure Using Blind Addition:</mark>***
 
 <br>
-<img src="\nr_embb\img\lte_mbb_scelladd.png" width=100% height=100% />
+<img src="\lte_mbb\img\lte_mbb_scelladd.png" width=100% height=100% />
 <br>
 
 ***<mark>Scell Add Fail Procedure When Scell Poor CQI:</mark>***
 
 <br>
-<img src="\nr_embb\img\lte_mbb_scelladdfail.png" width=100% height=100% />
+<img src="\lte_mbb\img\lte_mbb_scelladdfail.png" width=100% height=100% />
 <br>
 
 ***<mark>Scell Release Procedure When Scell Poor CQI</mark>***
 
 <br>
-<img src="\nr_embb\img\lte_mbb_scellrel.png" width=100% height=100% />
+<img src="\lte_mbb\img\lte_mbb_scellrel.png" width=100% height=100% />
 <br>
 
 ---
